@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>跟着世界杯看世界</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__media" aria-hidden="true"></div>
+      <nav class="topbar" aria-label="主要导航">
+        <a href="#countries">国家导览</a>
+        <a href="#passport">环球护照</a>
+        <a href="#plan">4周计划</a>
+      </nav>
+      <section class="hero__content">
+        <p class="eyebrow">家庭共学 · 轻量有趣 · 不像上课</p>
+        <h1>跟着世界杯看世界</h1>
+        <p>用 2026 世界杯 48 支参赛队，打开地图、语言、饮食、习俗和价值观。</p>
+        <div class="hero__stats" aria-label="赛事概览">
+          <span><strong>48</strong>参赛队</span>
+          <span><strong>3</strong>主办国</span>
+          <span><strong>104</strong>场比赛</span>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="mission" aria-label="共学目标">
+        <div>
+          <p class="section-kicker">从孩子愿意看的比赛开始</p>
+          <h2>一场球赛背后，有一个真实国家。</h2>
+        </div>
+        <p>赛前 5 分钟做国家卡片；看球时只问 2 到 3 个观察问题；每周深入 2 个国家；最后完成一本《世界杯环球护照》。</p>
+      </section>
+
+      <section class="workspace" id="countries">
+        <aside class="country-panel" aria-label="国家列表">
+          <div class="panel-head">
+            <h2>国家导览</h2>
+            <span id="countryCount"></span>
+          </div>
+          <label class="search">
+            <span>搜索</span>
+            <input id="searchInput" type="search" placeholder="国家、洲、语言">
+          </label>
+          <div class="filters" id="filters" aria-label="筛选国家"></div>
+          <div class="country-list" id="countryList"></div>
+        </aside>
+
+        <article class="country-detail" aria-live="polite">
+          <div class="detail-hero">
+            <div>
+              <span class="flag" id="detailFlag"></span>
+              <p class="section-kicker" id="detailRegion"></p>
+              <h2 id="detailName"></h2>
+            </div>
+            <span class="status-pill" id="detailStatus"></span>
+          </div>
+
+          <figure class="country-photo">
+            <img id="countryPhoto" src="assets/family-world-cup.jpg" alt="">
+            <figcaption id="imageCaption"></figcaption>
+            <div class="photo-controls" id="photoControls" aria-label="国家特色图片切换"></div>
+          </figure>
+
+          <section class="memory-card">
+            <h3>一句记住这个国家</h3>
+            <p id="memoryText"></p>
+          </section>
+
+          <section class="quick-card" aria-label="国家卡片">
+            <div>
+              <span>首都</span>
+              <strong id="capital"></strong>
+            </div>
+            <div>
+              <span>语言</span>
+              <strong id="languages"></strong>
+            </div>
+            <div>
+              <span>你好</span>
+              <strong id="hello"></strong>
+            </div>
+            <div>
+              <span>国旗颜色</span>
+              <strong id="flagColors"></strong>
+            </div>
+          </section>
+
+          <section class="detail-grid">
+            <div class="info-block">
+              <h3>有画面感的记忆点</h3>
+              <ul id="cultureList"></ul>
+            </div>
+            <div class="info-block">
+              <h3>主题夜素材</h3>
+              <ul id="themeList"></ul>
+            </div>
+            <div class="info-block">
+              <h3>球队性格</h3>
+              <p id="footballStyle"></p>
+            </div>
+            <div class="info-block">
+              <h3>价值观关键词</h3>
+              <div class="chips" id="valueChips"></div>
+            </div>
+          </section>
+
+          <section class="video-section">
+            <div>
+              <h3>视频看世界</h3>
+              <p>打开后优先选择播放量高、时长适中、画面清楚的视频，适合亲子一起筛选。</p>
+            </div>
+            <div id="videoList"></div>
+          </section>
+
+          <section class="match-section">
+            <div>
+              <h3>世界杯比赛记录</h3>
+              <p id="matchSummary"></p>
+            </div>
+            <div class="match-columns">
+              <div>
+                <h4>小组赛</h4>
+                <div id="groupMatchList"></div>
+              </div>
+              <div>
+                <h4>淘汰赛</h4>
+                <div id="knockoutMatchList"></div>
+              </div>
+            </div>
+            <p class="match-source">赛程、比分与时间来自 Wikipedia/FIFA 页面抽取；回放入口跳转到 YouTube 相关比赛搜索，实际可观看内容以外站为准。</p>
+          </section>
+
+          <section class="notes" id="passport">
+            <div>
+              <h3>我的环球护照页</h3>
+              <p id="noteHint"></p>
+            </div>
+            <textarea id="familyNotes" rows="7"></textarea>
+          </section>
+        </article>
+      </section>
+
+      <section class="plan" id="plan">
+        <div class="plan__intro">
+          <p class="section-kicker">4周家庭计划</p>
+          <h2>每天很轻，每周有一个小成果。</h2>
+        </div>
+        <div class="week-grid">
+          <article>
+            <span>第1周</span>
+            <h3>地图和国旗</h3>
+            <p>看球前找国家位置，贴小旗子。</p>
+          </article>
+          <article>
+            <span>第2周</span>
+            <h3>环球护照</h3>
+            <p>每个国家写 1 页，积累 5 页。</p>
+          </article>
+          <article>
+            <span>第3周</span>
+            <h3>主题晚餐</h3>
+            <p>选 2 个国家：吃、听、说、看。</p>
+          </article>
+          <article>
+            <span>第4周</span>
+            <h3>文化比较</h3>
+            <p>说出 3 个国家的不同和相似。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>内容提纲来自《跟着世界杯看世界_家庭共学计划》PPT。参赛队入口依据 2026 世界杯 48 队资料建立，国家细节可逐条扩展。</p>
+    </footer>
+
+    <script src="data/countries.js"></script>
+    <script src="data/videos.js"></script>
+    <script src="data/matches.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
