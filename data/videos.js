@@ -21,7 +21,7 @@ window.COUNTRY_VIDEOS = {
       "platform": "YouTube",
       "title": "巴西旅行与文化画面",
       "description": "用城市、自然、食物和日常生活画面帮助孩子形成印象。",
-      "videoId": "io5Z-PMnsHA",
+      "videoId": "VT7SzQBECoc",
       "query": "Brazil culture travel guide documentary"
     },
     {
