@@ -572,12 +572,49 @@ ul {
   overflow: hidden;
 }
 
-.video-card iframe {
+.video-thumb {
+  position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
   display: block;
-  border: 0;
   background: #d9e5e1;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.video-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(23, 50, 77, 0.42), rgba(23, 50, 77, 0.04));
+}
+
+.play-badge {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  z-index: 1;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 14px;
+  border-radius: 8px;
+  background: white;
+  color: var(--green);
+  font-weight: 900;
+  box-shadow: 0 8px 18px rgba(23, 50, 77, 0.18);
+}
+
+.video-thumb:hover img {
+  transform: scale(1.025);
+  transition: transform 180ms ease;
 }
 
 .video-card__body {

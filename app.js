@@ -344,7 +344,7 @@ function getVideoLinks(country) {
       platform: video.platform,
       title: video.title,
       description: video.description,
-      embedUrl: `https://www.youtube.com/embed/${video.videoId}`,
+      videoId: video.videoId,
       url: `https://www.youtube.com/watch?v=${video.videoId}`
     }));
   }
@@ -354,7 +354,7 @@ function getVideoLinks(country) {
     platform: "YouTube",
     title: `${country.nameZh}视频搜索`,
     description: "暂未配置可嵌入视频，点击前往外站选择高播放内容。",
-    embedUrl: "",
+    videoId: "",
     url: externalSearchUrl(topic)
   }];
 }
@@ -362,16 +362,14 @@ function getVideoLinks(country) {
 function renderVideoLinks(country) {
   elements.videoList.innerHTML = "";
   getVideoLinks(country).forEach((video) => {
+    const thumbnail = video.videoId ? `https://i.ytimg.com/vi/${video.videoId}/hqdefault.jpg` : "";
     const card = document.createElement("article");
     card.className = "video-card";
     card.innerHTML = `
-      ${video.embedUrl ? `<iframe
-          src="${video.embedUrl}"
-          title="${video.title}"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>` : ""}
+      <a class="video-thumb" href="${video.url}" target="_blank" rel="noopener noreferrer" aria-label="观看：${video.title}">
+        ${thumbnail ? `<img src="${thumbnail}" alt="${video.title}封面" loading="lazy">` : ""}
+        <span class="play-badge">播放</span>
+      </a>
       <div class="video-card__body">
         <span>${video.platform}</span>
         <strong>${video.title}</strong>
