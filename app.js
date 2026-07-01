@@ -735,7 +735,7 @@ function initSpeechRecognition() {
   recognition.onstart = () => {
     isListening = true;
     elements.aiVoiceInput.classList.add("is-active");
-    setVoiceStatus("正在听你说话，说完会自动发送...", true);
+    setVoiceStatus("正在听你说话，说完会填入输入框，请确认后手动发送。", true);
   };
 
   recognition.onresult = (event) => {
@@ -749,8 +749,8 @@ function initSpeechRecognition() {
     elements.aiChatInput.value = (finalTranscript || transcript).trim();
     if (finalTranscript.trim()) {
       recognition.stop();
-      const country = countries.find((item) => item.id === state.selectedId) || countries[0];
-      submitChatQuestion(country);
+      setVoiceStatus("语音已填入输入框，可以修改后再点“发送”。");
+      elements.aiChatInput.focus();
     }
   };
 
@@ -764,7 +764,7 @@ function initSpeechRecognition() {
   recognition.onend = () => {
     isListening = false;
     elements.aiVoiceInput.classList.remove("is-active");
-    if (!elements.aiVoiceStatus.textContent.includes("权限")) {
+    if (!elements.aiVoiceStatus.textContent.includes("权限") && !elements.aiChatInput.value.trim()) {
       setVoiceStatus(voiceOutputEnabled ? "播报已开启，AI 回复会自动朗读。" : "");
     }
   };
