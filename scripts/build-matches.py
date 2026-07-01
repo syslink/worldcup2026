@@ -161,7 +161,7 @@ def main():
             grouped.setdefault(team_id, []).append(match)
 
     output = {
-        "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-06-30",
+        "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-01",
         "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
         "matches": matches,
         "byCountry": grouped,

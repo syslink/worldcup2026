@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-06-30",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-01",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
@@ -1524,7 +1524,7 @@ window.WORLD_CUP_MATCHES = {
     },
     {
       "id": "m77",
-      "matchNo": 78,
+      "matchNo": 77,
       "stageType": "knockout",
       "stage": "32强淘汰赛",
       "group": null,
@@ -1535,16 +1535,16 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "ivory-coast",
       "away": "Norway",
       "awayId": "norway",
-      "score": "",
+      "score": "1–2",
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Ivory+Coast+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "负",
+      "awayResult": "胜"
     },
     {
       "id": "m78",
-      "matchNo": 77,
+      "matchNo": 78,
       "stageType": "knockout",
       "stage": "32强淘汰赛",
       "group": null,
@@ -1555,12 +1555,12 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "france",
       "away": "Sweden",
       "awayId": "sweden",
-      "score": "",
+      "score": "3–0",
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m79",
@@ -1569,7 +1569,7 @@ window.WORLD_CUP_MATCHES = {
       "stage": "32强淘汰赛",
       "group": null,
       "date": "2026-06-30",
-      "time": "7:00 p.m. UTC−6",
+      "time": "8:00 p.m. UTC−6 [ S ]",
       "venue": "Estadio Azteca , Mexico City",
       "home": "Mexico",
       "homeId": "mexico",
@@ -1793,12 +1793,12 @@ window.WORLD_CUP_MATCHES = {
       "venue": "Lincoln Financial Field , Philadelphia",
       "home": "Paraguay",
       "homeId": "paraguay",
-      "away": "Winner Match 77",
-      "awayId": "winner-match-77",
+      "away": "France",
+      "awayId": "france",
       "score": "",
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+Winner+Match+77+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -1813,12 +1813,12 @@ window.WORLD_CUP_MATCHES = {
       "venue": "MetLife Stadium , East Rutherford",
       "home": "Brazil",
       "homeId": "brazil",
-      "away": "Winner Match 78",
-      "awayId": "winner-match-78",
+      "away": "Norway",
+      "awayId": "norway",
       "score": "",
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Winner+Match+78+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -2152,7 +2152,7 @@ window.WORLD_CUP_MATCHES = {
         "stage": "32强淘汰赛",
         "group": null,
         "date": "2026-06-30",
-        "time": "7:00 p.m. UTC−6",
+        "time": "8:00 p.m. UTC−6 [ S ]",
         "venue": "Estadio Azteca , Mexico City",
         "home": "Mexico",
         "homeId": "mexico",
@@ -2792,12 +2792,12 @@ window.WORLD_CUP_MATCHES = {
         "venue": "MetLife Stadium , East Rutherford",
         "home": "Brazil",
         "homeId": "brazil",
-        "away": "Winner Match 78",
-        "awayId": "winner-match-78",
+        "away": "Norway",
+        "awayId": "norway",
         "score": "",
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Winner+Match+78+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -3202,12 +3202,12 @@ window.WORLD_CUP_MATCHES = {
         "venue": "Lincoln Financial Field , Philadelphia",
         "home": "Paraguay",
         "homeId": "paraguay",
-        "away": "Winner Match 77",
-        "awayId": "winner-match-77",
+        "away": "France",
+        "awayId": "france",
         "score": "",
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+Winner+Match+77+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -3563,7 +3563,7 @@ window.WORLD_CUP_MATCHES = {
       },
       {
         "id": "m77",
-        "matchNo": 78,
+        "matchNo": 77,
         "stageType": "knockout",
         "stage": "32强淘汰赛",
         "group": null,
@@ -3574,12 +3574,12 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "ivory-coast",
         "away": "Norway",
         "awayId": "norway",
-        "score": "",
+        "score": "1–2",
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Ivory+Coast+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "负",
+        "awayResult": "胜"
       }
     ],
     "ecuador": [
@@ -3650,7 +3650,7 @@ window.WORLD_CUP_MATCHES = {
         "stage": "32强淘汰赛",
         "group": null,
         "date": "2026-06-30",
-        "time": "7:00 p.m. UTC−6",
+        "time": "8:00 p.m. UTC−6 [ S ]",
         "venue": "Estadio Azteca , Mexico City",
         "home": "Mexico",
         "homeId": "mexico",
@@ -3891,7 +3891,7 @@ window.WORLD_CUP_MATCHES = {
       },
       {
         "id": "m78",
-        "matchNo": 77,
+        "matchNo": 78,
         "stageType": "knockout",
         "stage": "32强淘汰赛",
         "group": null,
@@ -3902,12 +3902,12 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "france",
         "away": "Sweden",
         "awayId": "sweden",
-        "score": "",
+        "score": "3–0",
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "tunisia": [
@@ -4611,7 +4611,7 @@ window.WORLD_CUP_MATCHES = {
       },
       {
         "id": "m78",
-        "matchNo": 77,
+        "matchNo": 78,
         "stageType": "knockout",
         "stage": "32强淘汰赛",
         "group": null,
@@ -4622,10 +4622,30 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "france",
         "away": "Sweden",
         "awayId": "sweden",
+        "score": "3–0",
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m90",
+        "matchNo": 89,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-04",
+        "time": "5:00 p.m. UTC−4",
+        "venue": "Lincoln Financial Field , Philadelphia",
+        "home": "Paraguay",
+        "homeId": "paraguay",
+        "away": "France",
+        "awayId": "france",
         "score": "",
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -4837,7 +4857,7 @@ window.WORLD_CUP_MATCHES = {
       },
       {
         "id": "m77",
-        "matchNo": 78,
+        "matchNo": 77,
         "stageType": "knockout",
         "stage": "32强淘汰赛",
         "group": null,
@@ -4848,10 +4868,30 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "ivory-coast",
         "away": "Norway",
         "awayId": "norway",
+        "score": "1–2",
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Ivory+Coast+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "负",
+        "awayResult": "胜"
+      },
+      {
+        "id": "m91",
+        "matchNo": 91,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-05",
+        "time": "4:00 p.m. UTC−4",
+        "venue": "MetLife Stadium , East Rutherford",
+        "home": "Brazil",
+        "homeId": "brazil",
+        "away": "Norway",
+        "awayId": "norway",
         "score": "",
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Ivory+Coast+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -5778,50 +5818,6 @@ window.WORLD_CUP_MATCHES = {
         "replayUrl": "https://www.youtube.com/results?search_query=Panama+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "负",
         "awayResult": "胜"
-      }
-    ],
-    "winner-match-77": [
-      {
-        "id": "m90",
-        "matchNo": 89,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-04",
-        "time": "5:00 p.m. UTC−4",
-        "venue": "Lincoln Financial Field , Philadelphia",
-        "home": "Paraguay",
-        "homeId": "paraguay",
-        "away": "Winner Match 77",
-        "awayId": "winner-match-77",
-        "score": "",
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+Winner+Match+77+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-78": [
-      {
-        "id": "m91",
-        "matchNo": 91,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-05",
-        "time": "4:00 p.m. UTC−4",
-        "venue": "MetLife Stadium , East Rutherford",
-        "home": "Brazil",
-        "homeId": "brazil",
-        "away": "Winner Match 78",
-        "awayId": "winner-match-78",
-        "score": "",
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Winner+Match+78+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
       }
     ],
     "winner-match-79": [
