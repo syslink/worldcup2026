@@ -30,12 +30,18 @@ function cacheDir() {
     || (process.env.VERCEL ? "/tmp/worldcup2026-speech-cache" : path.join(__dirname, ".speech-cache"));
 }
 
-function cacheKey({ text, model, voice, instructions }) {
+function cacheKey({ text, model, voice, instructions, speed }) {
   return crypto
     .createHash("sha256")
-    .update(JSON.stringify({ text, model, voice, instructions }))
+    .update(JSON.stringify({ text, model, voice, instructions, speed }))
     .digest("hex")
     .slice(0, 32);
+}
+
+function clampSpeed(value) {
+  const speed = Number(value);
+  if (!Number.isFinite(speed)) return 1.15;
+  return Math.min(4, Math.max(0.25, Number(speed.toFixed(2))));
 }
 
 function audioPath(id) {
@@ -74,7 +80,8 @@ async function createSpeech(req, res) {
   const model = process.env.OPENAI_TTS_MODEL || DEFAULT_TTS_MODEL;
   const voice = process.env.OPENAI_TTS_VOICE || DEFAULT_TTS_VOICE;
   const instructions = process.env.OPENAI_TTS_INSTRUCTIONS || DEFAULT_TTS_INSTRUCTIONS;
-  const id = cacheKey({ text, model, voice, instructions });
+  const speed = clampSpeed(body.speed);
+  const id = cacheKey({ text, model, voice, instructions, speed });
   const filePath = audioPath(id);
 
   fs.mkdirSync(cacheDir(), { recursive: true });
@@ -93,6 +100,7 @@ async function createSpeech(req, res) {
       voice,
       input: text,
       instructions,
+      speed,
       response_format: "mp3"
     })
   });

@@ -272,6 +272,8 @@ const elements = {
   aiChatSubmit: document.querySelector("#aiChatSubmit"),
   aiVoiceInput: document.querySelector("#aiVoiceInput"),
   aiVoiceOutput: document.querySelector("#aiVoiceOutput"),
+  aiVoiceSpeed: document.querySelector("#aiVoiceSpeed"),
+  aiVoiceSpeedValue: document.querySelector("#aiVoiceSpeedValue"),
   aiVoiceStatus: document.querySelector("#aiVoiceStatus"),
   noteHint: document.querySelector("#noteHint"),
   familyNotes: document.querySelector("#familyNotes")
@@ -697,6 +699,23 @@ function setVoiceStatus(message = "", isListeningNow = false) {
   elements.aiVoiceStatus.classList.toggle("is-listening", isListeningNow);
 }
 
+function currentSpeechSpeed() {
+  const speed = Number(elements.aiVoiceSpeed.value);
+  return Number.isFinite(speed) ? Math.min(1.6, Math.max(0.8, speed)) : 1.15;
+}
+
+function speedLabel() {
+  return `${currentSpeechSpeed().toFixed(2)}x`;
+}
+
+function updateSpeechSpeedLabel() {
+  elements.aiVoiceSpeedValue.textContent = speedLabel();
+}
+
+function voiceOutputStatusText() {
+  return `播报已开启，AI 回复会按 ${speedLabel()} 自动朗读。`;
+}
+
 function stopSpeechAudio() {
   if (!activeSpeechAudio) return;
   activeSpeechAudio.pause();
@@ -712,7 +731,7 @@ async function speakText(text) {
     const response = await fetch("/api/speech", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text })
+      body: JSON.stringify({ text, speed: currentSpeechSpeed() })
     });
     const data = await response.json().catch(() => ({}));
     if (!response.ok || !data.url) {
@@ -722,7 +741,7 @@ async function speakText(text) {
     activeSpeechAudio.onplay = () => setVoiceStatus(data.cached ? "正在播放已缓存的 OpenAI 语音..." : "正在播放 OpenAI 语音...");
     activeSpeechAudio.onended = () => {
       activeSpeechAudio = null;
-      setVoiceStatus(voiceOutputEnabled ? "播报已开启，AI 回复会自动朗读。" : "");
+      setVoiceStatus(voiceOutputEnabled ? voiceOutputStatusText() : "");
     };
     activeSpeechAudio.onerror = () => {
       activeSpeechAudio = null;
@@ -781,7 +800,7 @@ function initSpeechRecognition() {
     isListening = false;
     elements.aiVoiceInput.classList.remove("is-active");
     if (!elements.aiVoiceStatus.textContent.includes("权限") && !elements.aiChatInput.value.trim()) {
-      setVoiceStatus(voiceOutputEnabled ? "播报已开启，AI 回复会自动朗读。" : "");
+      setVoiceStatus(voiceOutputEnabled ? voiceOutputStatusText() : "");
     }
   };
 }
@@ -1107,10 +1126,17 @@ elements.aiVoiceOutput.addEventListener("click", () => {
   elements.aiVoiceOutput.classList.toggle("is-active", voiceOutputEnabled);
   elements.aiVoiceOutput.setAttribute("aria-pressed", String(voiceOutputEnabled));
   if (voiceOutputEnabled) {
-    setVoiceStatus("播报已开启，AI 回复会自动朗读。");
+    setVoiceStatus(voiceOutputStatusText());
   } else {
     stopSpeechAudio();
     setVoiceStatus("");
+  }
+});
+
+elements.aiVoiceSpeed.addEventListener("input", () => {
+  updateSpeechSpeedLabel();
+  if (voiceOutputEnabled) {
+    setVoiceStatus(voiceOutputStatusText());
   }
 });
 
@@ -1122,4 +1148,5 @@ document.addEventListener("keydown", (event) => {
 });
 
 initVoiceControls();
+updateSpeechSpeedLabel();
 render();

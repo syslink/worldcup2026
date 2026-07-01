@@ -807,6 +807,30 @@ ul {
   opacity: 0.65;
 }
 
+.ai-chat__speed {
+  display: grid;
+  grid-template-columns: auto minmax(120px, 1fr) 54px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 1px solid rgba(45, 138, 131, 0.18);
+  border-radius: 8px;
+  background: white;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.ai-chat__speed input {
+  width: 100%;
+  accent-color: var(--green);
+}
+
+.ai-chat__speed strong {
+  color: var(--green);
+  text-align: right;
+}
+
 .ai-chat__voice-status {
   min-height: 20px;
   margin: -4px 0 0;
