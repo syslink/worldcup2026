@@ -11,7 +11,6 @@
       <div class="hero__media" aria-hidden="true"></div>
       <nav class="topbar" aria-label="主要导航">
         <a href="#countries">国家导览</a>
-        <a href="#aiGuide">AI小导游</a>
         <a href="#passport">环球护照</a>
         <a href="#plan">4周计划</a>
       </nav>
@@ -57,7 +56,10 @@
               <p class="section-kicker" id="detailRegion"></p>
               <h2 id="detailName"></h2>
             </div>
-            <span class="status-pill" id="detailStatus"></span>
+            <div class="detail-actions">
+              <span class="status-pill" id="detailStatus"></span>
+              <button class="jump-match" id="jumpMatchButton" type="button">比赛记录</button>
+            </div>
           </div>
 
           <figure class="country-photo">
@@ -109,24 +111,6 @@
             </div>
           </section>
 
-          <section class="ai-chat" id="aiGuide" aria-label="AI小导游聊天">
-            <div class="ai-chat__head">
-              <div>
-                <h3>AI小导游</h3>
-                <p id="aiChatIntro"></p>
-              </div>
-              <span>OpenAI</span>
-            </div>
-            <div class="ai-chat__messages" id="aiChatMessages" aria-live="polite"></div>
-            <div class="ai-chat__suggestions" id="aiChatSuggestions" aria-label="推荐问题"></div>
-            <form class="ai-chat__form" id="aiChatForm">
-              <label class="sr-only" for="aiChatInput">向AI小导游提问</label>
-              <textarea id="aiChatInput" rows="2" placeholder="问问这个国家的故事、食物、球星或比赛"></textarea>
-              <button id="aiChatSubmit" type="submit">发送</button>
-            </form>
-            <p class="ai-chat__note">回答由 AI 生成，适合亲子共读；重要事实建议再和地图、百科或官方资料一起核对。</p>
-          </section>
-
           <section class="video-section">
             <div>
               <h3>视频看世界</h3>
@@ -135,7 +119,7 @@
             <div id="videoList"></div>
           </section>
 
-          <section class="match-section">
+          <section class="match-section" id="matchRecords">
             <div>
               <h3>世界杯比赛记录</h3>
               <p id="matchSummary"></p>
@@ -192,6 +176,30 @@
         </div>
       </section>
     </main>
+
+    <button class="ai-launcher" id="aiChatOpen" type="button" aria-label="打开AI小导游" aria-controls="aiGuide" aria-expanded="false">
+      AI
+    </button>
+
+    <section class="ai-chat" id="aiGuide" aria-label="AI小导游聊天" aria-hidden="true">
+      <div class="ai-chat__panel" role="dialog" aria-modal="false" aria-labelledby="aiChatTitle">
+        <div class="ai-chat__head">
+          <div>
+            <h3 id="aiChatTitle">AI小导游</h3>
+            <p id="aiChatIntro"></p>
+          </div>
+          <button class="ai-chat__close" id="aiChatClose" type="button" aria-label="关闭AI小导游">关闭</button>
+        </div>
+        <div class="ai-chat__messages" id="aiChatMessages" aria-live="polite"></div>
+        <div class="ai-chat__suggestions" id="aiChatSuggestions" aria-label="推荐问题"></div>
+        <form class="ai-chat__form" id="aiChatForm">
+          <label class="sr-only" for="aiChatInput">向AI小导游提问</label>
+          <textarea id="aiChatInput" rows="2" placeholder="问问这个国家的故事、食物、球星或比赛"></textarea>
+          <button id="aiChatSubmit" type="submit">发送</button>
+        </form>
+        <p class="ai-chat__note">回答由 AI 生成，适合亲子共读；重要事实建议再和地图、百科或官方资料一起核对。</p>
+      </div>
+    </section>
 
     <script src="data/countries.js"></script>
     <script src="data/videos.js"></script>

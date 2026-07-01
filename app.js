@@ -258,6 +258,11 @@ const elements = {
   imageCaption: document.querySelector("#imageCaption"),
   photoControls: document.querySelector("#photoControls"),
   memoryText: document.querySelector("#memoryText"),
+  jumpMatchButton: document.querySelector("#jumpMatchButton"),
+  matchRecords: document.querySelector("#matchRecords"),
+  aiChatOpen: document.querySelector("#aiChatOpen"),
+  aiChatClose: document.querySelector("#aiChatClose"),
+  aiGuide: document.querySelector("#aiGuide"),
   aiChatIntro: document.querySelector("#aiChatIntro"),
   aiChatMessages: document.querySelector("#aiChatMessages"),
   aiChatSuggestions: document.querySelector("#aiChatSuggestions"),
@@ -272,6 +277,7 @@ let imageRequestId = 0;
 let activePhotoIndex = 0;
 let chatRequestId = 0;
 let chatBusy = false;
+let chatOpen = false;
 const chatSessions = {};
 
 function statusLabel(status) {
@@ -667,6 +673,16 @@ function setChatBusy(isBusy) {
   });
 }
 
+function setChatOpen(isOpen) {
+  chatOpen = isOpen;
+  elements.aiGuide.classList.toggle("is-open", isOpen);
+  elements.aiGuide.setAttribute("aria-hidden", String(!isOpen));
+  elements.aiChatOpen.setAttribute("aria-expanded", String(isOpen));
+  if (isOpen) {
+    window.setTimeout(() => elements.aiChatInput.focus(), 160);
+  }
+}
+
 function appendChatMessage(message) {
   const bubble = document.createElement("div");
   bubble.className = `chat-message ${message.role}${message.pending ? " is-loading" : ""}`;
@@ -930,6 +946,26 @@ elements.aiChatForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const country = countries.find((item) => item.id === state.selectedId) || countries[0];
   submitChatQuestion(country);
+});
+
+elements.aiChatOpen.addEventListener("click", () => {
+  const country = countries.find((item) => item.id === state.selectedId) || countries[0];
+  renderChat(country);
+  setChatOpen(true);
+});
+
+elements.aiChatClose.addEventListener("click", () => {
+  setChatOpen(false);
+});
+
+elements.jumpMatchButton.addEventListener("click", () => {
+  elements.matchRecords.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && chatOpen) {
+    setChatOpen(false);
+  }
 });
 
 render();
