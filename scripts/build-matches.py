@@ -62,6 +62,18 @@ def penalty_parts(box):
     return int(match.group(1)), int(match.group(2))
 
 
+def goal_items(table, selector):
+    cell = table.select_one(selector)
+    if not cell:
+        return []
+    goals = []
+    for item in cell.select("li"):
+        text = clean(item.get_text(" ", strip=True))
+        if text:
+            goals.append(text.replace(" ,", ",").replace("( ", "(").replace(" )", ")"))
+    return goals
+
+
 def get_stage(box):
     heading = box.find_previous(["h2", "h3"])
     while heading:
@@ -146,6 +158,8 @@ def main():
             "away": away,
             "awayId": slugify(away),
             "score": score if completed else "",
+            "homeGoals": goal_items(table, ".fhgoal") if completed else [],
+            "awayGoals": goal_items(table, ".fagoal") if completed else [],
             "penalties": f"{penalties[0]}–{penalties[1]}" if penalties else "",
             "status": "completed" if completed else "scheduled",
             "replayUrl": replay_url(home, away, iso_date or date),

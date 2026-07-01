@@ -446,6 +446,76 @@ function scoreForCountry(match, country) {
   return match.penalties ? `${score}，点球 ${penalties}` : score;
 }
 
+function goalMinute(goal) {
+  const match = goal.match(/(\d+)(?:\+(\d+))?'/);
+  if (!match) return 999;
+  return Number(match[1]) + (match[2] ? Number(match[2]) / 100 : 0);
+}
+
+function goalListText(goals) {
+  if (!goals?.length) return "";
+  if (goals.length === 1) return goals[0];
+  return `${goals.slice(0, -1).join("、")}和${goals[goals.length - 1]}`;
+}
+
+function sideGoals(match, country) {
+  return match.homeId === country.id ? match.homeGoals || [] : match.awayGoals || [];
+}
+
+function opponentGoals(match, country) {
+  return match.homeId === country.id ? match.awayGoals || [] : match.homeGoals || [];
+}
+
+function firstScoringSide(match) {
+  const home = (match.homeGoals || []).map((goal) => ({ side: "home", minute: goalMinute(goal) }));
+  const away = (match.awayGoals || []).map((goal) => ({ side: "away", minute: goalMinute(goal) }));
+  return [...home, ...away].sort((a, b) => a.minute - b.minute)[0]?.side || "";
+}
+
+function detailedMatchStory(match, country, opponentName, result, score, stage) {
+  const ownGoals = sideGoals(match, country);
+  const againstGoals = opponentGoals(match, country);
+  const ownText = goalListText(ownGoals);
+  const againstText = goalListText(againstGoals);
+  const ownSide = match.homeId === country.id ? "home" : "away";
+  const firstSide = firstScoringSide(match);
+  const ledFirst = firstSide === ownSide;
+  const trailedFirst = firstSide && firstSide !== ownSide;
+
+  if (!ownGoals.length && !againstGoals.length) {
+    return `${stage}战报：${country.nameZh}与${opponentName}互交白卷，0–0 的比分背后是一场耐心、防守和机会把握的拉锯。`;
+  }
+
+  if (result === "胜") {
+    if (!againstGoals.length) {
+      return `${stage}战报：${country.nameZh}凭借 ${ownText} 的进球以 ${score} 击败${opponentName}，同时完成零封。`;
+    }
+    if (trailedFirst) {
+      return `${stage}战报：${country.nameZh}先被${opponentName}的 ${againstText} 破门，但随后依靠 ${ownText} 完成反超，以 ${score} 取胜。`;
+    }
+    return `${stage}战报：${country.nameZh}由 ${ownText} 建功，以 ${score} 击败${opponentName}；${opponentName}的 ${againstText} 曾制造压力。`;
+  }
+
+  if (result === "负") {
+    if (!ownGoals.length) {
+      return `${stage}战报：${country.nameZh}没能取得进球，被${opponentName}依靠 ${againstText} 以 ${score} 击败。`;
+    }
+    if (ledFirst) {
+      return `${stage}战报：${country.nameZh}曾靠 ${ownText} 取得进球，但之后被${opponentName}用 ${againstText} 反超，最终以 ${score} 告负。`;
+    }
+    return `${stage}战报：${country.nameZh}由 ${ownText} 破门回应，但没能挡住${opponentName}的 ${againstText}，最终以 ${score} 落败。`;
+  }
+
+  if (ownGoals.length && againstGoals.length) {
+    if (ledFirst) {
+      return `${stage}战报：${country.nameZh}先由 ${ownText} 破门，但${opponentName}依靠 ${againstText} 追平，双方以 ${score} 收场。`;
+    }
+    return `${stage}战报：${country.nameZh}在落后后依靠 ${ownText} 扳回比分，与${opponentName}的 ${againstText} 共同写成 ${score} 的平局。`;
+  }
+
+  return `${stage}战报：${country.nameZh}与${opponentName}踢成 ${score}，比赛的关键进球来自 ${ownText || againstText}。`;
+}
+
 function matchStory(match, country) {
   const override = matchStoryOverrides[match.matchNo]?.[country.id];
   if (override) return override;
@@ -459,6 +529,10 @@ function matchStory(match, country) {
 
   if (match.status !== "completed") {
     return `${stage}待赛：${country.nameZh}将对阵${opponentName}，可以和孩子一起提前找找两国在地图上的位置。`;
+  }
+
+  if (match.homeGoals || match.awayGoals) {
+    return detailedMatchStory(match, country, opponentName, result, score, stage);
   }
 
   if (result === "胜") {

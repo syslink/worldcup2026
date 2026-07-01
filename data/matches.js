@@ -16,6 +16,11 @@ window.WORLD_CUP_MATCHES = {
       "away": "South Africa",
       "awayId": "south-africa",
       "score": "2–0",
+      "homeGoals": [
+        "Quiñones 9'",
+        "Jiménez 67'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+South+Africa+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -36,6 +41,11 @@ window.WORLD_CUP_MATCHES = {
       "away": "Czech Republic",
       "awayId": "czech-republic",
       "score": "2–1",
+      "homeGoals": [
+        "Hwang In-beom 67'",
+        "Oh Hyeon-gyu 80'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=South+Korea+vs+Czech+Republic+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -56,6 +66,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "South Africa",
       "awayId": "south-africa",
       "score": "1–1",
+      "homeGoals": [
+        "Sadílek 6'"
+      ],
+      "awayGoals": [
+        "Mokoena 83' (pen.)"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Czech+Republic+vs+South+Africa+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -76,6 +92,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "South Korea",
       "awayId": "south-korea",
       "score": "1–0",
+      "homeGoals": [
+        "Romo 50'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+South+Korea+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -96,6 +116,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Mexico",
       "awayId": "mexico",
       "score": "0–3",
+      "homeGoals": [],
+      "awayGoals": [
+        "M. Chávez 55'",
+        "Quiñones 61'",
+        "Fidalgo 90+4'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Czech+Republic+vs+Mexico+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -116,6 +142,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "South Korea",
       "awayId": "south-korea",
       "score": "1–0",
+      "homeGoals": [
+        "Maseko 63'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=South+Africa+vs+South+Korea+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -136,6 +166,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Bosnia and Herzegovina",
       "awayId": "bosnia",
       "score": "1–1",
+      "homeGoals": [
+        "Larin 78'"
+      ],
+      "awayGoals": [
+        "Lukić 21'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -156,6 +192,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Switzerland",
       "awayId": "switzerland",
       "score": "1–1",
+      "homeGoals": [
+        "Muheim 90+4' (o.g.)"
+      ],
+      "awayGoals": [
+        "Embolo 17' (pen.)"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Qatar+vs+Switzerland+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -176,6 +218,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Bosnia and Herzegovina",
       "awayId": "bosnia",
       "score": "4–1",
+      "homeGoals": [
+        "Manzambi 74', 90'",
+        "Vargas 84'",
+        "Xhaka 90+7' (pen.)"
+      ],
+      "awayGoals": [
+        "Mahmić 90+3'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -196,6 +246,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Qatar",
       "awayId": "qatar",
       "score": "6–0",
+      "homeGoals": [
+        "Larin 16'",
+        "J. David 29', 45+3', 90+2'",
+        "Saliba 64'",
+        "Manai 75' (o.g.)"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Qatar+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -216,6 +273,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Canada",
       "awayId": "canada",
       "score": "2–1",
+      "homeGoals": [
+        "Vargas 46'",
+        "Manzambi 57'"
+      ],
+      "awayGoals": [
+        "P. David 76'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Canada+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -236,6 +300,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Qatar",
       "awayId": "qatar",
       "score": "3–1",
+      "homeGoals": [
+        "Alajbegović 29'",
+        "Abunada 34' (o.g.)",
+        "Mahmić 80'"
+      ],
+      "awayGoals": [
+        "Al-Haydos 42'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Bosnia+and+Herzegovina+vs+Qatar+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -256,6 +328,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Morocco",
       "awayId": "morocco",
       "score": "1–1",
+      "homeGoals": [
+        "Vinícius 32'"
+      ],
+      "awayGoals": [
+        "Saibari 21'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -276,6 +354,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "Scotland",
       "awayId": "scotland",
       "score": "0–1",
+      "homeGoals": [],
+      "awayGoals": [
+        "McGinn 28'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Haiti+vs+Scotland+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -296,6 +378,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "Morocco",
       "awayId": "morocco",
       "score": "0–1",
+      "homeGoals": [],
+      "awayGoals": [
+        "Saibari 2'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Scotland+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -316,6 +402,11 @@ window.WORLD_CUP_MATCHES = {
       "away": "Haiti",
       "awayId": "haiti",
       "score": "3–0",
+      "homeGoals": [
+        "Cunha 23', 36'",
+        "Vinícius 45+3'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Haiti+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -336,6 +427,11 @@ window.WORLD_CUP_MATCHES = {
       "away": "Brazil",
       "awayId": "brazil",
       "score": "0–3",
+      "homeGoals": [],
+      "awayGoals": [
+        "Vinícius 7', 45+3'",
+        "Cunha 60'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Scotland+vs+Brazil+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -356,6 +452,16 @@ window.WORLD_CUP_MATCHES = {
       "away": "Haiti",
       "awayId": "haiti",
       "score": "4–2",
+      "homeGoals": [
+        "Hakimi 39'",
+        "Saibari 45+1'",
+        "Rahimi 78'",
+        "Yassine 89'"
+      ],
+      "awayGoals": [
+        "Bounou 10' (o.g.)",
+        "Isidor 43'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Morocco+vs+Haiti+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -376,6 +482,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Paraguay",
       "awayId": "paraguay",
       "score": "4–1",
+      "homeGoals": [
+        "Bobadilla 7' (o.g.)",
+        "Balogun 31', 45+5'",
+        "Reyna 90+8'"
+      ],
+      "awayGoals": [
+        "Maurício 73'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Paraguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -396,6 +510,11 @@ window.WORLD_CUP_MATCHES = {
       "away": "Turkey",
       "awayId": "turkey",
       "score": "2–0",
+      "homeGoals": [
+        "Irankunda 27'",
+        "Metcalfe 75'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Australia+vs+Turkey+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -416,6 +535,11 @@ window.WORLD_CUP_MATCHES = {
       "away": "Australia",
       "awayId": "australia",
       "score": "2–0",
+      "homeGoals": [
+        "Burgess 11' (o.g.)",
+        "Freeman 43'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Australia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -436,6 +560,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "Paraguay",
       "awayId": "paraguay",
       "score": "0–1",
+      "homeGoals": [],
+      "awayGoals": [
+        "Galarza 2'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Turkey+vs+Paraguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -456,6 +584,15 @@ window.WORLD_CUP_MATCHES = {
       "away": "United States",
       "awayId": "united-states",
       "score": "3–2",
+      "homeGoals": [
+        "Güler 10'",
+        "Yılmaz 31'",
+        "Ayhan 90+8'"
+      ],
+      "awayGoals": [
+        "Trusty 3'",
+        "Berhalter 49'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Turkey+vs+United+States+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -476,6 +613,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Australia",
       "awayId": "australia",
       "score": "0–0",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+Australia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -496,6 +635,17 @@ window.WORLD_CUP_MATCHES = {
       "away": "Curaçao",
       "awayId": "curacao",
       "score": "7–1",
+      "homeGoals": [
+        "Nmecha 6'",
+        "Schlotterbeck 38'",
+        "Havertz 45+5' (pen.), 88'",
+        "Musiala 47'",
+        "Brown 68'",
+        "Undav 78'"
+      ],
+      "awayGoals": [
+        "Comenencia 21'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Germany+vs+Curaçao+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -516,6 +666,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "Ecuador",
       "awayId": "ecuador",
       "score": "1–0",
+      "homeGoals": [
+        "Diallo 90'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Ivory+Coast+vs+Ecuador+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -536,6 +690,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Ivory Coast",
       "awayId": "ivory-coast",
       "score": "2–1",
+      "homeGoals": [
+        "Undav 68', 90+4'"
+      ],
+      "awayGoals": [
+        "Kessié 30'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Germany+vs+Ivory+Coast+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -556,6 +716,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Curaçao",
       "awayId": "curacao",
       "score": "0–0",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Ecuador+vs+Curaçao+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -576,6 +738,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "Ivory Coast",
       "awayId": "ivory-coast",
       "score": "0–2",
+      "homeGoals": [],
+      "awayGoals": [
+        "Pépé 7', 64'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Curaçao+vs+Ivory+Coast+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -596,6 +762,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Germany",
       "awayId": "germany",
       "score": "2–1",
+      "homeGoals": [
+        "Angulo 9'",
+        "Plata 77'"
+      ],
+      "awayGoals": [
+        "Sané 2'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Ecuador+vs+Germany+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -616,6 +789,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Japan",
       "awayId": "japan",
       "score": "2–2",
+      "homeGoals": [
+        "Van Dijk 51'",
+        "Summerville 64'"
+      ],
+      "awayGoals": [
+        "Nakamura 57'",
+        "Kamada 88'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Netherlands+vs+Japan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -636,6 +817,15 @@ window.WORLD_CUP_MATCHES = {
       "away": "Tunisia",
       "awayId": "tunisia",
       "score": "5–1",
+      "homeGoals": [
+        "Ayari 7', 90+6'",
+        "Isak 30'",
+        "Gyökeres 59'",
+        "Svanberg 84'"
+      ],
+      "awayGoals": [
+        "Rekik 43'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Sweden+vs+Tunisia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -656,6 +846,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Sweden",
       "awayId": "sweden",
       "score": "5–1",
+      "homeGoals": [
+        "Brobbey 5', 17'",
+        "Gakpo 47', 54'",
+        "Summerville 89'"
+      ],
+      "awayGoals": [
+        "Elanga 59'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Netherlands+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -676,6 +874,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Japan",
       "awayId": "japan",
       "score": "0–4",
+      "homeGoals": [],
+      "awayGoals": [
+        "Kamada 4'",
+        "Ueda 31', 83'",
+        "J. Itō 69'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Tunisia+vs+Japan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -696,6 +900,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Sweden",
       "awayId": "sweden",
       "score": "1–1",
+      "homeGoals": [
+        "Maeda 56'"
+      ],
+      "awayGoals": [
+        "Elanga 62'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Japan+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -716,6 +926,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Netherlands",
       "awayId": "netherlands",
       "score": "1–3",
+      "homeGoals": [
+        "Mastouri 54'"
+      ],
+      "awayGoals": [
+        "Skhiri 3' (o.g.)",
+        "Brobbey 7'",
+        "Van Hecke 62'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Tunisia+vs+Netherlands+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -736,6 +954,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Egypt",
       "awayId": "egypt",
       "score": "1–1",
+      "homeGoals": [
+        "Hany 66' (o.g.)"
+      ],
+      "awayGoals": [
+        "Ashour 19'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -756,6 +980,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "New Zealand",
       "awayId": "new-zealand",
       "score": "2–2",
+      "homeGoals": [
+        "Rezaeian 32'",
+        "Mohebi 64'"
+      ],
+      "awayGoals": [
+        "Just 7', 54'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Iran+vs+New+Zealand+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -776,6 +1007,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Iran",
       "awayId": "iran",
       "score": "0–0",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Iran+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -796,6 +1029,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Egypt",
       "awayId": "egypt",
       "score": "1–3",
+      "homeGoals": [
+        "Surman 15'"
+      ],
+      "awayGoals": [
+        "Ziko 58'",
+        "Salah 67'",
+        "Trézéguet 82'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=New+Zealand+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -816,6 +1057,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Iran",
       "awayId": "iran",
       "score": "1–1",
+      "homeGoals": [
+        "Saber 5'"
+      ],
+      "awayGoals": [
+        "Rezaeian 14'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Egypt+vs+Iran+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -836,6 +1083,15 @@ window.WORLD_CUP_MATCHES = {
       "away": "Belgium",
       "awayId": "belgium",
       "score": "1–5",
+      "homeGoals": [
+        "Just 84'"
+      ],
+      "awayGoals": [
+        "Trossard 28', 50'",
+        "De Bruyne 66'",
+        "Lukaku 86'",
+        "Saelemaekers 90+4'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=New+Zealand+vs+Belgium+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -856,6 +1112,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Cape Verde",
       "awayId": "cape-verde",
       "score": "0–0",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -876,6 +1134,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Uruguay",
       "awayId": "uruguay",
       "score": "1–1",
+      "homeGoals": [
+        "Al-Amri 41'"
+      ],
+      "awayGoals": [
+        "M. Araújo 80'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Saudi+Arabia+vs+Uruguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -896,6 +1160,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Saudi Arabia",
       "awayId": "saudi-arabia",
       "score": "4–0",
+      "homeGoals": [
+        "Yamal 10'",
+        "Oyarzabal 21', 24'",
+        "Al-Tambakti 49' (o.g.)"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Saudi+Arabia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -916,6 +1186,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Cape Verde",
       "awayId": "cape-verde",
       "score": "2–2",
+      "homeGoals": [
+        "M. Araújo 44'",
+        "Canobbio 45+6'"
+      ],
+      "awayGoals": [
+        "K. Pina 21'",
+        "Varela 61'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Uruguay+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -936,6 +1214,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Saudi Arabia",
       "awayId": "saudi-arabia",
       "score": "0–0",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Cape+Verde+vs+Saudi+Arabia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -956,6 +1236,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "Spain",
       "awayId": "spain",
       "score": "0–1",
+      "homeGoals": [],
+      "awayGoals": [
+        "Baena 42'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Uruguay+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -976,6 +1260,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Senegal",
       "awayId": "senegal",
       "score": "3–1",
+      "homeGoals": [
+        "Mbappé 66', 90+6'",
+        "Barcola 82'"
+      ],
+      "awayGoals": [
+        "Mbaye 90+5'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -996,6 +1287,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Norway",
       "awayId": "norway",
       "score": "1–4",
+      "homeGoals": [
+        "Hussein 39'"
+      ],
+      "awayGoals": [
+        "Haaland 29', 43'",
+        "Østigård 76'",
+        "Hussein 90+6' (o.g.)"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Iraq+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1016,6 +1315,11 @@ window.WORLD_CUP_MATCHES = {
       "away": "Iraq",
       "awayId": "iraq",
       "score": "3–0",
+      "homeGoals": [
+        "Mbappé 14', 54'",
+        "Dembélé 66'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Iraq+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1036,6 +1340,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Senegal",
       "awayId": "senegal",
       "score": "3–2",
+      "homeGoals": [
+        "Pedersen 43'",
+        "Haaland 48', 58'"
+      ],
+      "awayGoals": [
+        "I. Sarr 53', 90+3'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1056,6 +1367,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "France",
       "awayId": "france",
       "score": "1–4",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1076,6 +1389,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Iraq",
       "awayId": "iraq",
       "score": "5–0",
+      "homeGoals": [
+        "Diarra 4'",
+        "I. Sarr 56'",
+        "P. Gueye 59', 71'",
+        "I. Ndiaye 82'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Senegal+vs+Iraq+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1096,6 +1416,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "Algeria",
       "awayId": "algeria",
       "score": "3–0",
+      "homeGoals": [
+        "Messi 17', 60', 76'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1116,6 +1440,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Jordan",
       "awayId": "jordan",
       "score": "3–1",
+      "homeGoals": [
+        "Schmid 20'",
+        "Al-Arab 76' (o.g.)",
+        "Arnautović 90+12' (pen.)"
+      ],
+      "awayGoals": [
+        "Olwan 50'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Austria+vs+Jordan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1136,6 +1468,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "Austria",
       "awayId": "austria",
       "score": "2–0",
+      "homeGoals": [
+        "Messi 38', 90+5'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1156,6 +1492,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Algeria",
       "awayId": "algeria",
       "score": "1–2",
+      "homeGoals": [
+        "Al-Rashdan 36'"
+      ],
+      "awayGoals": [
+        "Benbouali 69'",
+        "Gouiri 82'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Jordan+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1176,6 +1519,15 @@ window.WORLD_CUP_MATCHES = {
       "away": "Austria",
       "awayId": "austria",
       "score": "3–3",
+      "homeGoals": [
+        "Belghali 45'",
+        "Mahrez 60', 90+3'"
+      ],
+      "awayGoals": [
+        "Arnautović 28'",
+        "Sabitzer 55'",
+        "Kalajdžić 90+6'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Algeria+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1196,6 +1548,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Argentina",
       "awayId": "argentina",
       "score": "1–3",
+      "homeGoals": [
+        "Al-Taamari 55'"
+      ],
+      "awayGoals": [
+        "Lo Celso 19'",
+        "La. Martínez 31' (pen.)",
+        "Messi 80'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Jordan+vs+Argentina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1216,6 +1576,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "DR Congo",
       "awayId": "dr-congo",
       "score": "1–1",
+      "homeGoals": [
+        "J. Neves 6'"
+      ],
+      "awayGoals": [
+        "Wissa 45+5'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1236,6 +1602,14 @@ window.WORLD_CUP_MATCHES = {
       "away": "Colombia",
       "awayId": "colombia",
       "score": "1–3",
+      "homeGoals": [
+        "Fayzullaev 60'"
+      ],
+      "awayGoals": [
+        "Muñoz 40'",
+        "Díaz 65'",
+        "Campaz 90+9'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Uzbekistan+vs+Colombia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1256,6 +1630,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Uzbekistan",
       "awayId": "uzbekistan",
       "score": "5–0",
+      "homeGoals": [
+        "Ronaldo 6', 39'",
+        "Mendes 17'",
+        "Nematov 60' (o.g.)",
+        "Leão 87'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Uzbekistan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1276,6 +1657,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "DR Congo",
       "awayId": "dr-congo",
       "score": "1–0",
+      "homeGoals": [
+        "Muñoz 76'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1296,6 +1681,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Portugal",
       "awayId": "portugal",
       "score": "0–0",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+Portugal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1316,6 +1703,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Uzbekistan",
       "awayId": "uzbekistan",
       "score": "3–1",
+      "homeGoals": [
+        "Wissa 68' (pen.), 90+1'",
+        "Mayele 78'"
+      ],
+      "awayGoals": [
+        "Shomurodov 10'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=DR+Congo+vs+Uzbekistan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1336,6 +1730,15 @@ window.WORLD_CUP_MATCHES = {
       "away": "Croatia",
       "awayId": "croatia",
       "score": "4–2",
+      "homeGoals": [
+        "Kane 12' (pen.), 42'",
+        "Bellingham 47'",
+        "Rashford 85'"
+      ],
+      "awayGoals": [
+        "Baturina 36'",
+        "Musa 45+5'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1356,6 +1759,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "Panama",
       "awayId": "panama",
       "score": "1–0",
+      "homeGoals": [
+        "Yirenkyi 90+5'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Ghana+vs+Panama+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1376,6 +1783,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Ghana",
       "awayId": "ghana",
       "score": "0–0",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1396,6 +1805,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "Croatia",
       "awayId": "croatia",
       "score": "0–1",
+      "homeGoals": [],
+      "awayGoals": [
+        "Budimir 54'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Panama+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1416,6 +1829,11 @@ window.WORLD_CUP_MATCHES = {
       "away": "England",
       "awayId": "england",
       "score": "0–2",
+      "homeGoals": [],
+      "awayGoals": [
+        "Bellingham 62'",
+        "Kane 67'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Panama+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1436,6 +1854,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Ghana",
       "awayId": "ghana",
       "score": "2–1",
+      "homeGoals": [
+        "P. Sučić 31'",
+        "Vlašić 83'"
+      ],
+      "awayGoals": [
+        "Luckassen 73'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Croatia+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1456,6 +1881,10 @@ window.WORLD_CUP_MATCHES = {
       "away": "Canada",
       "awayId": "canada",
       "score": "0–1",
+      "homeGoals": [],
+      "awayGoals": [
+        "Eustáquio 90+2'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=South+Africa+vs+Canada+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1476,6 +1905,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Japan",
       "awayId": "japan",
       "score": "2–1",
+      "homeGoals": [
+        "Casemiro 56'",
+        "Martinelli 90+5'"
+      ],
+      "awayGoals": [
+        "Sano 29'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Japan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1496,6 +1932,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Paraguay",
       "awayId": "paraguay",
       "score": "1–1 ( a.e.t. )",
+      "homeGoals": [
+        "Havertz 54'"
+      ],
+      "awayGoals": [
+        "Enciso 42'"
+      ],
       "penalties": "3–4",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Germany+vs+Paraguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1516,6 +1958,12 @@ window.WORLD_CUP_MATCHES = {
       "away": "Morocco",
       "awayId": "morocco",
       "score": "1–1 ( a.e.t. )",
+      "homeGoals": [
+        "Gakpo 72'"
+      ],
+      "awayGoals": [
+        "Diop 90+1'"
+      ],
       "penalties": "2–3",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Netherlands+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1536,6 +1984,13 @@ window.WORLD_CUP_MATCHES = {
       "away": "Norway",
       "awayId": "norway",
       "score": "1–2",
+      "homeGoals": [
+        "Diallo 74'"
+      ],
+      "awayGoals": [
+        "Nusa 39'",
+        "Haaland 86'"
+      ],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Ivory+Coast+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1556,6 +2011,11 @@ window.WORLD_CUP_MATCHES = {
       "away": "Sweden",
       "awayId": "sweden",
       "score": "3–0",
+      "homeGoals": [
+        "Mbappé 45', 74'",
+        "Barcola 53'"
+      ],
+      "awayGoals": [],
       "penalties": "",
       "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1576,6 +2036,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Ecuador",
       "awayId": "ecuador",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+Ecuador+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1596,6 +2058,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "DR Congo",
       "awayId": "dr-congo",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=England+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1616,6 +2080,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Senegal",
       "awayId": "senegal",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1636,6 +2102,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Bosnia and Herzegovina",
       "awayId": "bosnia",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1656,6 +2124,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Austria",
       "awayId": "austria",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1676,6 +2146,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Croatia",
       "awayId": "croatia",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1696,6 +2168,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Algeria",
       "awayId": "algeria",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1716,6 +2190,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Egypt",
       "awayId": "egypt",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Australia+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1736,6 +2212,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Cape Verde",
       "awayId": "cape-verde",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1756,6 +2234,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Ghana",
       "awayId": "ghana",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1776,6 +2256,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Morocco",
       "awayId": "morocco",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1796,6 +2278,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "France",
       "awayId": "france",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1816,6 +2300,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Norway",
       "awayId": "norway",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1836,6 +2322,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 80",
       "awayId": "winner-match-80",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+79+vs+Winner+Match+80+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1856,6 +2344,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 84",
       "awayId": "winner-match-84",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Winner+Match+84+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1876,6 +2366,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 82",
       "awayId": "winner-match-82",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+81+vs+Winner+Match+82+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1896,6 +2388,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 88",
       "awayId": "winner-match-88",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+86+vs+Winner+Match+88+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1916,6 +2410,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 87",
       "awayId": "winner-match-87",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+85+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1936,6 +2432,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 90",
       "awayId": "winner-match-90",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+89+vs+Winner+Match+90+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1956,6 +2454,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 94",
       "awayId": "winner-match-94",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+93+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1976,6 +2476,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 92",
       "awayId": "winner-match-92",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+91+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -1996,6 +2498,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 96",
       "awayId": "winner-match-96",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+95+vs+Winner+Match+96+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2016,6 +2520,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 98",
       "awayId": "winner-match-98",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+97+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2036,6 +2542,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 100",
       "awayId": "winner-match-100",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+99+vs+Winner+Match+100+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2056,6 +2564,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Loser Match 102",
       "awayId": "loser-match-102",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Loser+Match+101+vs+Loser+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2076,6 +2586,8 @@ window.WORLD_CUP_MATCHES = {
       "away": "Winner Match 102",
       "awayId": "winner-match-102",
       "score": "",
+      "homeGoals": [],
+      "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
       "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+101+vs+Winner+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2099,6 +2611,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "South Africa",
         "awayId": "south-africa",
         "score": "2–0",
+        "homeGoals": [
+          "Quiñones 9'",
+          "Jiménez 67'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+South+Africa+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2119,6 +2636,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "South Korea",
         "awayId": "south-korea",
         "score": "1–0",
+        "homeGoals": [
+          "Romo 50'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+South+Korea+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2139,6 +2660,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Mexico",
         "awayId": "mexico",
         "score": "0–3",
+        "homeGoals": [],
+        "awayGoals": [
+          "M. Chávez 55'",
+          "Quiñones 61'",
+          "Fidalgo 90+4'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Czech+Republic+vs+Mexico+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2159,6 +2686,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ecuador",
         "awayId": "ecuador",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+Ecuador+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2181,6 +2710,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "South Africa",
         "awayId": "south-africa",
         "score": "2–0",
+        "homeGoals": [
+          "Quiñones 9'",
+          "Jiménez 67'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+South+Africa+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2201,6 +2735,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "South Africa",
         "awayId": "south-africa",
         "score": "1–1",
+        "homeGoals": [
+          "Sadílek 6'"
+        ],
+        "awayGoals": [
+          "Mokoena 83' (pen.)"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Czech+Republic+vs+South+Africa+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2221,6 +2761,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "South Korea",
         "awayId": "south-korea",
         "score": "1–0",
+        "homeGoals": [
+          "Maseko 63'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=South+Africa+vs+South+Korea+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2241,6 +2785,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Canada",
         "awayId": "canada",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Eustáquio 90+2'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=South+Africa+vs+Canada+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2263,6 +2811,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Czech Republic",
         "awayId": "czech-republic",
         "score": "2–1",
+        "homeGoals": [
+          "Hwang In-beom 67'",
+          "Oh Hyeon-gyu 80'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=South+Korea+vs+Czech+Republic+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2283,6 +2836,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "South Korea",
         "awayId": "south-korea",
         "score": "1–0",
+        "homeGoals": [
+          "Romo 50'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+South+Korea+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2303,6 +2860,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "South Korea",
         "awayId": "south-korea",
         "score": "1–0",
+        "homeGoals": [
+          "Maseko 63'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=South+Africa+vs+South+Korea+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2325,6 +2886,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Czech Republic",
         "awayId": "czech-republic",
         "score": "2–1",
+        "homeGoals": [
+          "Hwang In-beom 67'",
+          "Oh Hyeon-gyu 80'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=South+Korea+vs+Czech+Republic+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2345,6 +2911,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "South Africa",
         "awayId": "south-africa",
         "score": "1–1",
+        "homeGoals": [
+          "Sadílek 6'"
+        ],
+        "awayGoals": [
+          "Mokoena 83' (pen.)"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Czech+Republic+vs+South+Africa+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2365,6 +2937,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Mexico",
         "awayId": "mexico",
         "score": "0–3",
+        "homeGoals": [],
+        "awayGoals": [
+          "M. Chávez 55'",
+          "Quiñones 61'",
+          "Fidalgo 90+4'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Czech+Republic+vs+Mexico+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2387,6 +2965,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Bosnia and Herzegovina",
         "awayId": "bosnia",
         "score": "1–1",
+        "homeGoals": [
+          "Larin 78'"
+        ],
+        "awayGoals": [
+          "Lukić 21'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2407,6 +2991,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Qatar",
         "awayId": "qatar",
         "score": "6–0",
+        "homeGoals": [
+          "Larin 16'",
+          "J. David 29', 45+3', 90+2'",
+          "Saliba 64'",
+          "Manai 75' (o.g.)"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Qatar+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2427,6 +3018,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Canada",
         "awayId": "canada",
         "score": "2–1",
+        "homeGoals": [
+          "Vargas 46'",
+          "Manzambi 57'"
+        ],
+        "awayGoals": [
+          "P. David 76'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Canada+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2447,6 +3045,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Canada",
         "awayId": "canada",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Eustáquio 90+2'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=South+Africa+vs+Canada+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2467,6 +3069,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Morocco",
         "awayId": "morocco",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2489,6 +3093,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Bosnia and Herzegovina",
         "awayId": "bosnia",
         "score": "1–1",
+        "homeGoals": [
+          "Larin 78'"
+        ],
+        "awayGoals": [
+          "Lukić 21'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2509,6 +3119,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Bosnia and Herzegovina",
         "awayId": "bosnia",
         "score": "4–1",
+        "homeGoals": [
+          "Manzambi 74', 90'",
+          "Vargas 84'",
+          "Xhaka 90+7' (pen.)"
+        ],
+        "awayGoals": [
+          "Mahmić 90+3'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2529,6 +3147,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Qatar",
         "awayId": "qatar",
         "score": "3–1",
+        "homeGoals": [
+          "Alajbegović 29'",
+          "Abunada 34' (o.g.)",
+          "Mahmić 80'"
+        ],
+        "awayGoals": [
+          "Al-Haydos 42'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Bosnia+and+Herzegovina+vs+Qatar+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2549,6 +3175,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Bosnia and Herzegovina",
         "awayId": "bosnia",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2571,6 +3199,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Switzerland",
         "awayId": "switzerland",
         "score": "1–1",
+        "homeGoals": [
+          "Muheim 90+4' (o.g.)"
+        ],
+        "awayGoals": [
+          "Embolo 17' (pen.)"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Qatar+vs+Switzerland+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2591,6 +3225,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Qatar",
         "awayId": "qatar",
         "score": "6–0",
+        "homeGoals": [
+          "Larin 16'",
+          "J. David 29', 45+3', 90+2'",
+          "Saliba 64'",
+          "Manai 75' (o.g.)"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Qatar+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2611,6 +3252,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Qatar",
         "awayId": "qatar",
         "score": "3–1",
+        "homeGoals": [
+          "Alajbegović 29'",
+          "Abunada 34' (o.g.)",
+          "Mahmić 80'"
+        ],
+        "awayGoals": [
+          "Al-Haydos 42'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Bosnia+and+Herzegovina+vs+Qatar+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2633,6 +3282,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Switzerland",
         "awayId": "switzerland",
         "score": "1–1",
+        "homeGoals": [
+          "Muheim 90+4' (o.g.)"
+        ],
+        "awayGoals": [
+          "Embolo 17' (pen.)"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Qatar+vs+Switzerland+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2653,6 +3308,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Bosnia and Herzegovina",
         "awayId": "bosnia",
         "score": "4–1",
+        "homeGoals": [
+          "Manzambi 74', 90'",
+          "Vargas 84'",
+          "Xhaka 90+7' (pen.)"
+        ],
+        "awayGoals": [
+          "Mahmić 90+3'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2673,6 +3336,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Canada",
         "awayId": "canada",
         "score": "2–1",
+        "homeGoals": [
+          "Vargas 46'",
+          "Manzambi 57'"
+        ],
+        "awayGoals": [
+          "P. David 76'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Canada+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2693,6 +3363,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Algeria",
         "awayId": "algeria",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2715,6 +3387,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Morocco",
         "awayId": "morocco",
         "score": "1–1",
+        "homeGoals": [
+          "Vinícius 32'"
+        ],
+        "awayGoals": [
+          "Saibari 21'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2735,6 +3413,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Haiti",
         "awayId": "haiti",
         "score": "3–0",
+        "homeGoals": [
+          "Cunha 23', 36'",
+          "Vinícius 45+3'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Haiti+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2755,6 +3438,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Brazil",
         "awayId": "brazil",
         "score": "0–3",
+        "homeGoals": [],
+        "awayGoals": [
+          "Vinícius 7', 45+3'",
+          "Cunha 60'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Scotland+vs+Brazil+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2775,6 +3463,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Japan",
         "awayId": "japan",
         "score": "2–1",
+        "homeGoals": [
+          "Casemiro 56'",
+          "Martinelli 90+5'"
+        ],
+        "awayGoals": [
+          "Sano 29'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Japan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2795,6 +3490,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Norway",
         "awayId": "norway",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2817,6 +3514,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Morocco",
         "awayId": "morocco",
         "score": "1–1",
+        "homeGoals": [
+          "Vinícius 32'"
+        ],
+        "awayGoals": [
+          "Saibari 21'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2837,6 +3540,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Morocco",
         "awayId": "morocco",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Saibari 2'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Scotland+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2857,6 +3564,16 @@ window.WORLD_CUP_MATCHES = {
         "away": "Haiti",
         "awayId": "haiti",
         "score": "4–2",
+        "homeGoals": [
+          "Hakimi 39'",
+          "Saibari 45+1'",
+          "Rahimi 78'",
+          "Yassine 89'"
+        ],
+        "awayGoals": [
+          "Bounou 10' (o.g.)",
+          "Isidor 43'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Morocco+vs+Haiti+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2877,6 +3594,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Morocco",
         "awayId": "morocco",
         "score": "1–1 ( a.e.t. )",
+        "homeGoals": [
+          "Gakpo 72'"
+        ],
+        "awayGoals": [
+          "Diop 90+1'"
+        ],
         "penalties": "2–3",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Netherlands+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2897,6 +3620,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Morocco",
         "awayId": "morocco",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2919,6 +3644,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Scotland",
         "awayId": "scotland",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "McGinn 28'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Haiti+vs+Scotland+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2939,6 +3668,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Haiti",
         "awayId": "haiti",
         "score": "3–0",
+        "homeGoals": [
+          "Cunha 23', 36'",
+          "Vinícius 45+3'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Haiti+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2959,6 +3693,16 @@ window.WORLD_CUP_MATCHES = {
         "away": "Haiti",
         "awayId": "haiti",
         "score": "4–2",
+        "homeGoals": [
+          "Hakimi 39'",
+          "Saibari 45+1'",
+          "Rahimi 78'",
+          "Yassine 89'"
+        ],
+        "awayGoals": [
+          "Bounou 10' (o.g.)",
+          "Isidor 43'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Morocco+vs+Haiti+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -2981,6 +3725,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Scotland",
         "awayId": "scotland",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "McGinn 28'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Haiti+vs+Scotland+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3001,6 +3749,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Morocco",
         "awayId": "morocco",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Saibari 2'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Scotland+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3021,6 +3773,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Brazil",
         "awayId": "brazil",
         "score": "0–3",
+        "homeGoals": [],
+        "awayGoals": [
+          "Vinícius 7', 45+3'",
+          "Cunha 60'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Scotland+vs+Brazil+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3043,6 +3800,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Paraguay",
         "awayId": "paraguay",
         "score": "4–1",
+        "homeGoals": [
+          "Bobadilla 7' (o.g.)",
+          "Balogun 31', 45+5'",
+          "Reyna 90+8'"
+        ],
+        "awayGoals": [
+          "Maurício 73'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Paraguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3063,6 +3828,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Australia",
         "awayId": "australia",
         "score": "2–0",
+        "homeGoals": [
+          "Burgess 11' (o.g.)",
+          "Freeman 43'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Australia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3083,6 +3853,15 @@ window.WORLD_CUP_MATCHES = {
         "away": "United States",
         "awayId": "united-states",
         "score": "3–2",
+        "homeGoals": [
+          "Güler 10'",
+          "Yılmaz 31'",
+          "Ayhan 90+8'"
+        ],
+        "awayGoals": [
+          "Trusty 3'",
+          "Berhalter 49'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Turkey+vs+United+States+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3103,6 +3882,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Bosnia and Herzegovina",
         "awayId": "bosnia",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3125,6 +3906,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Paraguay",
         "awayId": "paraguay",
         "score": "4–1",
+        "homeGoals": [
+          "Bobadilla 7' (o.g.)",
+          "Balogun 31', 45+5'",
+          "Reyna 90+8'"
+        ],
+        "awayGoals": [
+          "Maurício 73'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Paraguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3145,6 +3934,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Paraguay",
         "awayId": "paraguay",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Galarza 2'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Turkey+vs+Paraguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3165,6 +3958,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Australia",
         "awayId": "australia",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+Australia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3185,6 +3980,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Paraguay",
         "awayId": "paraguay",
         "score": "1–1 ( a.e.t. )",
+        "homeGoals": [
+          "Havertz 54'"
+        ],
+        "awayGoals": [
+          "Enciso 42'"
+        ],
         "penalties": "3–4",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Germany+vs+Paraguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3205,6 +4006,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "France",
         "awayId": "france",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3227,6 +4030,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Turkey",
         "awayId": "turkey",
         "score": "2–0",
+        "homeGoals": [
+          "Irankunda 27'",
+          "Metcalfe 75'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Australia+vs+Turkey+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3247,6 +4055,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Australia",
         "awayId": "australia",
         "score": "2–0",
+        "homeGoals": [
+          "Burgess 11' (o.g.)",
+          "Freeman 43'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Australia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3267,6 +4080,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Australia",
         "awayId": "australia",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+Australia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3287,6 +4102,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Egypt",
         "awayId": "egypt",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Australia+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3309,6 +4126,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Turkey",
         "awayId": "turkey",
         "score": "2–0",
+        "homeGoals": [
+          "Irankunda 27'",
+          "Metcalfe 75'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Australia+vs+Turkey+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3329,6 +4151,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Paraguay",
         "awayId": "paraguay",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Galarza 2'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Turkey+vs+Paraguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3349,6 +4175,15 @@ window.WORLD_CUP_MATCHES = {
         "away": "United States",
         "awayId": "united-states",
         "score": "3–2",
+        "homeGoals": [
+          "Güler 10'",
+          "Yılmaz 31'",
+          "Ayhan 90+8'"
+        ],
+        "awayGoals": [
+          "Trusty 3'",
+          "Berhalter 49'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Turkey+vs+United+States+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3371,6 +4206,17 @@ window.WORLD_CUP_MATCHES = {
         "away": "Curaçao",
         "awayId": "curacao",
         "score": "7–1",
+        "homeGoals": [
+          "Nmecha 6'",
+          "Schlotterbeck 38'",
+          "Havertz 45+5' (pen.), 88'",
+          "Musiala 47'",
+          "Brown 68'",
+          "Undav 78'"
+        ],
+        "awayGoals": [
+          "Comenencia 21'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Germany+vs+Curaçao+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3391,6 +4237,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ivory Coast",
         "awayId": "ivory-coast",
         "score": "2–1",
+        "homeGoals": [
+          "Undav 68', 90+4'"
+        ],
+        "awayGoals": [
+          "Kessié 30'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Germany+vs+Ivory+Coast+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3411,6 +4263,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Germany",
         "awayId": "germany",
         "score": "2–1",
+        "homeGoals": [
+          "Angulo 9'",
+          "Plata 77'"
+        ],
+        "awayGoals": [
+          "Sané 2'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Ecuador+vs+Germany+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3431,6 +4290,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Paraguay",
         "awayId": "paraguay",
         "score": "1–1 ( a.e.t. )",
+        "homeGoals": [
+          "Havertz 54'"
+        ],
+        "awayGoals": [
+          "Enciso 42'"
+        ],
         "penalties": "3–4",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Germany+vs+Paraguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3453,6 +4318,17 @@ window.WORLD_CUP_MATCHES = {
         "away": "Curaçao",
         "awayId": "curacao",
         "score": "7–1",
+        "homeGoals": [
+          "Nmecha 6'",
+          "Schlotterbeck 38'",
+          "Havertz 45+5' (pen.), 88'",
+          "Musiala 47'",
+          "Brown 68'",
+          "Undav 78'"
+        ],
+        "awayGoals": [
+          "Comenencia 21'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Germany+vs+Curaçao+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3473,6 +4349,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Curaçao",
         "awayId": "curacao",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Ecuador+vs+Curaçao+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3493,6 +4371,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ivory Coast",
         "awayId": "ivory-coast",
         "score": "0–2",
+        "homeGoals": [],
+        "awayGoals": [
+          "Pépé 7', 64'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Curaçao+vs+Ivory+Coast+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3515,6 +4397,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ecuador",
         "awayId": "ecuador",
         "score": "1–0",
+        "homeGoals": [
+          "Diallo 90'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Ivory+Coast+vs+Ecuador+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3535,6 +4421,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ivory Coast",
         "awayId": "ivory-coast",
         "score": "2–1",
+        "homeGoals": [
+          "Undav 68', 90+4'"
+        ],
+        "awayGoals": [
+          "Kessié 30'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Germany+vs+Ivory+Coast+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3555,6 +4447,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ivory Coast",
         "awayId": "ivory-coast",
         "score": "0–2",
+        "homeGoals": [],
+        "awayGoals": [
+          "Pépé 7', 64'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Curaçao+vs+Ivory+Coast+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3575,6 +4471,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Norway",
         "awayId": "norway",
         "score": "1–2",
+        "homeGoals": [
+          "Diallo 74'"
+        ],
+        "awayGoals": [
+          "Nusa 39'",
+          "Haaland 86'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Ivory+Coast+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3597,6 +4500,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ecuador",
         "awayId": "ecuador",
         "score": "1–0",
+        "homeGoals": [
+          "Diallo 90'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Ivory+Coast+vs+Ecuador+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3617,6 +4524,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Curaçao",
         "awayId": "curacao",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Ecuador+vs+Curaçao+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3637,6 +4546,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Germany",
         "awayId": "germany",
         "score": "2–1",
+        "homeGoals": [
+          "Angulo 9'",
+          "Plata 77'"
+        ],
+        "awayGoals": [
+          "Sané 2'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Ecuador+vs+Germany+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3657,6 +4573,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ecuador",
         "awayId": "ecuador",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+Ecuador+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3679,6 +4597,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Japan",
         "awayId": "japan",
         "score": "2–2",
+        "homeGoals": [
+          "Van Dijk 51'",
+          "Summerville 64'"
+        ],
+        "awayGoals": [
+          "Nakamura 57'",
+          "Kamada 88'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Netherlands+vs+Japan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3699,6 +4625,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Sweden",
         "awayId": "sweden",
         "score": "5–1",
+        "homeGoals": [
+          "Brobbey 5', 17'",
+          "Gakpo 47', 54'",
+          "Summerville 89'"
+        ],
+        "awayGoals": [
+          "Elanga 59'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Netherlands+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3719,6 +4653,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Netherlands",
         "awayId": "netherlands",
         "score": "1–3",
+        "homeGoals": [
+          "Mastouri 54'"
+        ],
+        "awayGoals": [
+          "Skhiri 3' (o.g.)",
+          "Brobbey 7'",
+          "Van Hecke 62'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Tunisia+vs+Netherlands+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3739,6 +4681,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Morocco",
         "awayId": "morocco",
         "score": "1–1 ( a.e.t. )",
+        "homeGoals": [
+          "Gakpo 72'"
+        ],
+        "awayGoals": [
+          "Diop 90+1'"
+        ],
         "penalties": "2–3",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Netherlands+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3761,6 +4709,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Japan",
         "awayId": "japan",
         "score": "2–2",
+        "homeGoals": [
+          "Van Dijk 51'",
+          "Summerville 64'"
+        ],
+        "awayGoals": [
+          "Nakamura 57'",
+          "Kamada 88'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Netherlands+vs+Japan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3781,6 +4737,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Japan",
         "awayId": "japan",
         "score": "0–4",
+        "homeGoals": [],
+        "awayGoals": [
+          "Kamada 4'",
+          "Ueda 31', 83'",
+          "J. Itō 69'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Tunisia+vs+Japan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3801,6 +4763,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Sweden",
         "awayId": "sweden",
         "score": "1–1",
+        "homeGoals": [
+          "Maeda 56'"
+        ],
+        "awayGoals": [
+          "Elanga 62'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Japan+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3821,6 +4789,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Japan",
         "awayId": "japan",
         "score": "2–1",
+        "homeGoals": [
+          "Casemiro 56'",
+          "Martinelli 90+5'"
+        ],
+        "awayGoals": [
+          "Sano 29'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Japan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3843,6 +4818,15 @@ window.WORLD_CUP_MATCHES = {
         "away": "Tunisia",
         "awayId": "tunisia",
         "score": "5–1",
+        "homeGoals": [
+          "Ayari 7', 90+6'",
+          "Isak 30'",
+          "Gyökeres 59'",
+          "Svanberg 84'"
+        ],
+        "awayGoals": [
+          "Rekik 43'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Sweden+vs+Tunisia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3863,6 +4847,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Sweden",
         "awayId": "sweden",
         "score": "5–1",
+        "homeGoals": [
+          "Brobbey 5', 17'",
+          "Gakpo 47', 54'",
+          "Summerville 89'"
+        ],
+        "awayGoals": [
+          "Elanga 59'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Netherlands+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3883,6 +4875,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Sweden",
         "awayId": "sweden",
         "score": "1–1",
+        "homeGoals": [
+          "Maeda 56'"
+        ],
+        "awayGoals": [
+          "Elanga 62'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Japan+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3903,6 +4901,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Sweden",
         "awayId": "sweden",
         "score": "3–0",
+        "homeGoals": [
+          "Mbappé 45', 74'",
+          "Barcola 53'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3925,6 +4928,15 @@ window.WORLD_CUP_MATCHES = {
         "away": "Tunisia",
         "awayId": "tunisia",
         "score": "5–1",
+        "homeGoals": [
+          "Ayari 7', 90+6'",
+          "Isak 30'",
+          "Gyökeres 59'",
+          "Svanberg 84'"
+        ],
+        "awayGoals": [
+          "Rekik 43'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Sweden+vs+Tunisia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3945,6 +4957,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Japan",
         "awayId": "japan",
         "score": "0–4",
+        "homeGoals": [],
+        "awayGoals": [
+          "Kamada 4'",
+          "Ueda 31', 83'",
+          "J. Itō 69'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Tunisia+vs+Japan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3965,6 +4983,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Netherlands",
         "awayId": "netherlands",
         "score": "1–3",
+        "homeGoals": [
+          "Mastouri 54'"
+        ],
+        "awayGoals": [
+          "Skhiri 3' (o.g.)",
+          "Brobbey 7'",
+          "Van Hecke 62'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Tunisia+vs+Netherlands+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -3987,6 +5013,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Egypt",
         "awayId": "egypt",
         "score": "1–1",
+        "homeGoals": [
+          "Hany 66' (o.g.)"
+        ],
+        "awayGoals": [
+          "Ashour 19'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4007,6 +5039,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Iran",
         "awayId": "iran",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Iran+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4027,6 +5061,15 @@ window.WORLD_CUP_MATCHES = {
         "away": "Belgium",
         "awayId": "belgium",
         "score": "1–5",
+        "homeGoals": [
+          "Just 84'"
+        ],
+        "awayGoals": [
+          "Trossard 28', 50'",
+          "De Bruyne 66'",
+          "Lukaku 86'",
+          "Saelemaekers 90+4'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=New+Zealand+vs+Belgium+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4047,6 +5090,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Senegal",
         "awayId": "senegal",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4069,6 +5114,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Egypt",
         "awayId": "egypt",
         "score": "1–1",
+        "homeGoals": [
+          "Hany 66' (o.g.)"
+        ],
+        "awayGoals": [
+          "Ashour 19'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4089,6 +5140,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Egypt",
         "awayId": "egypt",
         "score": "1–3",
+        "homeGoals": [
+          "Surman 15'"
+        ],
+        "awayGoals": [
+          "Ziko 58'",
+          "Salah 67'",
+          "Trézéguet 82'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=New+Zealand+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4109,6 +5168,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Iran",
         "awayId": "iran",
         "score": "1–1",
+        "homeGoals": [
+          "Saber 5'"
+        ],
+        "awayGoals": [
+          "Rezaeian 14'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Egypt+vs+Iran+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4129,6 +5194,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Egypt",
         "awayId": "egypt",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Australia+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4151,6 +5218,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "New Zealand",
         "awayId": "new-zealand",
         "score": "2–2",
+        "homeGoals": [
+          "Rezaeian 32'",
+          "Mohebi 64'"
+        ],
+        "awayGoals": [
+          "Just 7', 54'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Iran+vs+New+Zealand+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4171,6 +5245,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Iran",
         "awayId": "iran",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Iran+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4191,6 +5267,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Iran",
         "awayId": "iran",
         "score": "1–1",
+        "homeGoals": [
+          "Saber 5'"
+        ],
+        "awayGoals": [
+          "Rezaeian 14'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Egypt+vs+Iran+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4213,6 +5295,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "New Zealand",
         "awayId": "new-zealand",
         "score": "2–2",
+        "homeGoals": [
+          "Rezaeian 32'",
+          "Mohebi 64'"
+        ],
+        "awayGoals": [
+          "Just 7', 54'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Iran+vs+New+Zealand+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4233,6 +5322,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Egypt",
         "awayId": "egypt",
         "score": "1–3",
+        "homeGoals": [
+          "Surman 15'"
+        ],
+        "awayGoals": [
+          "Ziko 58'",
+          "Salah 67'",
+          "Trézéguet 82'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=New+Zealand+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4253,6 +5350,15 @@ window.WORLD_CUP_MATCHES = {
         "away": "Belgium",
         "awayId": "belgium",
         "score": "1–5",
+        "homeGoals": [
+          "Just 84'"
+        ],
+        "awayGoals": [
+          "Trossard 28', 50'",
+          "De Bruyne 66'",
+          "Lukaku 86'",
+          "Saelemaekers 90+4'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=New+Zealand+vs+Belgium+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4275,6 +5381,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Cape Verde",
         "awayId": "cape-verde",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4295,6 +5403,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Saudi Arabia",
         "awayId": "saudi-arabia",
         "score": "4–0",
+        "homeGoals": [
+          "Yamal 10'",
+          "Oyarzabal 21', 24'",
+          "Al-Tambakti 49' (o.g.)"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Saudi+Arabia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4315,6 +5429,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Spain",
         "awayId": "spain",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Baena 42'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Uruguay+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4335,6 +5453,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Austria",
         "awayId": "austria",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4357,6 +5477,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Cape Verde",
         "awayId": "cape-verde",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4377,6 +5499,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Cape Verde",
         "awayId": "cape-verde",
         "score": "2–2",
+        "homeGoals": [
+          "M. Araújo 44'",
+          "Canobbio 45+6'"
+        ],
+        "awayGoals": [
+          "K. Pina 21'",
+          "Varela 61'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Uruguay+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4397,6 +5527,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Saudi Arabia",
         "awayId": "saudi-arabia",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Cape+Verde+vs+Saudi+Arabia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4417,6 +5549,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Cape Verde",
         "awayId": "cape-verde",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4439,6 +5573,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Uruguay",
         "awayId": "uruguay",
         "score": "1–1",
+        "homeGoals": [
+          "Al-Amri 41'"
+        ],
+        "awayGoals": [
+          "M. Araújo 80'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Saudi+Arabia+vs+Uruguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4459,6 +5599,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Saudi Arabia",
         "awayId": "saudi-arabia",
         "score": "4–0",
+        "homeGoals": [
+          "Yamal 10'",
+          "Oyarzabal 21', 24'",
+          "Al-Tambakti 49' (o.g.)"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Saudi+Arabia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4479,6 +5625,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Saudi Arabia",
         "awayId": "saudi-arabia",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Cape+Verde+vs+Saudi+Arabia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4501,6 +5649,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "Uruguay",
         "awayId": "uruguay",
         "score": "1–1",
+        "homeGoals": [
+          "Al-Amri 41'"
+        ],
+        "awayGoals": [
+          "M. Araújo 80'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Saudi+Arabia+vs+Uruguay+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4521,6 +5675,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Cape Verde",
         "awayId": "cape-verde",
         "score": "2–2",
+        "homeGoals": [
+          "M. Araújo 44'",
+          "Canobbio 45+6'"
+        ],
+        "awayGoals": [
+          "K. Pina 21'",
+          "Varela 61'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Uruguay+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4541,6 +5703,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Spain",
         "awayId": "spain",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Baena 42'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Uruguay+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4563,6 +5729,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Senegal",
         "awayId": "senegal",
         "score": "3–1",
+        "homeGoals": [
+          "Mbappé 66', 90+6'",
+          "Barcola 82'"
+        ],
+        "awayGoals": [
+          "Mbaye 90+5'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4583,6 +5756,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Iraq",
         "awayId": "iraq",
         "score": "3–0",
+        "homeGoals": [
+          "Mbappé 14', 54'",
+          "Dembélé 66'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Iraq+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4603,6 +5781,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "France",
         "awayId": "france",
         "score": "1–4",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4623,6 +5803,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Sweden",
         "awayId": "sweden",
         "score": "3–0",
+        "homeGoals": [
+          "Mbappé 45', 74'",
+          "Barcola 53'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Sweden+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4643,6 +5828,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "France",
         "awayId": "france",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4665,6 +5852,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Senegal",
         "awayId": "senegal",
         "score": "3–1",
+        "homeGoals": [
+          "Mbappé 66', 90+6'",
+          "Barcola 82'"
+        ],
+        "awayGoals": [
+          "Mbaye 90+5'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4685,6 +5879,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Senegal",
         "awayId": "senegal",
         "score": "3–2",
+        "homeGoals": [
+          "Pedersen 43'",
+          "Haaland 48', 58'"
+        ],
+        "awayGoals": [
+          "I. Sarr 53', 90+3'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4705,6 +5906,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Iraq",
         "awayId": "iraq",
         "score": "5–0",
+        "homeGoals": [
+          "Diarra 4'",
+          "I. Sarr 56'",
+          "P. Gueye 59', 71'",
+          "I. Ndiaye 82'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Senegal+vs+Iraq+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4725,6 +5933,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Senegal",
         "awayId": "senegal",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4747,6 +5957,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Norway",
         "awayId": "norway",
         "score": "1–4",
+        "homeGoals": [
+          "Hussein 39'"
+        ],
+        "awayGoals": [
+          "Haaland 29', 43'",
+          "Østigård 76'",
+          "Hussein 90+6' (o.g.)"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Iraq+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4767,6 +5985,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "Iraq",
         "awayId": "iraq",
         "score": "3–0",
+        "homeGoals": [
+          "Mbappé 14', 54'",
+          "Dembélé 66'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Iraq+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4787,6 +6010,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Iraq",
         "awayId": "iraq",
         "score": "5–0",
+        "homeGoals": [
+          "Diarra 4'",
+          "I. Sarr 56'",
+          "P. Gueye 59', 71'",
+          "I. Ndiaye 82'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Senegal+vs+Iraq+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4809,6 +6039,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Norway",
         "awayId": "norway",
         "score": "1–4",
+        "homeGoals": [
+          "Hussein 39'"
+        ],
+        "awayGoals": [
+          "Haaland 29', 43'",
+          "Østigård 76'",
+          "Hussein 90+6' (o.g.)"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Iraq+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4829,6 +6067,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Senegal",
         "awayId": "senegal",
         "score": "3–2",
+        "homeGoals": [
+          "Pedersen 43'",
+          "Haaland 48', 58'"
+        ],
+        "awayGoals": [
+          "I. Sarr 53', 90+3'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4849,6 +6094,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "France",
         "awayId": "france",
         "score": "1–4",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4869,6 +6116,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Norway",
         "awayId": "norway",
         "score": "1–2",
+        "homeGoals": [
+          "Diallo 74'"
+        ],
+        "awayGoals": [
+          "Nusa 39'",
+          "Haaland 86'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Ivory+Coast+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4889,6 +6143,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Norway",
         "awayId": "norway",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4911,6 +6167,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Algeria",
         "awayId": "algeria",
         "score": "3–0",
+        "homeGoals": [
+          "Messi 17', 60', 76'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4931,6 +6191,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Austria",
         "awayId": "austria",
         "score": "2–0",
+        "homeGoals": [
+          "Messi 38', 90+5'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4951,6 +6215,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Argentina",
         "awayId": "argentina",
         "score": "1–3",
+        "homeGoals": [
+          "Al-Taamari 55'"
+        ],
+        "awayGoals": [
+          "Lo Celso 19'",
+          "La. Martínez 31' (pen.)",
+          "Messi 80'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Jordan+vs+Argentina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4971,6 +6243,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Cape Verde",
         "awayId": "cape-verde",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -4993,6 +6267,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Algeria",
         "awayId": "algeria",
         "score": "3–0",
+        "homeGoals": [
+          "Messi 17', 60', 76'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5013,6 +6291,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Algeria",
         "awayId": "algeria",
         "score": "1–2",
+        "homeGoals": [
+          "Al-Rashdan 36'"
+        ],
+        "awayGoals": [
+          "Benbouali 69'",
+          "Gouiri 82'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Jordan+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5033,6 +6318,15 @@ window.WORLD_CUP_MATCHES = {
         "away": "Austria",
         "awayId": "austria",
         "score": "3–3",
+        "homeGoals": [
+          "Belghali 45'",
+          "Mahrez 60', 90+3'"
+        ],
+        "awayGoals": [
+          "Arnautović 28'",
+          "Sabitzer 55'",
+          "Kalajdžić 90+6'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Algeria+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5053,6 +6347,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Algeria",
         "awayId": "algeria",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5075,6 +6371,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Jordan",
         "awayId": "jordan",
         "score": "3–1",
+        "homeGoals": [
+          "Schmid 20'",
+          "Al-Arab 76' (o.g.)",
+          "Arnautović 90+12' (pen.)"
+        ],
+        "awayGoals": [
+          "Olwan 50'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Austria+vs+Jordan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5095,6 +6399,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Austria",
         "awayId": "austria",
         "score": "2–0",
+        "homeGoals": [
+          "Messi 38', 90+5'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5115,6 +6423,15 @@ window.WORLD_CUP_MATCHES = {
         "away": "Austria",
         "awayId": "austria",
         "score": "3–3",
+        "homeGoals": [
+          "Belghali 45'",
+          "Mahrez 60', 90+3'"
+        ],
+        "awayGoals": [
+          "Arnautović 28'",
+          "Sabitzer 55'",
+          "Kalajdžić 90+6'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Algeria+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5135,6 +6452,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Austria",
         "awayId": "austria",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5157,6 +6476,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Jordan",
         "awayId": "jordan",
         "score": "3–1",
+        "homeGoals": [
+          "Schmid 20'",
+          "Al-Arab 76' (o.g.)",
+          "Arnautović 90+12' (pen.)"
+        ],
+        "awayGoals": [
+          "Olwan 50'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Austria+vs+Jordan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5177,6 +6504,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Algeria",
         "awayId": "algeria",
         "score": "1–2",
+        "homeGoals": [
+          "Al-Rashdan 36'"
+        ],
+        "awayGoals": [
+          "Benbouali 69'",
+          "Gouiri 82'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Jordan+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5197,6 +6531,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Argentina",
         "awayId": "argentina",
         "score": "1–3",
+        "homeGoals": [
+          "Al-Taamari 55'"
+        ],
+        "awayGoals": [
+          "Lo Celso 19'",
+          "La. Martínez 31' (pen.)",
+          "Messi 80'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Jordan+vs+Argentina+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5219,6 +6561,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "DR Congo",
         "awayId": "dr-congo",
         "score": "1–1",
+        "homeGoals": [
+          "J. Neves 6'"
+        ],
+        "awayGoals": [
+          "Wissa 45+5'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5239,6 +6587,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Uzbekistan",
         "awayId": "uzbekistan",
         "score": "5–0",
+        "homeGoals": [
+          "Ronaldo 6', 39'",
+          "Mendes 17'",
+          "Nematov 60' (o.g.)",
+          "Leão 87'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Uzbekistan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5259,6 +6614,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Portugal",
         "awayId": "portugal",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+Portugal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5279,6 +6636,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Croatia",
         "awayId": "croatia",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5301,6 +6660,12 @@ window.WORLD_CUP_MATCHES = {
         "away": "DR Congo",
         "awayId": "dr-congo",
         "score": "1–1",
+        "homeGoals": [
+          "J. Neves 6'"
+        ],
+        "awayGoals": [
+          "Wissa 45+5'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5321,6 +6686,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "DR Congo",
         "awayId": "dr-congo",
         "score": "1–0",
+        "homeGoals": [
+          "Muñoz 76'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5341,6 +6710,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Uzbekistan",
         "awayId": "uzbekistan",
         "score": "3–1",
+        "homeGoals": [
+          "Wissa 68' (pen.), 90+1'",
+          "Mayele 78'"
+        ],
+        "awayGoals": [
+          "Shomurodov 10'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=DR+Congo+vs+Uzbekistan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5361,6 +6737,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "DR Congo",
         "awayId": "dr-congo",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=England+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5383,6 +6761,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Colombia",
         "awayId": "colombia",
         "score": "1–3",
+        "homeGoals": [
+          "Fayzullaev 60'"
+        ],
+        "awayGoals": [
+          "Muñoz 40'",
+          "Díaz 65'",
+          "Campaz 90+9'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Uzbekistan+vs+Colombia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5403,6 +6789,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Uzbekistan",
         "awayId": "uzbekistan",
         "score": "5–0",
+        "homeGoals": [
+          "Ronaldo 6', 39'",
+          "Mendes 17'",
+          "Nematov 60' (o.g.)",
+          "Leão 87'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Uzbekistan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5423,6 +6816,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Uzbekistan",
         "awayId": "uzbekistan",
         "score": "3–1",
+        "homeGoals": [
+          "Wissa 68' (pen.), 90+1'",
+          "Mayele 78'"
+        ],
+        "awayGoals": [
+          "Shomurodov 10'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=DR+Congo+vs+Uzbekistan+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5445,6 +6845,14 @@ window.WORLD_CUP_MATCHES = {
         "away": "Colombia",
         "awayId": "colombia",
         "score": "1–3",
+        "homeGoals": [
+          "Fayzullaev 60'"
+        ],
+        "awayGoals": [
+          "Muñoz 40'",
+          "Díaz 65'",
+          "Campaz 90+9'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Uzbekistan+vs+Colombia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5465,6 +6873,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "DR Congo",
         "awayId": "dr-congo",
         "score": "1–0",
+        "homeGoals": [
+          "Muñoz 76'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5485,6 +6897,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Portugal",
         "awayId": "portugal",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+Portugal+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5505,6 +6919,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ghana",
         "awayId": "ghana",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5527,6 +6943,15 @@ window.WORLD_CUP_MATCHES = {
         "away": "Croatia",
         "awayId": "croatia",
         "score": "4–2",
+        "homeGoals": [
+          "Kane 12' (pen.), 42'",
+          "Bellingham 47'",
+          "Rashford 85'"
+        ],
+        "awayGoals": [
+          "Baturina 36'",
+          "Musa 45+5'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5547,6 +6972,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ghana",
         "awayId": "ghana",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5567,6 +6994,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "England",
         "awayId": "england",
         "score": "0–2",
+        "homeGoals": [],
+        "awayGoals": [
+          "Bellingham 62'",
+          "Kane 67'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Panama+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5587,6 +7019,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "DR Congo",
         "awayId": "dr-congo",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=England+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5609,6 +7043,15 @@ window.WORLD_CUP_MATCHES = {
         "away": "Croatia",
         "awayId": "croatia",
         "score": "4–2",
+        "homeGoals": [
+          "Kane 12' (pen.), 42'",
+          "Bellingham 47'",
+          "Rashford 85'"
+        ],
+        "awayGoals": [
+          "Baturina 36'",
+          "Musa 45+5'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5629,6 +7072,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Croatia",
         "awayId": "croatia",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Budimir 54'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Panama+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5649,6 +7096,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ghana",
         "awayId": "ghana",
         "score": "2–1",
+        "homeGoals": [
+          "P. Sučić 31'",
+          "Vlašić 83'"
+        ],
+        "awayGoals": [
+          "Luckassen 73'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Croatia+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5669,6 +7123,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Croatia",
         "awayId": "croatia",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5691,6 +7147,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Panama",
         "awayId": "panama",
         "score": "1–0",
+        "homeGoals": [
+          "Yirenkyi 90+5'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Ghana+vs+Panama+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5711,6 +7171,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ghana",
         "awayId": "ghana",
         "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5731,6 +7193,13 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ghana",
         "awayId": "ghana",
         "score": "2–1",
+        "homeGoals": [
+          "P. Sučić 31'",
+          "Vlašić 83'"
+        ],
+        "awayGoals": [
+          "Luckassen 73'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Croatia+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5751,6 +7220,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Ghana",
         "awayId": "ghana",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5773,6 +7244,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Panama",
         "awayId": "panama",
         "score": "1–0",
+        "homeGoals": [
+          "Yirenkyi 90+5'"
+        ],
+        "awayGoals": [],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Ghana+vs+Panama+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5793,6 +7268,10 @@ window.WORLD_CUP_MATCHES = {
         "away": "Croatia",
         "awayId": "croatia",
         "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Budimir 54'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Panama+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5813,6 +7292,11 @@ window.WORLD_CUP_MATCHES = {
         "away": "England",
         "awayId": "england",
         "score": "0–2",
+        "homeGoals": [],
+        "awayGoals": [
+          "Bellingham 62'",
+          "Kane 67'"
+        ],
         "penalties": "",
         "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Panama+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5835,6 +7319,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 80",
         "awayId": "winner-match-80",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+79+vs+Winner+Match+80+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5857,6 +7343,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 80",
         "awayId": "winner-match-80",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+79+vs+Winner+Match+80+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5879,6 +7367,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 84",
         "awayId": "winner-match-84",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Winner+Match+84+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5901,6 +7391,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 84",
         "awayId": "winner-match-84",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Winner+Match+84+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5923,6 +7415,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 82",
         "awayId": "winner-match-82",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+81+vs+Winner+Match+82+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5945,6 +7439,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 82",
         "awayId": "winner-match-82",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+81+vs+Winner+Match+82+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5967,6 +7463,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 88",
         "awayId": "winner-match-88",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+86+vs+Winner+Match+88+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -5989,6 +7487,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 88",
         "awayId": "winner-match-88",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+86+vs+Winner+Match+88+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6011,6 +7511,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 87",
         "awayId": "winner-match-87",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+85+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6033,6 +7535,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 87",
         "awayId": "winner-match-87",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+85+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6055,6 +7559,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 90",
         "awayId": "winner-match-90",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+89+vs+Winner+Match+90+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6077,6 +7583,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 90",
         "awayId": "winner-match-90",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+89+vs+Winner+Match+90+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6099,6 +7607,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 94",
         "awayId": "winner-match-94",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+93+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6121,6 +7631,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 94",
         "awayId": "winner-match-94",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+93+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6143,6 +7655,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 92",
         "awayId": "winner-match-92",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+91+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6165,6 +7679,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 92",
         "awayId": "winner-match-92",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+91+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6187,6 +7703,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 96",
         "awayId": "winner-match-96",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+95+vs+Winner+Match+96+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6209,6 +7727,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 96",
         "awayId": "winner-match-96",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+95+vs+Winner+Match+96+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6231,6 +7751,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 98",
         "awayId": "winner-match-98",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+97+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6253,6 +7775,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 98",
         "awayId": "winner-match-98",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+97+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6275,6 +7799,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 100",
         "awayId": "winner-match-100",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+99+vs+Winner+Match+100+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6297,6 +7823,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 100",
         "awayId": "winner-match-100",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+99+vs+Winner+Match+100+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6319,6 +7847,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Loser Match 102",
         "awayId": "loser-match-102",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Loser+Match+101+vs+Loser+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6341,6 +7871,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Loser Match 102",
         "awayId": "loser-match-102",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Loser+Match+101+vs+Loser+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6363,6 +7895,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 102",
         "awayId": "winner-match-102",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+101+vs+Winner+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
@@ -6385,6 +7919,8 @@ window.WORLD_CUP_MATCHES = {
         "away": "Winner Match 102",
         "awayId": "winner-match-102",
         "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+101+vs+Winner+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
