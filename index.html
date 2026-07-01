@@ -195,8 +195,13 @@
         <form class="ai-chat__form" id="aiChatForm">
           <label class="sr-only" for="aiChatInput">向AI小导游提问</label>
           <textarea id="aiChatInput" rows="2" placeholder="问问这个国家的故事、食物、球星或比赛"></textarea>
+          <div class="ai-chat__voice">
+            <button id="aiVoiceInput" type="button">语音</button>
+            <button id="aiVoiceOutput" type="button" aria-pressed="false">播报</button>
+          </div>
           <button id="aiChatSubmit" type="submit">发送</button>
         </form>
+        <p class="ai-chat__voice-status" id="aiVoiceStatus"></p>
         <p class="ai-chat__note">回答由 AI 生成，适合亲子共读；重要事实建议再和地图、百科或官方资料一起核对。</p>
       </div>
     </section>

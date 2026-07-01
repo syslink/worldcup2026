@@ -269,6 +269,9 @@ const elements = {
   aiChatForm: document.querySelector("#aiChatForm"),
   aiChatInput: document.querySelector("#aiChatInput"),
   aiChatSubmit: document.querySelector("#aiChatSubmit"),
+  aiVoiceInput: document.querySelector("#aiVoiceInput"),
+  aiVoiceOutput: document.querySelector("#aiVoiceOutput"),
+  aiVoiceStatus: document.querySelector("#aiVoiceStatus"),
   noteHint: document.querySelector("#noteHint"),
   familyNotes: document.querySelector("#familyNotes")
 };
@@ -278,6 +281,9 @@ let activePhotoIndex = 0;
 let chatRequestId = 0;
 let chatBusy = false;
 let chatOpen = false;
+let voiceOutputEnabled = false;
+let recognition = null;
+let isListening = false;
 const chatSessions = {};
 
 function statusLabel(status) {
@@ -668,6 +674,7 @@ function setChatBusy(isBusy) {
   chatBusy = isBusy;
   elements.aiChatSubmit.disabled = isBusy;
   elements.aiChatInput.disabled = isBusy;
+  elements.aiVoiceInput.disabled = isBusy || !recognition;
   elements.aiChatSuggestions.querySelectorAll("button").forEach((button) => {
     button.disabled = isBusy;
   });
@@ -683,11 +690,128 @@ function setChatOpen(isOpen) {
   }
 }
 
+function setVoiceStatus(message = "", isListeningNow = false) {
+  elements.aiVoiceStatus.textContent = message;
+  elements.aiVoiceStatus.classList.toggle("is-listening", isListeningNow);
+}
+
+function speechSupported() {
+  return "speechSynthesis" in window && typeof SpeechSynthesisUtterance !== "undefined";
+}
+
+function speakText(text) {
+  if (!speechSupported() || !text) {
+    setVoiceStatus("当前浏览器不支持语音播报，可以继续使用文字聊天。");
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = "zh-CN";
+  utterance.rate = 0.95;
+  utterance.pitch = 1;
+  const voices = window.speechSynthesis.getVoices?.() || [];
+  const chineseVoice = voices.find((voice) => voice.lang?.toLowerCase().startsWith("zh"));
+  if (chineseVoice) utterance.voice = chineseVoice;
+  utterance.onstart = () => setVoiceStatus("正在播报 AI 小导游的回答...");
+  utterance.onend = () => setVoiceStatus(voiceOutputEnabled ? "播报已开启，AI 回复会自动朗读。" : "");
+  utterance.onerror = () => setVoiceStatus("语音播报被浏览器打断了，可以点单条回答旁的“朗读”再试。");
+  window.speechSynthesis.speak(utterance);
+}
+
+function initSpeechRecognition() {
+  const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!Recognition) {
+    elements.aiVoiceInput.disabled = true;
+    elements.aiVoiceInput.title = "当前浏览器不支持语音输入";
+    setVoiceStatus("此浏览器可能不支持语音输入；仍可输入文字，并可尝试播报。");
+    return;
+  }
+
+  recognition = new Recognition();
+  recognition.lang = "zh-CN";
+  recognition.interimResults = true;
+  recognition.continuous = false;
+
+  recognition.onstart = () => {
+    isListening = true;
+    elements.aiVoiceInput.classList.add("is-active");
+    setVoiceStatus("正在听你说话，说完会自动发送...", true);
+  };
+
+  recognition.onresult = (event) => {
+    let transcript = "";
+    let finalTranscript = "";
+    for (let index = event.resultIndex; index < event.results.length; index += 1) {
+      const text = event.results[index][0].transcript;
+      transcript += text;
+      if (event.results[index].isFinal) finalTranscript += text;
+    }
+    elements.aiChatInput.value = (finalTranscript || transcript).trim();
+    if (finalTranscript.trim()) {
+      recognition.stop();
+      const country = countries.find((item) => item.id === state.selectedId) || countries[0];
+      submitChatQuestion(country);
+    }
+  };
+
+  recognition.onerror = (event) => {
+    const message = event.error === "not-allowed"
+      ? "麦克风权限没有打开，请允许浏览器使用麦克风。"
+      : "这次没有听清楚，可以再点一次“语音”。";
+    setVoiceStatus(message);
+  };
+
+  recognition.onend = () => {
+    isListening = false;
+    elements.aiVoiceInput.classList.remove("is-active");
+    if (!elements.aiVoiceStatus.textContent.includes("权限")) {
+      setVoiceStatus(voiceOutputEnabled ? "播报已开启，AI 回复会自动朗读。" : "");
+    }
+  };
+}
+
+function toggleVoiceInput() {
+  if (!recognition) {
+    setVoiceStatus("当前浏览器不支持语音输入，可以换 Chrome 或 Safari 试试。");
+    return;
+  }
+  if (isListening) {
+    recognition.stop();
+    return;
+  }
+  try {
+    recognition.start();
+  } catch (error) {
+    setVoiceStatus("语音输入已经在启动中，稍等一下再试。");
+  }
+}
+
+function initVoiceControls() {
+  initSpeechRecognition();
+  if (!speechSupported()) {
+    elements.aiVoiceOutput.disabled = true;
+    elements.aiVoiceOutput.title = "当前浏览器不支持语音播报";
+    if (!elements.aiVoiceStatus.textContent) {
+      setVoiceStatus("此浏览器可能不支持语音播报；仍可使用文字聊天。");
+    }
+  }
+}
+
 function appendChatMessage(message) {
   const bubble = document.createElement("div");
   bubble.className = `chat-message ${message.role}${message.pending ? " is-loading" : ""}`;
   const label = message.role === "user" ? "你" : "AI小导游";
-  bubble.innerHTML = `<strong>${label}</strong><span>${escapeHtml(message.content)}</span>`;
+  const speakButton = message.role === "assistant" && !message.pending
+    ? `<button class="chat-speak" type="button">朗读</button>`
+    : "";
+  bubble.innerHTML = `
+    <div class="chat-message__top">
+      <strong>${label}</strong>
+      ${speakButton}
+    </div>
+    <span>${escapeHtml(message.content)}</span>
+  `;
+  bubble.querySelector(".chat-speak")?.addEventListener("click", () => speakText(message.content));
   elements.aiChatMessages.append(bubble);
   elements.aiChatMessages.scrollTop = elements.aiChatMessages.scrollHeight;
   return bubble;
@@ -789,6 +913,7 @@ async function submitChatQuestion(country) {
     session.suggestions = suggestions;
     loadingBubble.remove();
     renderChat(country);
+    if (voiceOutputEnabled) speakText(answer);
   } catch (error) {
     if (requestId !== chatRequestId || country.id !== state.selectedId) return;
     const message = error.message || "AI 暂时没有回应";
@@ -798,6 +923,7 @@ async function submitChatQuestion(country) {
     });
     loadingBubble.remove();
     renderChat(country);
+    if (voiceOutputEnabled) speakText(session.messages[session.messages.length - 1].content);
   } finally {
     if (requestId === chatRequestId) setChatBusy(false);
   }
@@ -956,16 +1082,35 @@ elements.aiChatOpen.addEventListener("click", () => {
 
 elements.aiChatClose.addEventListener("click", () => {
   setChatOpen(false);
+  if (speechSupported()) window.speechSynthesis.cancel();
 });
 
 elements.jumpMatchButton.addEventListener("click", () => {
   elements.matchRecords.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && chatOpen) {
-    setChatOpen(false);
+elements.aiVoiceInput.addEventListener("click", () => {
+  toggleVoiceInput();
+});
+
+elements.aiVoiceOutput.addEventListener("click", () => {
+  voiceOutputEnabled = !voiceOutputEnabled;
+  elements.aiVoiceOutput.classList.toggle("is-active", voiceOutputEnabled);
+  elements.aiVoiceOutput.setAttribute("aria-pressed", String(voiceOutputEnabled));
+  if (voiceOutputEnabled) {
+    setVoiceStatus("播报已开启，AI 回复会自动朗读。");
+  } else {
+    if (speechSupported()) window.speechSynthesis.cancel();
+    setVoiceStatus("");
   }
 });
 
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && chatOpen) {
+    setChatOpen(false);
+    if (speechSupported()) window.speechSynthesis.cancel();
+  }
+});
+
+initVoiceControls();
 render();
