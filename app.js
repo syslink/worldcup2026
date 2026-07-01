@@ -420,6 +420,29 @@ function scoreForCountry(match, country) {
   return match.penalties ? `${score}，点球 ${penalties}` : score;
 }
 
+function matchStory(match, country) {
+  const opponent = opponentForCountry(match, country);
+  const opponentId = match.homeId === country.id ? match.awayId : match.homeId;
+  const opponentName = countryById(opponentId)?.nameZh || opponent;
+  const result = resultForCountry(match, country);
+  const score = scoreForCountry(match, country);
+  const stage = match.stage;
+
+  if (match.status !== "completed") {
+    return `${stage}待赛：${country.nameZh}将对阵${opponentName}，可以和孩子一起提前找找两国在地图上的位置。`;
+  }
+
+  if (result === "胜") {
+    return `${stage}战报：${country.nameZh}以 ${score} 战胜${opponentName}，这场胜利很适合聊聊“坚持到最后”和团队配合。`;
+  }
+
+  if (result === "负") {
+    return `${stage}战报：${country.nameZh}以 ${score} 不敌${opponentName}，输球也可以成为理解风度、尊重和重新出发的好机会。`;
+  }
+
+  return `${stage}战报：${country.nameZh}与${opponentName}踢成 ${score}，双方都没有轻易让步，平局也很能体现比赛的拉锯感。`;
+}
+
 function renderMatchList(target, matches, country) {
   target.innerHTML = "";
   if (!matches.length) {
@@ -447,6 +470,7 @@ function renderMatchList(target, matches, country) {
         ${teamButtonMarkup(opponentId, opponent, country.id)}
       </div>
       <p>${match.date || "待定"} ${match.time || ""}${match.venue ? ` · ${match.venue}` : ""}</p>
+      <p class="match-story">${matchStory(match, country)}</p>
       <a href="${match.replayUrl}" target="_blank" rel="noopener noreferrer">看重播 / 集锦</a>
     `;
     card.querySelectorAll(".team-jump:not(:disabled)").forEach((button) => {
