@@ -200,6 +200,32 @@ const videoTopicOverrides = {
   turkey: "Turkey country culture history",
   "czech-republic": "Czech Republic culture history"
 };
+const matchStoryOverrides = {
+  73: {
+    canada: "加拿大久攻不下，直到补时第 92 分钟由 Eustáquio 一脚绝杀，艰难跨过南非进入 16 强。",
+    "south-africa": "南非守到最后时刻仍被加拿大绝杀，虽然出局，但这场比赛让孩子看到防守坚持和最后一分钟的残酷。"
+  },
+  74: {
+    brazil: "巴西先落后日本，但下半场靠 Casemiro 扳平，并在第 95 分钟由 Martinelli 绝杀完成逆转。",
+    japan: "日本先取得领先，却在最后时刻被巴西反超，这是一场关于领先、坚持和遗憾的淘汰赛课。"
+  },
+  75: {
+    paraguay: "巴拉圭把德国拖进点球大战，并以 4–3 淘汰这支点球传统强队，制造了本届淘汰赛的大冷门。",
+    germany: "德国没能在 120 分钟解决比赛，点球大战连续失手，延续半个世纪的点球神话在巴拉圭面前终结。"
+  },
+  76: {
+    morocco: "摩洛哥在最后时刻由 Diop 扳平，把比赛拖进点球大战，并靠 Saibari 的关键点球淘汰荷兰。",
+    netherlands: "荷兰一度靠 Gakpo 领先，却在补时被摩洛哥追平，最终倒在混乱而残酷的点球大战中。"
+  },
+  77: {
+    norway: "挪威先靠 Nusa 的个人能力破门，又在被追平后由 Haaland 第 86 分钟打进制胜球，惊险闯入 16 强。",
+    "ivory-coast": "科特迪瓦靠 Diallo 扳平比分并一度看到希望，但最后阶段没能挡住 Haaland 的致命一击。"
+  },
+  78: {
+    france: "法国靠 Mbappé 的两粒进球和 Barcola 的破门 3–0 击败瑞典，展现出强队在淘汰赛中的效率。",
+    sweden: "瑞典努力用防守抵抗法国，但面对 Mbappé 和 Barcola 的连续冲击，最终没能挡住法国的进攻火力。"
+  }
+};
 
 const state = {
   selectedId: countries[0].id,
@@ -421,6 +447,9 @@ function scoreForCountry(match, country) {
 }
 
 function matchStory(match, country) {
+  const override = matchStoryOverrides[match.matchNo]?.[country.id];
+  if (override) return override;
+
   const opponent = opponentForCountry(match, country);
   const opponentId = match.homeId === country.id ? match.awayId : match.homeId;
   const opponentName = countryById(opponentId)?.nameZh || opponent;
