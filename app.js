@@ -258,12 +258,21 @@ const elements = {
   imageCaption: document.querySelector("#imageCaption"),
   photoControls: document.querySelector("#photoControls"),
   memoryText: document.querySelector("#memoryText"),
+  aiChatIntro: document.querySelector("#aiChatIntro"),
+  aiChatMessages: document.querySelector("#aiChatMessages"),
+  aiChatSuggestions: document.querySelector("#aiChatSuggestions"),
+  aiChatForm: document.querySelector("#aiChatForm"),
+  aiChatInput: document.querySelector("#aiChatInput"),
+  aiChatSubmit: document.querySelector("#aiChatSubmit"),
   noteHint: document.querySelector("#noteHint"),
   familyNotes: document.querySelector("#familyNotes")
 };
 
 let imageRequestId = 0;
 let activePhotoIndex = 0;
+let chatRequestId = 0;
+let chatBusy = false;
+const chatSessions = {};
 
 function statusLabel(status) {
   return status === "complete" ? "已完善" : "待扩展";
@@ -356,6 +365,15 @@ function renderList(target, items) {
     li.textContent = item;
     target.append(li);
   });
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
 function externalSearchUrl(query) {
@@ -620,6 +638,155 @@ function renderMatches(country) {
   renderMatchList(elements.knockoutMatchList, knockoutMatches, country);
 }
 
+function initialChatSuggestions(country) {
+  const questions = [
+    `${country.nameZh}最适合小朋友记住的故事是什么？`,
+    `${country.nameZh}的${country.landmark}有什么有趣来历？`,
+    `看${country.nameZh}比赛时，可以顺便聊哪些文化？`,
+    `${country.nameZh}有什么代表性食物适合家庭主题夜？`
+  ];
+  return questions.filter(Boolean).slice(0, 4);
+}
+
+function chatSession(country) {
+  if (!chatSessions[country.id]) {
+    chatSessions[country.id] = {
+      messages: [],
+      suggestions: initialChatSuggestions(country)
+    };
+  }
+  return chatSessions[country.id];
+}
+
+function setChatBusy(isBusy) {
+  chatBusy = isBusy;
+  elements.aiChatSubmit.disabled = isBusy;
+  elements.aiChatInput.disabled = isBusy;
+  elements.aiChatSuggestions.querySelectorAll("button").forEach((button) => {
+    button.disabled = isBusy;
+  });
+}
+
+function appendChatMessage(message) {
+  const bubble = document.createElement("div");
+  bubble.className = `chat-message ${message.role}${message.pending ? " is-loading" : ""}`;
+  const label = message.role === "user" ? "你" : "AI小导游";
+  bubble.innerHTML = `<strong>${label}</strong><span>${escapeHtml(message.content)}</span>`;
+  elements.aiChatMessages.append(bubble);
+  elements.aiChatMessages.scrollTop = elements.aiChatMessages.scrollHeight;
+  return bubble;
+}
+
+function renderChatSuggestions(country, suggestions) {
+  elements.aiChatSuggestions.innerHTML = "";
+  suggestions.slice(0, 4).forEach((question) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = question;
+    button.addEventListener("click", () => {
+      elements.aiChatInput.value = question;
+      submitChatQuestion(country);
+    });
+    elements.aiChatSuggestions.append(button);
+  });
+}
+
+function renderChat(country) {
+  const session = chatSession(country);
+  elements.aiChatIntro.textContent = `和 AI 一起聊${country.nameZh}的历史、人文、食物、足球和旅行画面。`;
+  elements.aiChatMessages.innerHTML = "";
+
+  if (!session.messages.length) {
+    appendChatMessage({
+      role: "assistant",
+      content: `我是${country.nameZh}这一页的 AI 小导游。可以从一个故事、一种食物、一场比赛或一个地标开始聊。`
+    });
+  } else {
+    session.messages.forEach(appendChatMessage);
+  }
+
+  renderChatSuggestions(country, session.suggestions);
+  elements.aiChatInput.value = "";
+  elements.aiChatInput.placeholder = `问问${country.nameZh}的故事、食物、球星或比赛`;
+  setChatBusy(chatBusy);
+}
+
+function countryChatContext(country) {
+  const matches = window.WORLD_CUP_MATCHES?.byCountry?.[country.id] || [];
+  const completed = matches.filter((match) => match.status === "completed");
+  const recentMatches = completed.slice(-4).map((match) => {
+    const opponent = countryById(match.homeId === country.id ? match.awayId : match.homeId)?.nameZh || opponentForCountry(match, country);
+    return `${match.stage}${match.group ? match.group + "组" : ""} 对${opponent} ${scoreForCountry(match, country)} ${resultForCountry(match, country)}`;
+  });
+
+  return {
+    id: country.id,
+    nameZh: country.nameZh,
+    nameEn: country.nameEn,
+    region: country.region,
+    confederation: confederationLabels[country.confederation],
+    capital: country.capital,
+    languages: country.languages,
+    hello: country.hello,
+    landmark: country.landmark,
+    culture: country.culture,
+    food: country.food,
+    footballStyle: country.footballStyle,
+    values: country.values,
+    memory: memoryStories[country.id] || "",
+    recentMatches
+  };
+}
+
+async function submitChatQuestion(country) {
+  const content = elements.aiChatInput.value.trim();
+  if (!content || chatBusy) return;
+
+  const requestId = ++chatRequestId;
+  const session = chatSession(country);
+  session.messages.push({ role: "user", content });
+  elements.aiChatInput.value = "";
+  renderChat(country);
+  const loadingBubble = appendChatMessage({ role: "assistant", content: "正在想一个适合孩子听的说法...", pending: true });
+  setChatBusy(true);
+
+  try {
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        country: countryChatContext(country),
+        messages: session.messages.slice(-8)
+      })
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      throw new Error(data.error || "AI 暂时没有回应");
+    }
+    if (requestId !== chatRequestId || country.id !== state.selectedId) return;
+    const answer = data.answer || "我还没组织好答案，可以换个问法再试一次。";
+    const suggestions = Array.isArray(data.suggestions) && data.suggestions.length
+      ? data.suggestions.slice(0, 4)
+      : initialChatSuggestions(country);
+
+    session.messages.push({ role: "assistant", content: answer });
+    session.suggestions = suggestions;
+    loadingBubble.remove();
+    renderChat(country);
+  } catch (error) {
+    if (requestId !== chatRequestId || country.id !== state.selectedId) return;
+    const message = error.message || "AI 暂时没有回应";
+    session.messages.push({
+      role: "assistant",
+      content: `${message}。可以稍后再试，或先点下面的问题继续探索。`
+    });
+    loadingBubble.remove();
+    renderChat(country);
+  } finally {
+    if (requestId === chatRequestId) setChatBusy(false);
+  }
+}
+
 function getImageItems(country) {
   const topics = imageTopics[country.id] || country.nameEn;
   const items = Array.isArray(topics) ? topics : [[country.landmark, topics]];
@@ -733,6 +900,7 @@ function renderCountryDetail() {
 
   renderVideoLinks(country);
   renderMatches(country);
+  renderChat(country);
 
   elements.noteHint.textContent = `${country.nameZh}这一页可以写：一句当地问候语、一个球员故事、一种食物、一个想问当地小朋友的问题。`;
   elements.familyNotes.value = savedNote;
@@ -756,6 +924,12 @@ elements.searchInput.addEventListener("input", (event) => {
   }
   renderCountryList();
   renderCountryDetail();
+});
+
+elements.aiChatForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const country = countries.find((item) => item.id === state.selectedId) || countries[0];
+  submitChatQuestion(country);
 });
 
 render();
