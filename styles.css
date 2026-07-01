@@ -819,6 +819,24 @@ ul {
   text-decoration: none;
 }
 
+.match-card .match-story .goal-link {
+  width: auto;
+  min-height: 0;
+  display: inline;
+  padding: 1px 3px;
+  border-radius: 4px;
+  background: rgba(23, 92, 74, 0.1);
+  color: #145d4d;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.match-card .match-story .goal-link:hover {
+  background: rgba(23, 92, 74, 0.18);
+  color: #0c493b;
+}
+
 .result-胜 {
   border-color: rgba(45, 138, 131, 0.42);
   background: #f5fbf8;

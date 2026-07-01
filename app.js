@@ -202,28 +202,28 @@ const videoTopicOverrides = {
 };
 const matchStoryOverrides = {
   73: {
-    canada: "加拿大久攻不下，直到补时第 92 分钟由 Eustáquio 一脚绝杀，艰难跨过南非进入 16 强。",
-    "south-africa": "南非守到最后时刻仍被加拿大绝杀，虽然出局，但这场比赛让孩子看到防守坚持和最后一分钟的残酷。"
+    canada: "加拿大久攻不下，直到 Eustáquio 90+2' 一脚绝杀，艰难跨过南非进入 16 强。",
+    "south-africa": "南非守到最后时刻仍被 Eustáquio 90+2' 绝杀，虽然出局，但这场比赛让孩子看到防守坚持和最后一分钟的残酷。"
   },
   74: {
-    brazil: "巴西先落后日本，但下半场靠 Casemiro 扳平，并在第 95 分钟由 Martinelli 绝杀完成逆转。",
-    japan: "日本先取得领先，却在最后时刻被巴西反超，这是一场关于领先、坚持和遗憾的淘汰赛课。"
+    brazil: "巴西先被日本的 Sano 29' 打开局面，但下半场靠 Casemiro 56' 扳平，并由 Martinelli 90+5' 绝杀完成逆转。",
+    japan: "日本靠 Sano 29' 先取得领先，却被 Casemiro 56' 扳平，又在最后时刻被 Martinelli 90+5' 反超。"
   },
   75: {
-    paraguay: "巴拉圭把德国拖进点球大战，并以 4–3 淘汰这支点球传统强队，制造了本届淘汰赛的大冷门。",
-    germany: "德国没能在 120 分钟解决比赛，点球大战连续失手，延续半个世纪的点球神话在巴拉圭面前终结。"
+    paraguay: "巴拉圭先靠 Enciso 42' 领先，被 Havertz 54' 扳平后仍把德国拖进点球大战，并以 4–3 制造大冷门。",
+    germany: "德国靠 Havertz 54' 追平 Enciso 42' 的进球，但没能在 120 分钟解决比赛，最终倒在点球大战。"
   },
   76: {
-    morocco: "摩洛哥在最后时刻由 Diop 扳平，把比赛拖进点球大战，并靠 Saibari 的关键点球淘汰荷兰。",
-    netherlands: "荷兰一度靠 Gakpo 领先，却在补时被摩洛哥追平，最终倒在混乱而残酷的点球大战中。"
+    morocco: "摩洛哥在被 Gakpo 72' 领先后没有放弃，最后时刻由 Diop 90+1' 扳平，并靠点球大战淘汰荷兰。",
+    netherlands: "荷兰一度靠 Gakpo 72' 领先，却在补时被 Diop 90+1' 追平，最终倒在混乱而残酷的点球大战中。"
   },
   77: {
-    norway: "挪威先靠 Nusa 的个人能力破门，又在被追平后由 Haaland 第 86 分钟打进制胜球，惊险闯入 16 强。",
-    "ivory-coast": "科特迪瓦靠 Diallo 扳平比分并一度看到希望，但最后阶段没能挡住 Haaland 的致命一击。"
+    norway: "挪威先靠 Nusa 39' 破门，又在被 Diallo 74' 追平后由 Haaland 86' 打进制胜球，惊险闯入 16 强。",
+    "ivory-coast": "科特迪瓦靠 Diallo 74' 扳平比分并一度看到希望，但最后阶段没能挡住 Haaland 86' 的致命一击。"
   },
   78: {
-    france: "法国靠 Mbappé 的两粒进球和 Barcola 的破门 3–0 击败瑞典，展现出强队在淘汰赛中的效率。",
-    sweden: "瑞典努力用防守抵抗法国，但面对 Mbappé 和 Barcola 的连续冲击，最终没能挡住法国的进攻火力。"
+    france: "法国靠 Mbappé 45', 74' 的两粒进球和 Barcola 53' 的破门 3–0 击败瑞典，展现出强队在淘汰赛中的效率。",
+    sweden: "瑞典努力用防守抵抗法国，但面对 Mbappé 45', 74' 和 Barcola 53' 的连续冲击，最终没能挡住法国的进攻火力。"
   }
 };
 
@@ -452,10 +452,26 @@ function goalMinute(goal) {
   return Number(match[1]) + (match[2] ? Number(match[2]) / 100 : 0);
 }
 
-function goalListText(goals) {
+function goalSearchUrl(match, goal) {
+  const cleanGoal = goal.replace(/\s*\([^)]*\)/g, "").trim();
+  return externalSearchUrl(`${match.home} vs ${match.away} ${cleanGoal} goal 2026 FIFA World Cup highlights`);
+}
+
+function goalLinkMarkup(match, goal) {
+  return `<a class="goal-link" href="${goalSearchUrl(match, goal)}" target="_blank" rel="noopener noreferrer" title="在 YouTube 搜索这个进球片段">${goal}</a>`;
+}
+
+function goalListHtml(match, goals) {
   if (!goals?.length) return "";
-  if (goals.length === 1) return goals[0];
-  return `${goals.slice(0, -1).join("、")}和${goals[goals.length - 1]}`;
+  const linkedGoals = goals.map((goal) => goalLinkMarkup(match, goal));
+  if (linkedGoals.length === 1) return linkedGoals[0];
+  return `${linkedGoals.slice(0, -1).join("、")}和${linkedGoals[linkedGoals.length - 1]}`;
+}
+
+function linkStoryGoals(story, match) {
+  return [...(match.homeGoals || []), ...(match.awayGoals || [])]
+    .sort((a, b) => b.length - a.length)
+    .reduce((linkedStory, goal) => linkedStory.split(goal).join(goalLinkMarkup(match, goal)), story);
 }
 
 function sideGoals(match, country) {
@@ -475,8 +491,8 @@ function firstScoringSide(match) {
 function detailedMatchStory(match, country, opponentName, result, score, stage) {
   const ownGoals = sideGoals(match, country);
   const againstGoals = opponentGoals(match, country);
-  const ownText = goalListText(ownGoals);
-  const againstText = goalListText(againstGoals);
+  const ownText = goalListHtml(match, ownGoals);
+  const againstText = goalListHtml(match, againstGoals);
   const ownSide = match.homeId === country.id ? "home" : "away";
   const firstSide = firstScoringSide(match);
   const ledFirst = firstSide === ownSide;
@@ -518,7 +534,7 @@ function detailedMatchStory(match, country, opponentName, result, score, stage) 
 
 function matchStory(match, country) {
   const override = matchStoryOverrides[match.matchNo]?.[country.id];
-  if (override) return override;
+  if (override) return linkStoryGoals(override, match);
 
   const opponent = opponentForCountry(match, country);
   const opponentId = match.homeId === country.id ? match.awayId : match.homeId;
