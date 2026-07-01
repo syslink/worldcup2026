@@ -8,6 +8,7 @@ const confederationLabels = {
   UEFA: "欧洲足联"
 };
 const confederations = ["全部", ...Object.keys(confederationLabels)];
+const speechRecognitionLang = "zh-CN";
 const imageTopics = {
   brazil: [
     ["亚马逊雨林", "Amazon rainforest"],
@@ -728,14 +729,14 @@ function initSpeechRecognition() {
   }
 
   recognition = new Recognition();
-  recognition.lang = "zh-CN";
+  recognition.lang = speechRecognitionLang;
   recognition.interimResults = true;
   recognition.continuous = false;
 
   recognition.onstart = () => {
     isListening = true;
     elements.aiVoiceInput.classList.add("is-active");
-    setVoiceStatus("正在听你说话，说完会填入输入框，请确认后手动发送。", true);
+    setVoiceStatus("正在用简体中文识别你说的话，说完会填入输入框，请确认后手动发送。", true);
   };
 
   recognition.onresult = (event) => {
