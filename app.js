@@ -285,6 +285,7 @@ let chatOpen = false;
 let voiceOutputEnabled = false;
 let recognition = null;
 let isListening = false;
+let activeSpeechAudio = null;
 const chatSessions = {};
 
 function statusLabel(status) {
@@ -696,27 +697,41 @@ function setVoiceStatus(message = "", isListeningNow = false) {
   elements.aiVoiceStatus.classList.toggle("is-listening", isListeningNow);
 }
 
-function speechSupported() {
-  return "speechSynthesis" in window && typeof SpeechSynthesisUtterance !== "undefined";
+function stopSpeechAudio() {
+  if (!activeSpeechAudio) return;
+  activeSpeechAudio.pause();
+  activeSpeechAudio.currentTime = 0;
+  activeSpeechAudio = null;
 }
 
-function speakText(text) {
-  if (!speechSupported() || !text) {
-    setVoiceStatus("当前浏览器不支持语音播报，可以继续使用文字聊天。");
-    return;
+async function speakText(text) {
+  if (!text) return;
+  stopSpeechAudio();
+  setVoiceStatus("正在准备 OpenAI 语音...");
+  try {
+    const response = await fetch("/api/speech", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text })
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok || !data.url) {
+      throw new Error(data.error || "语音生成失败");
+    }
+    activeSpeechAudio = new Audio(data.url);
+    activeSpeechAudio.onplay = () => setVoiceStatus(data.cached ? "正在播放已缓存的 OpenAI 语音..." : "正在播放 OpenAI 语音...");
+    activeSpeechAudio.onended = () => {
+      activeSpeechAudio = null;
+      setVoiceStatus(voiceOutputEnabled ? "播报已开启，AI 回复会自动朗读。" : "");
+    };
+    activeSpeechAudio.onerror = () => {
+      activeSpeechAudio = null;
+      setVoiceStatus("音频播放失败，可以再点一次“朗读”。");
+    };
+    await activeSpeechAudio.play();
+  } catch (error) {
+    setVoiceStatus(error.message || "语音服务暂时不可用，请稍后再试。");
   }
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "zh-CN";
-  utterance.rate = 0.95;
-  utterance.pitch = 1;
-  const voices = window.speechSynthesis.getVoices?.() || [];
-  const chineseVoice = voices.find((voice) => voice.lang?.toLowerCase().startsWith("zh"));
-  if (chineseVoice) utterance.voice = chineseVoice;
-  utterance.onstart = () => setVoiceStatus("正在播报 AI 小导游的回答...");
-  utterance.onend = () => setVoiceStatus(voiceOutputEnabled ? "播报已开启，AI 回复会自动朗读。" : "");
-  utterance.onerror = () => setVoiceStatus("语音播报被浏览器打断了，可以点单条回答旁的“朗读”再试。");
-  window.speechSynthesis.speak(utterance);
 }
 
 function initSpeechRecognition() {
@@ -789,13 +804,6 @@ function toggleVoiceInput() {
 
 function initVoiceControls() {
   initSpeechRecognition();
-  if (!speechSupported()) {
-    elements.aiVoiceOutput.disabled = true;
-    elements.aiVoiceOutput.title = "当前浏览器不支持语音播报";
-    if (!elements.aiVoiceStatus.textContent) {
-      setVoiceStatus("此浏览器可能不支持语音播报；仍可使用文字聊天。");
-    }
-  }
 }
 
 function appendChatMessage(message) {
@@ -888,7 +896,7 @@ async function submitChatQuestion(country) {
   session.messages.push({ role: "user", content });
   elements.aiChatInput.value = "";
   renderChat(country);
-  const loadingBubble = appendChatMessage({ role: "assistant", content: "正在想一个适合孩子听的说法...", pending: true });
+  const loadingBubble = appendChatMessage({ role: "assistant", content: "正在整理一个清楚好记的说法...", pending: true });
   setChatBusy(true);
 
   try {
@@ -1083,7 +1091,7 @@ elements.aiChatOpen.addEventListener("click", () => {
 
 elements.aiChatClose.addEventListener("click", () => {
   setChatOpen(false);
-  if (speechSupported()) window.speechSynthesis.cancel();
+  stopSpeechAudio();
 });
 
 elements.jumpMatchButton.addEventListener("click", () => {
@@ -1101,7 +1109,7 @@ elements.aiVoiceOutput.addEventListener("click", () => {
   if (voiceOutputEnabled) {
     setVoiceStatus("播报已开启，AI 回复会自动朗读。");
   } else {
-    if (speechSupported()) window.speechSynthesis.cancel();
+    stopSpeechAudio();
     setVoiceStatus("");
   }
 });
@@ -1109,7 +1117,7 @@ elements.aiVoiceOutput.addEventListener("click", () => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && chatOpen) {
     setChatOpen(false);
-    if (speechSupported()) window.speechSynthesis.cancel();
+    stopSpeechAudio();
   }
 });
 
