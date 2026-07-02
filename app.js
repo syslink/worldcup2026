@@ -9,6 +9,36 @@ const confederationLabels = {
 };
 const confederations = ["全部", ...Object.keys(confederationLabels)];
 const speechRecognitionLang = "zh-CN";
+const helloSpeechLocales = {
+  "葡萄牙语": "pt-PT",
+  "西班牙语": "es-ES",
+  "阿拉伯语": "ar-SA",
+  "阿马齐格语": "ar-SA",
+  "法语": "fr-FR",
+  "日语": "ja-JP",
+  "英语": "en-US",
+  "毛利语": "mi-NZ",
+  "波斯语": "fa-IR",
+  "乌兹别克语": "uz-UZ",
+  "韩语": "ko-KR",
+  "瓜拉尼语": "gn-PY",
+  "沃洛夫语": "wo-SN",
+  "荷兰语": "nl-NL",
+  "海地克里奥尔语": "fr-FR",
+  "克里奥尔语": "pt-PT",
+  "德语": "de-DE",
+  "克罗地亚语": "hr-HR",
+  "挪威语": "nb-NO",
+  "瑞典语": "sv-SE",
+  "土耳其语": "tr-TR",
+  "捷克语": "cs-CZ",
+  "帕皮阿门托语": "nl-NL",
+  "波斯尼亚语": "bs-BA",
+  "塞尔维亚语": "sr-RS",
+  "林加拉语等": "fr-FR",
+  "库尔德语": "ku-TR",
+  "多种官方语言": "en-ZA"
+};
 const imageTopics = {
   brazil: [
     ["亚马逊雨林", "Amazon rainforest"],
@@ -391,6 +421,38 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+}
+
+function helloLocale(country) {
+  const languageText = country.languages.join(" / ");
+  const matchedLanguage = Object.keys(helloSpeechLocales)
+    .sort((a, b) => b.length - a.length)
+    .find((language) => languageText.includes(language));
+  return matchedLanguage ? helloSpeechLocales[matchedLanguage] : "en-US";
+}
+
+function pickSpeechVoice(locale) {
+  const voices = window.speechSynthesis?.getVoices?.() || [];
+  const normalized = locale.toLowerCase();
+  return voices.find((voice) => voice.lang?.toLowerCase() === normalized)
+    || voices.find((voice) => voice.lang?.toLowerCase().startsWith(normalized.split("-")[0]))
+    || null;
+}
+
+function speakHello(country) {
+  if (!("speechSynthesis" in window) || typeof SpeechSynthesisUtterance === "undefined") {
+    elements.hello.title = "当前浏览器不支持内置语音朗读";
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const locale = helloLocale(country);
+  const utterance = new SpeechSynthesisUtterance(country.hello);
+  utterance.lang = locale;
+  utterance.rate = 0.95;
+  utterance.pitch = 1;
+  const voice = pickSpeechVoice(locale);
+  if (voice) utterance.voice = voice;
+  window.speechSynthesis.speak(utterance);
 }
 
 function externalSearchUrl(query) {
@@ -1110,6 +1172,17 @@ function renderCountryDetail() {
   elements.capital.textContent = country.capital;
   elements.languages.textContent = country.languages.join(" / ");
   elements.hello.textContent = country.hello;
+  elements.hello.classList.add("hello-speak");
+  elements.hello.setAttribute("role", "button");
+  elements.hello.setAttribute("tabindex", "0");
+  elements.hello.setAttribute("title", `点击朗读：${country.hello}`);
+  elements.hello.onclick = () => speakHello(country);
+  elements.hello.onkeydown = (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      speakHello(country);
+    }
+  };
   elements.flagColors.textContent = country.flagColors;
   renderList(elements.cultureList, [country.landmark, ...country.culture].filter(Boolean));
   renderList(elements.themeList, [...country.food, `景点：${country.landmark}`, `问候语：${country.hello}`]);

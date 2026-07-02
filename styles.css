@@ -631,6 +631,32 @@ img.mini-flag {
   overflow-wrap: anywhere;
 }
 
+.quick-card strong.hello-speak {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: 8px;
+  background: #eef8f3;
+  color: var(--green);
+  cursor: pointer;
+}
+
+.quick-card strong.hello-speak::after {
+  content: "朗读";
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.quick-card strong.hello-speak:hover,
+.quick-card strong.hello-speak:focus-visible {
+  outline: 2px solid rgba(45, 138, 131, 0.32);
+  outline-offset: 2px;
+  background: #e3f3ec;
+}
+
 .detail-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
