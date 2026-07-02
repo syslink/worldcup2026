@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-01",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-02; latest knockout results patched from match reports",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
@@ -2035,14 +2035,17 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "mexico",
       "away": "Ecuador",
       "awayId": "ecuador",
-      "score": "",
-      "homeGoals": [],
+      "score": "2–0",
+      "homeGoals": [
+        "Quiñones 22'",
+        "Jiménez 31'"
+      ],
       "awayGoals": [],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+Ecuador+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m80",
@@ -2057,18 +2060,23 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "england",
       "away": "DR Congo",
       "awayId": "dr-congo",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "2–1",
+      "homeGoals": [
+        "Kane 75'",
+        "Kane 86'"
+      ],
+      "awayGoals": [
+        "Cipenga 7'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=England+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m81",
-      "matchNo": 82,
+      "matchNo": 81,
       "stageType": "knockout",
       "stage": "32强淘汰赛",
       "group": null,
@@ -2079,18 +2087,25 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "belgium",
       "away": "Senegal",
       "awayId": "senegal",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "3–2 ( a.e.t. )",
+      "homeGoals": [
+        "Lukaku 86'",
+        "Tielemans 89'",
+        "Tielemans 120+5' (pen.)"
+      ],
+      "awayGoals": [
+        "Diarra 24'",
+        "I. Sarr 51'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m82",
-      "matchNo": 81,
+      "matchNo": 82,
       "stageType": "knockout",
       "stage": "32强淘汰赛",
       "group": null,
@@ -2101,14 +2116,17 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "united-states",
       "away": "Bosnia and Herzegovina",
       "awayId": "bosnia",
-      "score": "",
-      "homeGoals": [],
+      "score": "2–0",
+      "homeGoals": [
+        "Balogun 44'",
+        "Tillman 82'"
+      ],
       "awayGoals": [],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m83",
@@ -2317,16 +2335,16 @@ window.WORLD_CUP_MATCHES = {
       "date": "2026-07-05",
       "time": "6:00 p.m. UTC−6",
       "venue": "Estadio Azteca , Mexico City",
-      "home": "Winner Match 79",
-      "homeId": "winner-match-79",
-      "away": "Winner Match 80",
-      "awayId": "winner-match-80",
+      "home": "Mexico",
+      "homeId": "mexico",
+      "away": "England",
+      "awayId": "england",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+79+vs+Winner+Match+80+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -2361,16 +2379,16 @@ window.WORLD_CUP_MATCHES = {
       "date": "2026-07-06",
       "time": "5:00 p.m. UTC−7",
       "venue": "Lumen Field , Seattle",
-      "home": "Winner Match 81",
-      "homeId": "winner-match-81",
-      "away": "Winner Match 82",
-      "awayId": "winner-match-82",
+      "home": "Belgium",
+      "homeId": "belgium",
+      "away": "United States",
+      "awayId": "united-states",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+81+vs+Winner+Match+82+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+United+States+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -2685,12 +2703,37 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "mexico",
         "away": "Ecuador",
         "awayId": "ecuador",
+        "score": "2–0",
+        "homeGoals": [
+          "Quiñones 22'",
+          "Jiménez 31'"
+        ],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+Ecuador+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m92",
+        "matchNo": 92,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-05",
+        "time": "6:00 p.m. UTC−6",
+        "venue": "Estadio Azteca , Mexico City",
+        "home": "Mexico",
+        "homeId": "mexico",
+        "away": "England",
+        "awayId": "england",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+Ecuador+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -3163,7 +3206,7 @@ window.WORLD_CUP_MATCHES = {
       },
       {
         "id": "m82",
-        "matchNo": 81,
+        "matchNo": 82,
         "stageType": "knockout",
         "stage": "32强淘汰赛",
         "group": null,
@@ -3174,14 +3217,17 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "united-states",
         "away": "Bosnia and Herzegovina",
         "awayId": "bosnia",
-        "score": "",
-        "homeGoals": [],
+        "score": "2–0",
+        "homeGoals": [
+          "Balogun 44'",
+          "Tillman 82'"
+        ],
         "awayGoals": [],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "qatar": [
@@ -3870,7 +3916,7 @@ window.WORLD_CUP_MATCHES = {
       },
       {
         "id": "m82",
-        "matchNo": 81,
+        "matchNo": 82,
         "stageType": "knockout",
         "stage": "32强淘汰赛",
         "group": null,
@@ -3881,12 +3927,37 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "united-states",
         "away": "Bosnia and Herzegovina",
         "awayId": "bosnia",
+        "score": "2–0",
+        "homeGoals": [
+          "Balogun 44'",
+          "Tillman 82'"
+        ],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m94",
+        "matchNo": 94,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-06",
+        "time": "5:00 p.m. UTC−7",
+        "venue": "Lumen Field , Seattle",
+        "home": "Belgium",
+        "homeId": "belgium",
+        "away": "United States",
+        "awayId": "united-states",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=United+States+vs+Bosnia+and+Herzegovina+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+United+States+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -4572,14 +4643,17 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "mexico",
         "away": "Ecuador",
         "awayId": "ecuador",
-        "score": "",
-        "homeGoals": [],
+        "score": "2–0",
+        "homeGoals": [
+          "Quiñones 22'",
+          "Jiménez 31'"
+        ],
         "awayGoals": [],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+Ecuador+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "netherlands": [
@@ -5078,7 +5152,7 @@ window.WORLD_CUP_MATCHES = {
       },
       {
         "id": "m81",
-        "matchNo": 82,
+        "matchNo": 81,
         "stageType": "knockout",
         "stage": "32强淘汰赛",
         "group": null,
@@ -5089,12 +5163,41 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "belgium",
         "away": "Senegal",
         "awayId": "senegal",
+        "score": "3–2 ( a.e.t. )",
+        "homeGoals": [
+          "Lukaku 86'",
+          "Tielemans 89'",
+          "Tielemans 120+5' (pen.)"
+        ],
+        "awayGoals": [
+          "Diarra 24'",
+          "I. Sarr 51'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m94",
+        "matchNo": 94,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-06",
+        "time": "5:00 p.m. UTC−7",
+        "venue": "Lumen Field , Seattle",
+        "home": "Belgium",
+        "homeId": "belgium",
+        "away": "United States",
+        "awayId": "united-states",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+United+States+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -5921,7 +6024,7 @@ window.WORLD_CUP_MATCHES = {
       },
       {
         "id": "m81",
-        "matchNo": 82,
+        "matchNo": 81,
         "stageType": "knockout",
         "stage": "32强淘汰赛",
         "group": null,
@@ -5932,14 +6035,21 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "belgium",
         "away": "Senegal",
         "awayId": "senegal",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "3–2 ( a.e.t. )",
+        "homeGoals": [
+          "Lukaku 86'",
+          "Tielemans 89'",
+          "Tielemans 120+5' (pen.)"
+        ],
+        "awayGoals": [
+          "Diarra 24'",
+          "I. Sarr 51'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+Senegal+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "iraq": [
@@ -6736,14 +6846,19 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "england",
         "away": "DR Congo",
         "awayId": "dr-congo",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "2–1",
+        "homeGoals": [
+          "Kane 75'",
+          "Kane 86'"
+        ],
+        "awayGoals": [
+          "Cipenga 7'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=England+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "uzbekistan": [
@@ -7018,12 +7133,39 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "england",
         "away": "DR Congo",
         "awayId": "dr-congo",
+        "score": "2–1",
+        "homeGoals": [
+          "Kane 75'",
+          "Kane 86'"
+        ],
+        "awayGoals": [
+          "Cipenga 7'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=England+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m92",
+        "matchNo": 92,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-05",
+        "time": "6:00 p.m. UTC−6",
+        "venue": "Estadio Azteca , Mexico City",
+        "home": "Mexico",
+        "homeId": "mexico",
+        "away": "England",
+        "awayId": "england",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=England+vs+DR+Congo+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -7304,54 +7446,6 @@ window.WORLD_CUP_MATCHES = {
         "awayResult": "胜"
       }
     ],
-    "winner-match-79": [
-      {
-        "id": "m92",
-        "matchNo": 92,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-05",
-        "time": "6:00 p.m. UTC−6",
-        "venue": "Estadio Azteca , Mexico City",
-        "home": "Winner Match 79",
-        "homeId": "winner-match-79",
-        "away": "Winner Match 80",
-        "awayId": "winner-match-80",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+79+vs+Winner+Match+80+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-80": [
-      {
-        "id": "m92",
-        "matchNo": 92,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-05",
-        "time": "6:00 p.m. UTC−6",
-        "venue": "Estadio Azteca , Mexico City",
-        "home": "Winner Match 79",
-        "homeId": "winner-match-79",
-        "away": "Winner Match 80",
-        "awayId": "winner-match-80",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+79+vs+Winner+Match+80+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
     "winner-match-83": [
       {
         "id": "m93",
@@ -7396,54 +7490,6 @@ window.WORLD_CUP_MATCHES = {
         "penalties": "",
         "status": "scheduled",
         "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Winner+Match+84+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-81": [
-      {
-        "id": "m94",
-        "matchNo": 94,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-06",
-        "time": "5:00 p.m. UTC−7",
-        "venue": "Lumen Field , Seattle",
-        "home": "Winner Match 81",
-        "homeId": "winner-match-81",
-        "away": "Winner Match 82",
-        "awayId": "winner-match-82",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+81+vs+Winner+Match+82+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-82": [
-      {
-        "id": "m94",
-        "matchNo": 94,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-06",
-        "time": "5:00 p.m. UTC−7",
-        "venue": "Lumen Field , Seattle",
-        "home": "Winner Match 81",
-        "homeId": "winner-match-81",
-        "away": "Winner Match 82",
-        "awayId": "winner-match-82",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+81+vs+Winner+Match+82+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }

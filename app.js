@@ -243,6 +243,7 @@ const elements = {
   detailRegion: document.querySelector("#detailRegion"),
   detailName: document.querySelector("#detailName"),
   detailStatus: document.querySelector("#detailStatus"),
+  latestMatchList: document.querySelector("#latestMatchList"),
   capital: document.querySelector("#capital"),
   languages: document.querySelector("#languages"),
   hello: document.querySelector("#hello"),
@@ -455,6 +456,18 @@ function countryById(id) {
   return countries.find((item) => item.id === id);
 }
 
+function selectCountry(countryId, shouldScroll = true) {
+  if (!countryById(countryId)) return;
+  state.selectedId = countryId;
+  state.query = "";
+  elements.searchInput.value = "";
+  renderCountryList();
+  renderCountryDetail();
+  if (shouldScroll) {
+    document.querySelector(".country-detail").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
 function teamButtonMarkup(teamId, teamName, currentCountryId) {
   const team = countryById(teamId);
   const label = team?.nameZh || teamName;
@@ -628,15 +641,55 @@ function renderMatchList(target, matches, country) {
     `;
     card.querySelectorAll(".team-jump:not(:disabled)").forEach((button) => {
       button.addEventListener("click", () => {
-        state.selectedId = button.dataset.countryId;
-        state.query = "";
-        elements.searchInput.value = "";
-        renderCountryList();
-        renderCountryDetail();
-        document.querySelector(".country-detail").scrollIntoView({ behavior: "smooth", block: "start" });
+        selectCountry(button.dataset.countryId);
       });
     });
     target.append(card);
+  });
+}
+
+function latestCompletedMatches(limit = 4) {
+  return (window.WORLD_CUP_MATCHES?.matches || [])
+    .filter((match) => match.status === "completed" && match.stageType === "knockout")
+    .sort((a, b) => {
+      const dateCompare = String(b.date || "").localeCompare(String(a.date || ""));
+      return dateCompare || b.matchNo - a.matchNo;
+    })
+    .slice(0, limit);
+}
+
+function latestTeamButton(match, side) {
+  const teamId = match[`${side}Id`];
+  const teamName = match[side];
+  const team = countryById(teamId);
+  return `
+    <button class="latest-team" type="button" data-country-id="${teamId}" ${team ? "" : "disabled"}>
+      ${team ? flagMarkup(team, "latest-flag") : ""}
+      <span>${team?.nameZh || teamName}</span>
+    </button>
+  `;
+}
+
+function renderLatestMatches() {
+  elements.latestMatchList.innerHTML = "";
+  latestCompletedMatches().forEach((match) => {
+    const item = document.createElement("article");
+    item.className = "latest-match";
+    item.innerHTML = `
+      <div class="latest-match__meta">
+        <span>${match.stage}</span>
+        <strong>${match.date}</strong>
+      </div>
+      <div class="latest-match__score">
+        ${latestTeamButton(match, "home")}
+        <strong>${match.score}</strong>
+        ${latestTeamButton(match, "away")}
+      </div>
+    `;
+    item.querySelectorAll(".latest-team:not(:disabled)").forEach((button) => {
+      button.addEventListener("click", () => selectCountry(button.dataset.countryId));
+    });
+    elements.latestMatchList.append(item);
   });
 }
 
@@ -1084,6 +1137,7 @@ function render() {
   renderFilters();
   renderCountryList();
   renderCountryDetail();
+  renderLatestMatches();
 }
 
 elements.searchInput.addEventListener("input", (event) => {

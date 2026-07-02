@@ -1,5 +1,6 @@
 import json
 import re
+from datetime import date as today
 from pathlib import Path
 
 from bs4 import BeautifulSoup
@@ -23,6 +24,60 @@ TEAM_ALIASES = {
     "South Africa": "south-africa",
     "South Korea": "south-korea",
     "United States": "united-states",
+}
+
+MANUAL_MATCH_UPDATES = {
+    79: {
+        "score": "2–0",
+        "homeGoals": ["Quiñones 22'", "Jiménez 31'"],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
+    80: {
+        "score": "2–1",
+        "homeGoals": ["Kane 75'", "Kane 86'"],
+        "awayGoals": ["Cipenga 7'"],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
+    81: {
+        "score": "3–2 ( a.e.t. )",
+        "homeGoals": ["Lukaku 86'", "Tielemans 89'", "Tielemans 120+5' (pen.)"],
+        "awayGoals": ["Diarra 24'", "I. Sarr 51'"],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
+    82: {
+        "score": "2–0",
+        "homeGoals": ["Balogun 44'", "Tillman 82'"],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
+}
+
+MANUAL_TEAM_REPLACEMENTS = {
+    92: {
+        "home": "Mexico",
+        "homeId": "mexico",
+        "away": "England",
+        "awayId": "england",
+    },
+    94: {
+        "home": "Belgium",
+        "homeId": "belgium",
+        "away": "United States",
+        "awayId": "united-states",
+    },
 }
 
 
@@ -168,6 +223,13 @@ def main():
         match["awayResult"] = outcome_for(away, home, away, score, penalties, match["status"], stage_type)
         matches.append(match)
 
+    for match in matches:
+        if match["matchNo"] in MANUAL_MATCH_UPDATES:
+            match.update(MANUAL_MATCH_UPDATES[match["matchNo"]])
+        if match["matchNo"] in MANUAL_TEAM_REPLACEMENTS:
+            match.update(MANUAL_TEAM_REPLACEMENTS[match["matchNo"]])
+            match["replayUrl"] = replay_url(match["home"], match["away"], match["date"])
+
     grouped = {}
     for match in matches:
         for side in ["home", "away"]:
@@ -175,7 +237,7 @@ def main():
             grouped.setdefault(team_id, []).append(match)
 
     output = {
-        "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-01",
+        "source": f"Wikipedia 2026 FIFA World Cup page, fetched {today.today().isoformat()}; latest knockout results patched from match reports",
         "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
         "matches": matches,
         "byCountry": grouped,
