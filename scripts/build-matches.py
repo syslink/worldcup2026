@@ -63,6 +63,15 @@ MANUAL_MATCH_UPDATES = {
         "homeResult": "胜",
         "awayResult": "负",
     },
+    84: {
+        "score": "3–0",
+        "homeGoals": ["Oyarzabal 36'", "Pedro Porro 66'", "Oyarzabal 89'"],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
 }
 
 MANUAL_TEAM_REPLACEMENTS = {
@@ -78,6 +87,15 @@ MANUAL_TEAM_REPLACEMENTS = {
         "away": "United States",
         "awayId": "united-states",
     },
+    93: {
+        "away": "Spain",
+        "awayId": "spain",
+    },
+}
+
+MANUAL_MATCH_NUMBERS = {
+    ("Portugal", "Croatia"): 83,
+    ("Spain", "Austria"): 84,
 }
 
 
@@ -219,6 +237,8 @@ def main():
             "status": "completed" if completed else "scheduled",
             "replayUrl": replay_url(home, away, iso_date or date),
         }
+        if (home, away) in MANUAL_MATCH_NUMBERS:
+            match["matchNo"] = MANUAL_MATCH_NUMBERS[(home, away)]
         match["homeResult"] = outcome_for(home, home, away, score, penalties, match["status"], stage_type)
         match["awayResult"] = outcome_for(away, home, away, score, penalties, match["status"], stage_type)
         matches.append(match)

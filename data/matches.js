@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-02; latest knockout results patched from match reports",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-03; latest knockout results patched from match reports",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
@@ -2141,14 +2141,18 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "spain",
       "away": "Austria",
       "awayId": "austria",
-      "score": "",
-      "homeGoals": [],
+      "score": "3–0",
+      "homeGoals": [
+        "Oyarzabal 36'",
+        "Pedro Porro 66'",
+        "Oyarzabal 89'"
+      ],
       "awayGoals": [],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m84",
@@ -2359,14 +2363,14 @@ window.WORLD_CUP_MATCHES = {
       "venue": "AT&T Stadium , Arlington",
       "home": "Winner Match 83",
       "homeId": "winner-match-83",
-      "away": "Winner Match 84",
-      "awayId": "winner-match-84",
+      "away": "Spain",
+      "awayId": "spain",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Winner+Match+84+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -5555,12 +5559,38 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "spain",
         "away": "Austria",
         "awayId": "austria",
+        "score": "3–0",
+        "homeGoals": [
+          "Oyarzabal 36'",
+          "Pedro Porro 66'",
+          "Oyarzabal 89'"
+        ],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m93",
+        "matchNo": 93,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-06",
+        "time": "2:00 p.m. UTC−5",
+        "venue": "AT&T Stadium , Arlington",
+        "home": "Winner Match 83",
+        "homeId": "winner-match-83",
+        "away": "Spain",
+        "awayId": "spain",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -6561,14 +6591,18 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "spain",
         "away": "Austria",
         "awayId": "austria",
-        "score": "",
-        "homeGoals": [],
+        "score": "3–0",
+        "homeGoals": [
+          "Oyarzabal 36'",
+          "Pedro Porro 66'",
+          "Oyarzabal 89'"
+        ],
         "awayGoals": [],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Austria+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "jordan": [
@@ -7458,38 +7492,14 @@ window.WORLD_CUP_MATCHES = {
         "venue": "AT&T Stadium , Arlington",
         "home": "Winner Match 83",
         "homeId": "winner-match-83",
-        "away": "Winner Match 84",
-        "awayId": "winner-match-84",
+        "away": "Spain",
+        "awayId": "spain",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Winner+Match+84+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-84": [
-      {
-        "id": "m93",
-        "matchNo": 93,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-06",
-        "time": "2:00 p.m. UTC−5",
-        "venue": "AT&T Stadium , Arlington",
-        "home": "Winner Match 83",
-        "homeId": "winner-match-83",
-        "away": "Winner Match 84",
-        "awayId": "winner-match-84",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Winner+Match+84+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
