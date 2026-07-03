@@ -2167,14 +2167,19 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "portugal",
       "away": "Croatia",
       "awayId": "croatia",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "2–1",
+      "homeGoals": [
+        "Ronaldo 68' (pen.)",
+        "Gonçalo Ramos 90+4'"
+      ],
+      "awayGoals": [
+        "Perišić 53'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m85",
@@ -2361,8 +2366,8 @@ window.WORLD_CUP_MATCHES = {
       "date": "2026-07-06",
       "time": "2:00 p.m. UTC−5",
       "venue": "AT&T Stadium , Arlington",
-      "home": "Winner Match 83",
-      "homeId": "winner-match-83",
+      "home": "Portugal",
+      "homeId": "portugal",
       "away": "Spain",
       "awayId": "spain",
       "score": "",
@@ -2370,7 +2375,7 @@ window.WORLD_CUP_MATCHES = {
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -5581,8 +5586,8 @@ window.WORLD_CUP_MATCHES = {
         "date": "2026-07-06",
         "time": "2:00 p.m. UTC−5",
         "venue": "AT&T Stadium , Arlington",
-        "home": "Winner Match 83",
-        "homeId": "winner-match-83",
+        "home": "Portugal",
+        "homeId": "portugal",
         "away": "Spain",
         "awayId": "spain",
         "score": "",
@@ -5590,7 +5595,7 @@ window.WORLD_CUP_MATCHES = {
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -6779,12 +6784,39 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "portugal",
         "away": "Croatia",
         "awayId": "croatia",
+        "score": "2–1",
+        "homeGoals": [
+          "Ronaldo 68' (pen.)",
+          "Gonçalo Ramos 90+4'"
+        ],
+        "awayGoals": [
+          "Perišić 53'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m93",
+        "matchNo": 93,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-06",
+        "time": "2:00 p.m. UTC−5",
+        "venue": "AT&T Stadium , Arlington",
+        "home": "Portugal",
+        "homeId": "portugal",
+        "away": "Spain",
+        "awayId": "spain",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -7298,14 +7330,19 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "portugal",
         "away": "Croatia",
         "awayId": "croatia",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "2–1",
+        "homeGoals": [
+          "Ronaldo 68' (pen.)",
+          "Gonçalo Ramos 90+4'"
+        ],
+        "awayGoals": [
+          "Perišić 53'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Croatia+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "ghana": [
@@ -7478,30 +7515,6 @@ window.WORLD_CUP_MATCHES = {
         "replayUrl": "https://www.youtube.com/results?search_query=Panama+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "负",
         "awayResult": "胜"
-      }
-    ],
-    "winner-match-83": [
-      {
-        "id": "m93",
-        "matchNo": 93,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-06",
-        "time": "2:00 p.m. UTC−5",
-        "venue": "AT&T Stadium , Arlington",
-        "home": "Winner Match 83",
-        "homeId": "winner-match-83",
-        "away": "Spain",
-        "awayId": "spain",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+83+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
       }
     ],
     "winner-match-86": [

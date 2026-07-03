@@ -63,6 +63,15 @@ MANUAL_MATCH_UPDATES = {
         "homeResult": "胜",
         "awayResult": "负",
     },
+    83: {
+        "score": "2–1",
+        "homeGoals": ["Ronaldo 68' (pen.)", "Gonçalo Ramos 90+4'"],
+        "awayGoals": ["Perišić 53'"],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
     84: {
         "score": "3–0",
         "homeGoals": ["Oyarzabal 36'", "Pedro Porro 66'", "Oyarzabal 89'"],
@@ -88,6 +97,8 @@ MANUAL_TEAM_REPLACEMENTS = {
         "awayId": "united-states",
     },
     93: {
+        "home": "Portugal",
+        "homeId": "portugal",
         "away": "Spain",
         "awayId": "spain",
     },
