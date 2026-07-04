@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-03; latest knockout results patched from match reports",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-04; latest knockout results patched from match reports",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
@@ -2194,14 +2194,17 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "switzerland",
       "away": "Algeria",
       "awayId": "algeria",
-      "score": "",
-      "homeGoals": [],
+      "score": "2–0",
+      "homeGoals": [
+        "Embolo 10'",
+        "Ndoye 46'"
+      ],
       "awayGoals": [],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m86",
@@ -2216,14 +2219,18 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "australia",
       "away": "Egypt",
       "awayId": "egypt",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
-      "penalties": "",
-      "status": "scheduled",
+      "score": "1–1 ( a.e.t. )",
+      "homeGoals": [
+        "Hany 55' (o.g.)"
+      ],
+      "awayGoals": [
+        "Ashour 13'"
+      ],
+      "penalties": "2–4",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Australia+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "负",
+      "awayResult": "胜"
     },
     {
       "id": "m87",
@@ -2238,14 +2245,21 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "argentina",
       "away": "Cape Verde",
       "awayId": "cape-verde",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "3–2 ( a.e.t. )",
+      "homeGoals": [
+        "Messi 29'",
+        "Li. Martínez 92'",
+        "Diney 111' (o.g.)"
+      ],
+      "awayGoals": [
+        "D. Duarte 59'",
+        "S.L. Cabral 103'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m88",
@@ -2410,16 +2424,16 @@ window.WORLD_CUP_MATCHES = {
       "date": "2026-07-07",
       "time": "12:00 p.m. UTC−4",
       "venue": "Mercedes-Benz Stadium , Atlanta",
-      "home": "Winner Match 86",
-      "homeId": "winner-match-86",
-      "away": "Winner Match 88",
-      "awayId": "winner-match-88",
+      "home": "Argentina",
+      "homeId": "argentina",
+      "away": "Egypt",
+      "awayId": "egypt",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+86+vs+Winner+Match+88+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -2432,8 +2446,8 @@ window.WORLD_CUP_MATCHES = {
       "date": "2026-07-07",
       "time": "1:00 p.m. UTC−7",
       "venue": "BC Place , Vancouver",
-      "home": "Winner Match 85",
-      "homeId": "winner-match-85",
+      "home": "Switzerland",
+      "homeId": "switzerland",
       "away": "Winner Match 87",
       "awayId": "winner-match-87",
       "score": "",
@@ -2441,7 +2455,7 @@ window.WORLD_CUP_MATCHES = {
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+85+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -3417,12 +3431,37 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "switzerland",
         "away": "Algeria",
         "awayId": "algeria",
+        "score": "2–0",
+        "homeGoals": [
+          "Embolo 10'",
+          "Ndoye 46'"
+        ],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m96",
+        "matchNo": 96,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-07",
+        "time": "1:00 p.m. UTC−7",
+        "venue": "BC Place , Vancouver",
+        "home": "Switzerland",
+        "homeId": "switzerland",
+        "away": "Winner Match 87",
+        "awayId": "winner-match-87",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -4181,14 +4220,18 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "australia",
         "away": "Egypt",
         "awayId": "egypt",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
+        "score": "1–1 ( a.e.t. )",
+        "homeGoals": [
+          "Hany 55' (o.g.)"
+        ],
+        "awayGoals": [
+          "Ashour 13'"
+        ],
+        "penalties": "2–4",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Australia+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "负",
+        "awayResult": "胜"
       }
     ],
     "turkey": [
@@ -5305,12 +5348,38 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "australia",
         "away": "Egypt",
         "awayId": "egypt",
+        "score": "1–1 ( a.e.t. )",
+        "homeGoals": [
+          "Hany 55' (o.g.)"
+        ],
+        "awayGoals": [
+          "Ashour 13'"
+        ],
+        "penalties": "2–4",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Australia+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "负",
+        "awayResult": "胜"
+      },
+      {
+        "id": "m95",
+        "matchNo": 95,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-07",
+        "time": "12:00 p.m. UTC−4",
+        "venue": "Mercedes-Benz Stadium , Atlanta",
+        "home": "Argentina",
+        "homeId": "argentina",
+        "away": "Egypt",
+        "awayId": "egypt",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Australia+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -5686,14 +5755,21 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "argentina",
         "away": "Cape Verde",
         "awayId": "cape-verde",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "3–2 ( a.e.t. )",
+        "homeGoals": [
+          "Messi 29'",
+          "Li. Martínez 92'",
+          "Diney 111' (o.g.)"
+        ],
+        "awayGoals": [
+          "D. Duarte 59'",
+          "S.L. Cabral 103'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "saudi-arabia": [
@@ -6387,12 +6463,41 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "argentina",
         "away": "Cape Verde",
         "awayId": "cape-verde",
+        "score": "3–2 ( a.e.t. )",
+        "homeGoals": [
+          "Messi 29'",
+          "Li. Martínez 92'",
+          "Diney 111' (o.g.)"
+        ],
+        "awayGoals": [
+          "D. Duarte 59'",
+          "S.L. Cabral 103'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m95",
+        "matchNo": 95,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-07",
+        "time": "12:00 p.m. UTC−4",
+        "venue": "Mercedes-Benz Stadium , Atlanta",
+        "home": "Argentina",
+        "homeId": "argentina",
+        "away": "Egypt",
+        "awayId": "egypt",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Cape+Verde+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -6491,14 +6596,17 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "switzerland",
         "away": "Algeria",
         "awayId": "algeria",
-        "score": "",
-        "homeGoals": [],
+        "score": "2–0",
+        "homeGoals": [
+          "Embolo 10'",
+          "Ndoye 46'"
+        ],
         "awayGoals": [],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Algeria+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "austria": [
@@ -7517,78 +7625,6 @@ window.WORLD_CUP_MATCHES = {
         "awayResult": "胜"
       }
     ],
-    "winner-match-86": [
-      {
-        "id": "m95",
-        "matchNo": 95,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-07",
-        "time": "12:00 p.m. UTC−4",
-        "venue": "Mercedes-Benz Stadium , Atlanta",
-        "home": "Winner Match 86",
-        "homeId": "winner-match-86",
-        "away": "Winner Match 88",
-        "awayId": "winner-match-88",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+86+vs+Winner+Match+88+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-88": [
-      {
-        "id": "m95",
-        "matchNo": 95,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-07",
-        "time": "12:00 p.m. UTC−4",
-        "venue": "Mercedes-Benz Stadium , Atlanta",
-        "home": "Winner Match 86",
-        "homeId": "winner-match-86",
-        "away": "Winner Match 88",
-        "awayId": "winner-match-88",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+86+vs+Winner+Match+88+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-85": [
-      {
-        "id": "m96",
-        "matchNo": 96,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-07",
-        "time": "1:00 p.m. UTC−7",
-        "venue": "BC Place , Vancouver",
-        "home": "Winner Match 85",
-        "homeId": "winner-match-85",
-        "away": "Winner Match 87",
-        "awayId": "winner-match-87",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+85+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
     "winner-match-87": [
       {
         "id": "m96",
@@ -7599,8 +7635,8 @@ window.WORLD_CUP_MATCHES = {
         "date": "2026-07-07",
         "time": "1:00 p.m. UTC−7",
         "venue": "BC Place , Vancouver",
-        "home": "Winner Match 85",
-        "homeId": "winner-match-85",
+        "home": "Switzerland",
+        "homeId": "switzerland",
         "away": "Winner Match 87",
         "awayId": "winner-match-87",
         "score": "",
@@ -7608,7 +7644,7 @@ window.WORLD_CUP_MATCHES = {
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+85+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }

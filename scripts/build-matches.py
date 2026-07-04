@@ -81,6 +81,33 @@ MANUAL_MATCH_UPDATES = {
         "homeResult": "胜",
         "awayResult": "负",
     },
+    85: {
+        "score": "2–0",
+        "homeGoals": ["Embolo 10'", "Ndoye 46'"],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
+    86: {
+        "score": "3–2 ( a.e.t. )",
+        "homeGoals": ["Messi 29'", "Li. Martínez 92'", "Diney 111' (o.g.)"],
+        "awayGoals": ["D. Duarte 59'", "S.L. Cabral 103'"],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
+    88: {
+        "score": "1–1 ( a.e.t. )",
+        "homeGoals": ["Hany 55' (o.g.)"],
+        "awayGoals": ["Ashour 13'"],
+        "penalties": "2–4",
+        "status": "completed",
+        "homeResult": "负",
+        "awayResult": "胜",
+    },
 }
 
 MANUAL_TEAM_REPLACEMENTS = {
@@ -102,11 +129,25 @@ MANUAL_TEAM_REPLACEMENTS = {
         "away": "Spain",
         "awayId": "spain",
     },
+    95: {
+        "home": "Argentina",
+        "homeId": "argentina",
+        "away": "Egypt",
+        "awayId": "egypt",
+    },
+    96: {
+        "home": "Switzerland",
+        "homeId": "switzerland",
+        "away": "Winner Match 87",
+        "awayId": "winner-match-87",
+    },
 }
 
 MANUAL_MATCH_NUMBERS = {
     ("Portugal", "Croatia"): 83,
     ("Spain", "Austria"): 84,
+    ("Australia", "Egypt"): 88,
+    ("Argentina", "Cape Verde"): 86,
 }
 
 
