@@ -46,7 +46,7 @@ MANUAL_MATCH_UPDATES = {
         "awayResult": "负",
     },
     81: {
-        "score": "3–2 ( a.e.t. )",
+        "score": "3–2",
         "homeGoals": ["Lukaku 86'", "Tielemans 89'", "Tielemans 120+5' (pen.)"],
         "awayGoals": ["Diarra 24'", "I. Sarr 51'"],
         "penalties": "",
@@ -91,7 +91,7 @@ MANUAL_MATCH_UPDATES = {
         "awayResult": "负",
     },
     86: {
-        "score": "3–2 ( a.e.t. )",
+        "score": "3–2",
         "homeGoals": ["Messi 29'", "Li. Martínez 92'", "Diney 111' (o.g.)"],
         "awayGoals": ["D. Duarte 59'", "S.L. Cabral 103'"],
         "penalties": "",
@@ -100,7 +100,7 @@ MANUAL_MATCH_UPDATES = {
         "awayResult": "负",
     },
     88: {
-        "score": "1–1 ( a.e.t. )",
+        "score": "1–1",
         "homeGoals": ["Hany 55' (o.g.)"],
         "awayGoals": ["Ashour 13'"],
         "penalties": "2–4",
@@ -177,6 +177,13 @@ def score_parts(score):
     if not match:
         return None
     return int(match.group(1)), int(match.group(2))
+
+
+def display_score(score):
+    parts = score_parts(score)
+    if not parts:
+        return ""
+    return f"{parts[0]}–{parts[1]}"
 
 
 def penalty_parts(box):
@@ -282,7 +289,7 @@ def main():
             "homeId": slugify(home),
             "away": away,
             "awayId": slugify(away),
-            "score": score if completed else "",
+            "score": display_score(score) if completed else "",
             "homeGoals": goal_items(table, ".fhgoal") if completed else [],
             "awayGoals": goal_items(table, ".fagoal") if completed else [],
             "penalties": f"{penalties[0]}–{penalties[1]}" if penalties else "",

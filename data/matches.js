@@ -1931,7 +1931,7 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "germany",
       "away": "Paraguay",
       "awayId": "paraguay",
-      "score": "1–1 ( a.e.t. )",
+      "score": "1–1",
       "homeGoals": [
         "Havertz 54'"
       ],
@@ -1957,7 +1957,7 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "netherlands",
       "away": "Morocco",
       "awayId": "morocco",
-      "score": "1–1 ( a.e.t. )",
+      "score": "1–1",
       "homeGoals": [
         "Gakpo 72'"
       ],
@@ -2087,7 +2087,7 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "belgium",
       "away": "Senegal",
       "awayId": "senegal",
-      "score": "3–2 ( a.e.t. )",
+      "score": "3–2",
       "homeGoals": [
         "Lukaku 86'",
         "Tielemans 89'",
@@ -2219,7 +2219,7 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "australia",
       "away": "Egypt",
       "awayId": "egypt",
-      "score": "1–1 ( a.e.t. )",
+      "score": "1–1",
       "homeGoals": [
         "Hany 55' (o.g.)"
       ],
@@ -2245,7 +2245,7 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "argentina",
       "away": "Cape Verde",
       "awayId": "cape-verde",
-      "score": "3–2 ( a.e.t. )",
+      "score": "3–2",
       "homeGoals": [
         "Messi 29'",
         "Li. Martínez 92'",
@@ -3687,7 +3687,7 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "netherlands",
         "away": "Morocco",
         "awayId": "morocco",
-        "score": "1–1 ( a.e.t. )",
+        "score": "1–1",
         "homeGoals": [
           "Gakpo 72'"
         ],
@@ -4098,7 +4098,7 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "germany",
         "away": "Paraguay",
         "awayId": "paraguay",
-        "score": "1–1 ( a.e.t. )",
+        "score": "1–1",
         "homeGoals": [
           "Havertz 54'"
         ],
@@ -4220,7 +4220,7 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "australia",
         "away": "Egypt",
         "awayId": "egypt",
-        "score": "1–1 ( a.e.t. )",
+        "score": "1–1",
         "homeGoals": [
           "Hany 55' (o.g.)"
         ],
@@ -4412,7 +4412,7 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "germany",
         "away": "Paraguay",
         "awayId": "paraguay",
-        "score": "1–1 ( a.e.t. )",
+        "score": "1–1",
         "homeGoals": [
           "Havertz 54'"
         ],
@@ -4806,7 +4806,7 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "netherlands",
         "away": "Morocco",
         "awayId": "morocco",
-        "score": "1–1 ( a.e.t. )",
+        "score": "1–1",
         "homeGoals": [
           "Gakpo 72'"
         ],
@@ -5215,7 +5215,7 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "belgium",
         "away": "Senegal",
         "awayId": "senegal",
-        "score": "3–2 ( a.e.t. )",
+        "score": "3–2",
         "homeGoals": [
           "Lukaku 86'",
           "Tielemans 89'",
@@ -5348,7 +5348,7 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "australia",
         "away": "Egypt",
         "awayId": "egypt",
-        "score": "1–1 ( a.e.t. )",
+        "score": "1–1",
         "homeGoals": [
           "Hany 55' (o.g.)"
         ],
@@ -5755,7 +5755,7 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "argentina",
         "away": "Cape Verde",
         "awayId": "cape-verde",
-        "score": "3–2 ( a.e.t. )",
+        "score": "3–2",
         "homeGoals": [
           "Messi 29'",
           "Li. Martínez 92'",
@@ -6146,7 +6146,7 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "belgium",
         "away": "Senegal",
         "awayId": "senegal",
-        "score": "3–2 ( a.e.t. )",
+        "score": "3–2",
         "homeGoals": [
           "Lukaku 86'",
           "Tielemans 89'",
@@ -6463,7 +6463,7 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "argentina",
         "away": "Cape Verde",
         "awayId": "cape-verde",
-        "score": "3–2 ( a.e.t. )",
+        "score": "3–2",
         "homeGoals": [
           "Messi 29'",
           "Li. Martínez 92'",
