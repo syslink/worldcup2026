@@ -321,6 +321,66 @@ let isListening = false;
 let activeSpeechAudio = null;
 const chatSessions = {};
 
+function countryById(id) {
+  return countries.find((item) => item.id === id);
+}
+
+function countryByUrlToken(token) {
+  const normalized = decodeURIComponent(String(token || ""))
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/^#/, "");
+  if (!normalized) return null;
+  return countries.find((country) => {
+    const candidates = [
+      country.id,
+      country.nameEn,
+      country.nameZh,
+      country.flag
+    ].map((value) => String(value || "").trim().toLowerCase().replace(/\s+/g, "-"));
+    return candidates.includes(normalized);
+  }) || null;
+}
+
+function parseUrlState() {
+  const params = new URLSearchParams(window.location.search);
+  let countryToken = params.get("country") || params.get("c") || "";
+  let sectionToken = params.get("section") || params.get("target") || "";
+  const hash = decodeURIComponent(window.location.hash.replace(/^#/, "")).trim();
+
+  if (hash) {
+    if (hash.includes("=")) {
+      const hashParams = new URLSearchParams(hash);
+      countryToken = hashParams.get("country") || hashParams.get("c") || countryToken;
+      sectionToken = hashParams.get("section") || hashParams.get("target") || sectionToken;
+    } else {
+      const [hashCountry, hashSection] = hash.split(/[/:]/);
+      countryToken = hashCountry || countryToken;
+      sectionToken = hashSection || sectionToken;
+    }
+  }
+
+  return {
+    country: countryByUrlToken(countryToken),
+    shouldShowMatches: ["match", "matches", "records", "matchrecords", "世界杯比赛记录"].includes(sectionToken.toLowerCase())
+  };
+}
+
+function updateCountryUrl(countryId, section = "") {
+  const targetHash = section === "matches" ? `#${countryId}/matches` : `#${countryId}`;
+  if (window.location.hash === targetHash) return;
+  window.history.pushState(null, "", targetHash);
+}
+
+function scrollToCountryDetail() {
+  document.querySelector(".country-detail").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function scrollToMatchRecords() {
+  elements.matchRecords.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 function statusLabel(status) {
   return status === "complete" ? "已完善" : "待扩展";
 }
@@ -389,11 +449,7 @@ function renderCountryList() {
       </span>
       <span class="dot ${country.status}" title="${statusLabel(country.status)}"></span>
     `;
-    button.addEventListener("click", () => {
-      state.selectedId = country.id;
-      renderCountryDetail();
-      renderCountryList();
-    });
+    button.addEventListener("click", () => selectCountry(country.id, { scroll: false }));
     elements.countryList.append(button);
   });
 
@@ -514,19 +570,24 @@ function opponentForCountry(match, country) {
   return match.homeId === country.id ? match.away : match.home;
 }
 
-function countryById(id) {
-  return countries.find((item) => item.id === id);
-}
-
-function selectCountry(countryId, shouldScroll = true) {
+function selectCountry(countryId, options = {}) {
   if (!countryById(countryId)) return;
+  const config = typeof options === "boolean" ? { scroll: options } : options;
+  const shouldScroll = config.scroll ?? true;
+  const section = config.section || "";
+  const shouldUpdateUrl = config.updateUrl ?? true;
   state.selectedId = countryId;
   state.query = "";
   elements.searchInput.value = "";
   renderCountryList();
   renderCountryDetail();
+  if (shouldUpdateUrl) updateCountryUrl(countryId, section);
   if (shouldScroll) {
-    document.querySelector(".country-detail").scrollIntoView({ behavior: "smooth", block: "start" });
+    if (section === "matches") {
+      scrollToMatchRecords();
+    } else {
+      scrollToCountryDetail();
+    }
   }
 }
 
@@ -1241,7 +1302,8 @@ elements.aiChatClose.addEventListener("click", () => {
 });
 
 elements.jumpMatchButton.addEventListener("click", () => {
-  elements.matchRecords.scrollIntoView({ behavior: "smooth", block: "start" });
+  updateCountryUrl(state.selectedId, "matches");
+  scrollToMatchRecords();
 });
 
 elements.aiVoiceInput.addEventListener("click", () => {
@@ -1276,4 +1338,37 @@ document.addEventListener("keydown", (event) => {
 
 initVoiceControls();
 updateSpeechSpeedLabel();
+const initialUrlState = parseUrlState();
+if (initialUrlState.country) {
+  state.selectedId = initialUrlState.country.id;
+}
 render();
+if (initialUrlState.shouldShowMatches) {
+  window.setTimeout(scrollToMatchRecords, 0);
+}
+
+window.addEventListener("popstate", () => {
+  const urlState = parseUrlState();
+  if (urlState.country) {
+    selectCountry(urlState.country.id, {
+      scroll: urlState.shouldShowMatches,
+      section: urlState.shouldShowMatches ? "matches" : "",
+      updateUrl: false
+    });
+  } else if (urlState.shouldShowMatches) {
+    scrollToMatchRecords();
+  }
+});
+
+window.addEventListener("hashchange", () => {
+  const urlState = parseUrlState();
+  if (urlState.country) {
+    selectCountry(urlState.country.id, {
+      scroll: true,
+      section: urlState.shouldShowMatches ? "matches" : "",
+      updateUrl: false
+    });
+  } else if (urlState.shouldShowMatches) {
+    scrollToMatchRecords();
+  }
+});
