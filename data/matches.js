@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-04; latest knockout results patched from match reports",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-06; latest knockout results patched from match reports",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
@@ -2274,14 +2274,16 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "colombia",
       "away": "Ghana",
       "awayId": "ghana",
-      "score": "",
-      "homeGoals": [],
+      "score": "1–0",
+      "homeGoals": [
+        "J. Arias 14'"
+      ],
       "awayGoals": [],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m89",
@@ -2296,14 +2298,18 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "canada",
       "away": "Morocco",
       "awayId": "morocco",
-      "score": "",
+      "score": "0–3",
       "homeGoals": [],
-      "awayGoals": [],
+      "awayGoals": [
+        "Ounahi 50'",
+        "Ounahi 82'",
+        "Rahimi 90+8'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "负",
+      "awayResult": "胜"
     },
     {
       "id": "m90",
@@ -2318,14 +2324,16 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "paraguay",
       "away": "France",
       "awayId": "france",
-      "score": "",
+      "score": "0–1",
       "homeGoals": [],
-      "awayGoals": [],
+      "awayGoals": [
+        "Mbappé 70' (pen.)"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "负",
+      "awayResult": "胜"
     },
     {
       "id": "m91",
@@ -2340,14 +2348,19 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "brazil",
       "away": "Norway",
       "awayId": "norway",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "1–2",
+      "homeGoals": [
+        "Neymar 90+10' (pen.)"
+      ],
+      "awayGoals": [
+        "Haaland 79'",
+        "Haaland 89'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "负",
+      "awayResult": "胜"
     },
     {
       "id": "m92",
@@ -2448,14 +2461,14 @@ window.WORLD_CUP_MATCHES = {
       "venue": "BC Place , Vancouver",
       "home": "Switzerland",
       "homeId": "switzerland",
-      "away": "Winner Match 87",
-      "awayId": "winner-match-87",
+      "away": "Colombia",
+      "awayId": "colombia",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Colombia+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -2468,16 +2481,16 @@ window.WORLD_CUP_MATCHES = {
       "date": "2026-07-09",
       "time": "4:00 p.m. UTC−4",
       "venue": "Gillette Stadium , Foxborough",
-      "home": "Winner Match 89",
-      "homeId": "winner-match-89",
-      "away": "Winner Match 90",
-      "awayId": "winner-match-90",
+      "home": "France",
+      "homeId": "france",
+      "away": "Morocco",
+      "awayId": "morocco",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+89+vs+Winner+Match+90+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -2512,8 +2525,8 @@ window.WORLD_CUP_MATCHES = {
       "date": "2026-07-11",
       "time": "5:00 p.m. UTC−4",
       "venue": "Hard Rock Stadium , Miami Gardens",
-      "home": "Winner Match 91",
-      "homeId": "winner-match-91",
+      "home": "Norway",
+      "homeId": "norway",
       "away": "Winner Match 92",
       "awayId": "winner-match-92",
       "score": "",
@@ -2521,7 +2534,7 @@ window.WORLD_CUP_MATCHES = {
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+91+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -3134,14 +3147,18 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "canada",
         "away": "Morocco",
         "awayId": "morocco",
-        "score": "",
+        "score": "0–3",
         "homeGoals": [],
-        "awayGoals": [],
+        "awayGoals": [
+          "Ounahi 50'",
+          "Ounahi 82'",
+          "Rahimi 90+8'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "负",
+        "awayResult": "胜"
       }
     ],
     "bosnia": [
@@ -3454,14 +3471,14 @@ window.WORLD_CUP_MATCHES = {
         "venue": "BC Place , Vancouver",
         "home": "Switzerland",
         "homeId": "switzerland",
-        "away": "Winner Match 87",
-        "awayId": "winner-match-87",
+        "away": "Colombia",
+        "awayId": "colombia",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Colombia+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -3583,14 +3600,19 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "brazil",
         "away": "Norway",
         "awayId": "norway",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "1–2",
+        "homeGoals": [
+          "Neymar 90+10' (pen.)"
+        ],
+        "awayGoals": [
+          "Haaland 79'",
+          "Haaland 89'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "负",
+        "awayResult": "胜"
       }
     ],
     "morocco": [
@@ -3713,12 +3735,38 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "canada",
         "away": "Morocco",
         "awayId": "morocco",
+        "score": "0–3",
+        "homeGoals": [],
+        "awayGoals": [
+          "Ounahi 50'",
+          "Ounahi 82'",
+          "Rahimi 90+8'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "负",
+        "awayResult": "胜"
+      },
+      {
+        "id": "m97",
+        "matchNo": 97,
+        "stageType": "knockout",
+        "stage": "四分之一决赛",
+        "group": null,
+        "date": "2026-07-09",
+        "time": "4:00 p.m. UTC−4",
+        "venue": "Gillette Stadium , Foxborough",
+        "home": "France",
+        "homeId": "france",
+        "away": "Morocco",
+        "awayId": "morocco",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Canada+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -4124,14 +4172,16 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "paraguay",
         "away": "France",
         "awayId": "france",
-        "score": "",
+        "score": "0–1",
         "homeGoals": [],
-        "awayGoals": [],
+        "awayGoals": [
+          "Mbappé 70' (pen.)"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "负",
+        "awayResult": "胜"
       }
     ],
     "australia": [
@@ -6041,12 +6091,36 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "paraguay",
         "away": "France",
         "awayId": "france",
+        "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Mbappé 70' (pen.)"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "负",
+        "awayResult": "胜"
+      },
+      {
+        "id": "m97",
+        "matchNo": 97,
+        "stageType": "knockout",
+        "stage": "四分之一决赛",
+        "group": null,
+        "date": "2026-07-09",
+        "time": "4:00 p.m. UTC−4",
+        "venue": "Gillette Stadium , Foxborough",
+        "home": "France",
+        "homeId": "france",
+        "away": "Morocco",
+        "awayId": "morocco",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Paraguay+vs+France+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -6363,12 +6437,39 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "brazil",
         "away": "Norway",
         "awayId": "norway",
+        "score": "1–2",
+        "homeGoals": [
+          "Neymar 90+10' (pen.)"
+        ],
+        "awayGoals": [
+          "Haaland 79'",
+          "Haaland 89'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "负",
+        "awayResult": "胜"
+      },
+      {
+        "id": "m99",
+        "matchNo": 99,
+        "stageType": "knockout",
+        "stage": "四分之一决赛",
+        "group": null,
+        "date": "2026-07-11",
+        "time": "5:00 p.m. UTC−4",
+        "venue": "Hard Rock Stadium , Miami Gardens",
+        "home": "Norway",
+        "homeId": "norway",
+        "away": "Winner Match 92",
+        "awayId": "winner-match-92",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Brazil+vs+Norway+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -7207,12 +7308,36 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "colombia",
         "away": "Ghana",
         "awayId": "ghana",
+        "score": "1–0",
+        "homeGoals": [
+          "J. Arias 14'"
+        ],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m96",
+        "matchNo": 96,
+        "stageType": "knockout",
+        "stage": "16强淘汰赛",
+        "group": null,
+        "date": "2026-07-07",
+        "time": "1:00 p.m. UTC−7",
+        "venue": "BC Place , Vancouver",
+        "home": "Switzerland",
+        "homeId": "switzerland",
+        "away": "Colombia",
+        "awayId": "colombia",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Colombia+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -7540,14 +7665,16 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "colombia",
         "away": "Ghana",
         "awayId": "ghana",
-        "score": "",
-        "homeGoals": [],
+        "score": "1–0",
+        "homeGoals": [
+          "J. Arias 14'"
+        ],
         "awayGoals": [],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Colombia+vs+Ghana+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "panama": [
@@ -7625,78 +7752,6 @@ window.WORLD_CUP_MATCHES = {
         "awayResult": "胜"
       }
     ],
-    "winner-match-87": [
-      {
-        "id": "m96",
-        "matchNo": 96,
-        "stageType": "knockout",
-        "stage": "16强淘汰赛",
-        "group": null,
-        "date": "2026-07-07",
-        "time": "1:00 p.m. UTC−7",
-        "venue": "BC Place , Vancouver",
-        "home": "Switzerland",
-        "homeId": "switzerland",
-        "away": "Winner Match 87",
-        "awayId": "winner-match-87",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Winner+Match+87+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-89": [
-      {
-        "id": "m97",
-        "matchNo": 97,
-        "stageType": "knockout",
-        "stage": "四分之一决赛",
-        "group": null,
-        "date": "2026-07-09",
-        "time": "4:00 p.m. UTC−4",
-        "venue": "Gillette Stadium , Foxborough",
-        "home": "Winner Match 89",
-        "homeId": "winner-match-89",
-        "away": "Winner Match 90",
-        "awayId": "winner-match-90",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+89+vs+Winner+Match+90+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-90": [
-      {
-        "id": "m97",
-        "matchNo": 97,
-        "stageType": "knockout",
-        "stage": "四分之一决赛",
-        "group": null,
-        "date": "2026-07-09",
-        "time": "4:00 p.m. UTC−4",
-        "venue": "Gillette Stadium , Foxborough",
-        "home": "Winner Match 89",
-        "homeId": "winner-match-89",
-        "away": "Winner Match 90",
-        "awayId": "winner-match-90",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+89+vs+Winner+Match+90+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
     "winner-match-93": [
       {
         "id": "m98",
@@ -7745,30 +7800,6 @@ window.WORLD_CUP_MATCHES = {
         "awayResult": "待赛"
       }
     ],
-    "winner-match-91": [
-      {
-        "id": "m99",
-        "matchNo": 99,
-        "stageType": "knockout",
-        "stage": "四分之一决赛",
-        "group": null,
-        "date": "2026-07-11",
-        "time": "5:00 p.m. UTC−4",
-        "venue": "Hard Rock Stadium , Miami Gardens",
-        "home": "Winner Match 91",
-        "homeId": "winner-match-91",
-        "away": "Winner Match 92",
-        "awayId": "winner-match-92",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+91+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
     "winner-match-92": [
       {
         "id": "m99",
@@ -7779,8 +7810,8 @@ window.WORLD_CUP_MATCHES = {
         "date": "2026-07-11",
         "time": "5:00 p.m. UTC−4",
         "venue": "Hard Rock Stadium , Miami Gardens",
-        "home": "Winner Match 91",
-        "homeId": "winner-match-91",
+        "home": "Norway",
+        "homeId": "norway",
         "away": "Winner Match 92",
         "awayId": "winner-match-92",
         "score": "",
@@ -7788,7 +7819,7 @@ window.WORLD_CUP_MATCHES = {
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+91+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
