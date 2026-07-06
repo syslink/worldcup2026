@@ -793,21 +793,58 @@ function latestTeamButton(match, side) {
   `;
 }
 
+function latestTeamName(match, side) {
+  const team = countryById(match[`${side}Id`]);
+  return team?.nameZh || match[side];
+}
+
+function latestScoreText(match) {
+  return match.penalties ? `${match.score} 点球 ${match.penalties}` : match.score;
+}
+
+function latestWinnerText(match) {
+  if (match.homeResult === "胜") return `${latestTeamName(match, "home")}晋级`;
+  if (match.awayResult === "胜") return `${latestTeamName(match, "away")}晋级`;
+  return "平局收场";
+}
+
+function latestGoalText(match) {
+  const goals = [
+    ...(match.homeGoals || []).map((goal) => `${latestTeamName(match, "home")} ${goal}`),
+    ...(match.awayGoals || []).map((goal) => `${latestTeamName(match, "away")} ${goal}`)
+  ];
+  if (!goals.length) return "暂无进球记录";
+  const visibleGoals = goals.slice(0, 3).join("；");
+  return goals.length > 3 ? `${visibleGoals} 等` : visibleGoals;
+}
+
 function renderLatestMatches() {
   elements.latestMatchList.innerHTML = "";
-  latestCompletedMatches().forEach((match) => {
+  const matches = latestCompletedMatches();
+  if (!matches.length) {
+    elements.latestMatchList.innerHTML = `<p class="latest-empty">暂无已结束的淘汰赛。</p>`;
+    return;
+  }
+
+  matches.forEach((match) => {
     const item = document.createElement("article");
     item.className = "latest-match";
     item.innerHTML = `
       <div class="latest-match__meta">
-        <span>${match.stage}</span>
+        <span>最新赛果 · ${match.stage}</span>
         <strong>${match.date}</strong>
+      </div>
+      <div class="latest-match__headline">
+        <span>${latestTeamName(match, "home")}</span>
+        <strong>${latestScoreText(match)}</strong>
+        <span>${latestTeamName(match, "away")}</span>
       </div>
       <div class="latest-match__score">
         ${latestTeamButton(match, "home")}
-        <strong>${match.score}</strong>
+        <strong>${latestWinnerText(match)}</strong>
         ${latestTeamButton(match, "away")}
       </div>
+      <p class="latest-match__note">${latestGoalText(match)}</p>
     `;
     item.querySelectorAll(".latest-team:not(:disabled)").forEach((button) => {
       button.addEventListener("click", () => selectCountry(button.dataset.countryId));
