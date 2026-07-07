@@ -144,6 +144,24 @@ MANUAL_MATCH_UPDATES = {
         "homeResult": "负",
         "awayResult": "胜",
     },
+    92: {
+        "score": "2–3",
+        "homeGoals": ["Quiñones 42'", "Jiménez 69'"],
+        "awayGoals": ["Bellingham 36'", "Bellingham 38'", "Kane 60' (pen.)"],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "负",
+        "awayResult": "胜",
+    },
+    93: {
+        "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": ["Merino 91'"],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "负",
+        "awayResult": "胜",
+    },
 }
 
 MANUAL_TEAM_REPLACEMENTS = {
@@ -183,11 +201,17 @@ MANUAL_TEAM_REPLACEMENTS = {
         "away": "Morocco",
         "awayId": "morocco",
     },
+    98: {
+        "home": "Spain",
+        "homeId": "spain",
+        "away": "Winner Match 94",
+        "awayId": "winner-match-94",
+    },
     99: {
         "home": "Norway",
         "homeId": "norway",
-        "away": "Winner Match 92",
-        "awayId": "winner-match-92",
+        "away": "England",
+        "awayId": "england",
     },
 }
 

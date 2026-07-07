@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-06; latest knockout results patched from match reports",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-07; latest knockout results patched from match reports",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
@@ -2375,14 +2375,21 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "mexico",
       "away": "England",
       "awayId": "england",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "2–3",
+      "homeGoals": [
+        "Quiñones 42'",
+        "Jiménez 69'"
+      ],
+      "awayGoals": [
+        "Bellingham 36'",
+        "Bellingham 38'",
+        "Kane 60' (pen.)"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "负",
+      "awayResult": "胜"
     },
     {
       "id": "m93",
@@ -2397,14 +2404,16 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "portugal",
       "away": "Spain",
       "awayId": "spain",
-      "score": "",
+      "score": "0–1",
       "homeGoals": [],
-      "awayGoals": [],
+      "awayGoals": [
+        "Merino 91'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "负",
+      "awayResult": "胜"
     },
     {
       "id": "m94",
@@ -2503,8 +2512,8 @@ window.WORLD_CUP_MATCHES = {
       "date": "2026-07-10",
       "time": "12:00 p.m. UTC−7",
       "venue": "SoFi Stadium , Inglewood",
-      "home": "Winner Match 93",
-      "homeId": "winner-match-93",
+      "home": "Spain",
+      "homeId": "spain",
       "away": "Winner Match 94",
       "awayId": "winner-match-94",
       "score": "",
@@ -2512,7 +2521,7 @@ window.WORLD_CUP_MATCHES = {
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+93+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -2527,14 +2536,14 @@ window.WORLD_CUP_MATCHES = {
       "venue": "Hard Rock Stadium , Miami Gardens",
       "home": "Norway",
       "homeId": "norway",
-      "away": "Winner Match 92",
-      "awayId": "winner-match-92",
+      "away": "England",
+      "awayId": "england",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -2764,14 +2773,21 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "mexico",
         "away": "England",
         "awayId": "england",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "2–3",
+        "homeGoals": [
+          "Quiñones 42'",
+          "Jiménez 69'"
+        ],
+        "awayGoals": [
+          "Bellingham 36'",
+          "Bellingham 38'",
+          "Kane 60' (pen.)"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "负",
+        "awayResult": "胜"
       }
     ],
     "south-africa": [
@@ -5709,12 +5725,36 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "portugal",
         "away": "Spain",
         "awayId": "spain",
+        "score": "0–1",
+        "homeGoals": [],
+        "awayGoals": [
+          "Merino 91'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "负",
+        "awayResult": "胜"
+      },
+      {
+        "id": "m98",
+        "matchNo": 98,
+        "stageType": "knockout",
+        "stage": "四分之一决赛",
+        "group": null,
+        "date": "2026-07-10",
+        "time": "12:00 p.m. UTC−7",
+        "venue": "SoFi Stadium , Inglewood",
+        "home": "Spain",
+        "homeId": "spain",
+        "away": "Winner Match 94",
+        "awayId": "winner-match-94",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -6462,14 +6502,14 @@ window.WORLD_CUP_MATCHES = {
         "venue": "Hard Rock Stadium , Miami Gardens",
         "home": "Norway",
         "homeId": "norway",
-        "away": "Winner Match 92",
-        "awayId": "winner-match-92",
+        "away": "England",
+        "awayId": "england",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -7020,14 +7060,16 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "portugal",
         "away": "Spain",
         "awayId": "spain",
-        "score": "",
+        "score": "0–1",
         "homeGoals": [],
-        "awayGoals": [],
+        "awayGoals": [
+          "Merino 91'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Portugal+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "负",
+        "awayResult": "胜"
       }
     ],
     "dr-congo": [
@@ -7459,12 +7501,41 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "mexico",
         "away": "England",
         "awayId": "england",
+        "score": "2–3",
+        "homeGoals": [
+          "Quiñones 42'",
+          "Jiménez 69'"
+        ],
+        "awayGoals": [
+          "Bellingham 36'",
+          "Bellingham 38'",
+          "Kane 60' (pen.)"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "负",
+        "awayResult": "胜"
+      },
+      {
+        "id": "m99",
+        "matchNo": 99,
+        "stageType": "knockout",
+        "stage": "四分之一决赛",
+        "group": null,
+        "date": "2026-07-11",
+        "time": "5:00 p.m. UTC−4",
+        "venue": "Hard Rock Stadium , Miami Gardens",
+        "home": "Norway",
+        "homeId": "norway",
+        "away": "England",
+        "awayId": "england",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Mexico+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -7752,30 +7823,6 @@ window.WORLD_CUP_MATCHES = {
         "awayResult": "胜"
       }
     ],
-    "winner-match-93": [
-      {
-        "id": "m98",
-        "matchNo": 98,
-        "stageType": "knockout",
-        "stage": "四分之一决赛",
-        "group": null,
-        "date": "2026-07-10",
-        "time": "12:00 p.m. UTC−7",
-        "venue": "SoFi Stadium , Inglewood",
-        "home": "Winner Match 93",
-        "homeId": "winner-match-93",
-        "away": "Winner Match 94",
-        "awayId": "winner-match-94",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+93+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
     "winner-match-94": [
       {
         "id": "m98",
@@ -7786,8 +7833,8 @@ window.WORLD_CUP_MATCHES = {
         "date": "2026-07-10",
         "time": "12:00 p.m. UTC−7",
         "venue": "SoFi Stadium , Inglewood",
-        "home": "Winner Match 93",
-        "homeId": "winner-match-93",
+        "home": "Spain",
+        "homeId": "spain",
         "away": "Winner Match 94",
         "awayId": "winner-match-94",
         "score": "",
@@ -7795,31 +7842,7 @@ window.WORLD_CUP_MATCHES = {
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+93+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-92": [
-      {
-        "id": "m99",
-        "matchNo": 99,
-        "stageType": "knockout",
-        "stage": "四分之一决赛",
-        "group": null,
-        "date": "2026-07-11",
-        "time": "5:00 p.m. UTC−4",
-        "venue": "Hard Rock Stadium , Miami Gardens",
-        "home": "Norway",
-        "homeId": "norway",
-        "away": "Winner Match 92",
-        "awayId": "winner-match-92",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+Winner+Match+92+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
