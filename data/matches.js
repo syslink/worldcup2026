@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-07; latest knockout results patched from match reports",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-08; latest knockout results patched from match reports",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
@@ -2428,14 +2428,21 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "belgium",
       "away": "United States",
       "awayId": "united-states",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "4–1",
+      "homeGoals": [
+        "De Ketelaere 9'",
+        "De Ketelaere 33'",
+        "Vanaken 57'",
+        "Lukaku 90+3'"
+      ],
+      "awayGoals": [
+        "Tillman 31'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+United+States+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m95",
@@ -2450,14 +2457,21 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "argentina",
       "away": "Egypt",
       "awayId": "egypt",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "3–2",
+      "homeGoals": [
+        "Romero 79'",
+        "Messi 83'",
+        "Fernandez 90+2'"
+      ],
+      "awayGoals": [
+        "Ibrahim 10'",
+        "Zico 58'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m96",
@@ -2472,14 +2486,14 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "switzerland",
       "away": "Colombia",
       "awayId": "colombia",
-      "score": "",
+      "score": "0–0",
       "homeGoals": [],
       "awayGoals": [],
-      "penalties": "",
-      "status": "scheduled",
+      "penalties": "4–3",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Colombia+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m97",
@@ -2514,14 +2528,14 @@ window.WORLD_CUP_MATCHES = {
       "venue": "SoFi Stadium , Inglewood",
       "home": "Spain",
       "homeId": "spain",
-      "away": "Winner Match 94",
-      "awayId": "winner-match-94",
+      "away": "Belgium",
+      "awayId": "belgium",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Belgium+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -2556,16 +2570,16 @@ window.WORLD_CUP_MATCHES = {
       "date": "2026-07-11",
       "time": "8:00 p.m. UTC−5",
       "venue": "Arrowhead Stadium , Kansas City",
-      "home": "Winner Match 95",
-      "homeId": "winner-match-95",
-      "away": "Winner Match 96",
-      "awayId": "winner-match-96",
+      "home": "Argentina",
+      "homeId": "argentina",
+      "away": "Switzerland",
+      "awayId": "switzerland",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+95+vs+Winner+Match+96+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Switzerland+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -3489,12 +3503,34 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "switzerland",
         "away": "Colombia",
         "awayId": "colombia",
+        "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
+        "penalties": "4–3",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Colombia+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m100",
+        "matchNo": 100,
+        "stageType": "knockout",
+        "stage": "四分之一决赛",
+        "group": null,
+        "date": "2026-07-11",
+        "time": "8:00 p.m. UTC−5",
+        "venue": "Arrowhead Stadium , Kansas City",
+        "home": "Argentina",
+        "homeId": "argentina",
+        "away": "Switzerland",
+        "awayId": "switzerland",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Colombia+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Switzerland+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -4064,14 +4100,21 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "belgium",
         "away": "United States",
         "awayId": "united-states",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "4–1",
+        "homeGoals": [
+          "De Ketelaere 9'",
+          "De Ketelaere 33'",
+          "Vanaken 57'",
+          "Lukaku 90+3'"
+        ],
+        "awayGoals": [
+          "Tillman 31'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+United+States+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "paraguay": [
@@ -5310,12 +5353,41 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "belgium",
         "away": "United States",
         "awayId": "united-states",
+        "score": "4–1",
+        "homeGoals": [
+          "De Ketelaere 9'",
+          "De Ketelaere 33'",
+          "Vanaken 57'",
+          "Lukaku 90+3'"
+        ],
+        "awayGoals": [
+          "Tillman 31'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+United+States+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m98",
+        "matchNo": 98,
+        "stageType": "knockout",
+        "stage": "四分之一决赛",
+        "group": null,
+        "date": "2026-07-10",
+        "time": "12:00 p.m. UTC−7",
+        "venue": "SoFi Stadium , Inglewood",
+        "home": "Spain",
+        "homeId": "spain",
+        "away": "Belgium",
+        "awayId": "belgium",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Belgium+vs+United+States+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Belgium+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -5440,14 +5512,21 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "argentina",
         "away": "Egypt",
         "awayId": "egypt",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "3–2",
+        "homeGoals": [
+          "Romero 79'",
+          "Messi 83'",
+          "Fernandez 90+2'"
+        ],
+        "awayGoals": [
+          "Ibrahim 10'",
+          "Zico 58'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "iran": [
@@ -5747,14 +5826,14 @@ window.WORLD_CUP_MATCHES = {
         "venue": "SoFi Stadium , Inglewood",
         "home": "Spain",
         "homeId": "spain",
-        "away": "Winner Match 94",
-        "awayId": "winner-match-94",
+        "away": "Belgium",
+        "awayId": "belgium",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Belgium+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -6633,12 +6712,41 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "argentina",
         "away": "Egypt",
         "awayId": "egypt",
+        "score": "3–2",
+        "homeGoals": [
+          "Romero 79'",
+          "Messi 83'",
+          "Fernandez 90+2'"
+        ],
+        "awayGoals": [
+          "Ibrahim 10'",
+          "Zico 58'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m100",
+        "matchNo": 100,
+        "stageType": "knockout",
+        "stage": "四分之一决赛",
+        "group": null,
+        "date": "2026-07-11",
+        "time": "8:00 p.m. UTC−5",
+        "venue": "Arrowhead Stadium , Kansas City",
+        "home": "Argentina",
+        "homeId": "argentina",
+        "away": "Switzerland",
+        "awayId": "switzerland",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Egypt+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Switzerland+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -7374,14 +7482,14 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "switzerland",
         "away": "Colombia",
         "awayId": "colombia",
-        "score": "",
+        "score": "0–0",
         "homeGoals": [],
         "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
+        "penalties": "4–3",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Switzerland+vs+Colombia+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "england": [
@@ -7821,78 +7929,6 @@ window.WORLD_CUP_MATCHES = {
         "replayUrl": "https://www.youtube.com/results?search_query=Panama+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "负",
         "awayResult": "胜"
-      }
-    ],
-    "winner-match-94": [
-      {
-        "id": "m98",
-        "matchNo": 98,
-        "stageType": "knockout",
-        "stage": "四分之一决赛",
-        "group": null,
-        "date": "2026-07-10",
-        "time": "12:00 p.m. UTC−7",
-        "venue": "SoFi Stadium , Inglewood",
-        "home": "Spain",
-        "homeId": "spain",
-        "away": "Winner Match 94",
-        "awayId": "winner-match-94",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Winner+Match+94+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-95": [
-      {
-        "id": "m100",
-        "matchNo": 100,
-        "stageType": "knockout",
-        "stage": "四分之一决赛",
-        "group": null,
-        "date": "2026-07-11",
-        "time": "8:00 p.m. UTC−5",
-        "venue": "Arrowhead Stadium , Kansas City",
-        "home": "Winner Match 95",
-        "homeId": "winner-match-95",
-        "away": "Winner Match 96",
-        "awayId": "winner-match-96",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+95+vs+Winner+Match+96+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-96": [
-      {
-        "id": "m100",
-        "matchNo": 100,
-        "stageType": "knockout",
-        "stage": "四分之一决赛",
-        "group": null,
-        "date": "2026-07-11",
-        "time": "8:00 p.m. UTC−5",
-        "venue": "Arrowhead Stadium , Kansas City",
-        "home": "Winner Match 95",
-        "homeId": "winner-match-95",
-        "away": "Winner Match 96",
-        "awayId": "winner-match-96",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+95+vs+Winner+Match+96+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
       }
     ],
     "winner-match-97": [

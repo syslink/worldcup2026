@@ -162,6 +162,33 @@ MANUAL_MATCH_UPDATES = {
         "homeResult": "负",
         "awayResult": "胜",
     },
+    94: {
+        "score": "4–1",
+        "homeGoals": ["De Ketelaere 9'", "De Ketelaere 33'", "Vanaken 57'", "Lukaku 90+3'"],
+        "awayGoals": ["Tillman 31'"],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
+    95: {
+        "score": "3–2",
+        "homeGoals": ["Romero 79'", "Messi 83'", "Fernandez 90+2'"],
+        "awayGoals": ["Ibrahim 10'", "Zico 58'"],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
+    96: {
+        "score": "0–0",
+        "homeGoals": [],
+        "awayGoals": [],
+        "penalties": "4–3",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
 }
 
 MANUAL_TEAM_REPLACEMENTS = {
@@ -204,14 +231,20 @@ MANUAL_TEAM_REPLACEMENTS = {
     98: {
         "home": "Spain",
         "homeId": "spain",
-        "away": "Winner Match 94",
-        "awayId": "winner-match-94",
+        "away": "Belgium",
+        "awayId": "belgium",
     },
     99: {
         "home": "Norway",
         "homeId": "norway",
         "away": "England",
         "awayId": "england",
+    },
+    100: {
+        "home": "Argentina",
+        "homeId": "argentina",
+        "away": "Switzerland",
+        "awayId": "switzerland",
     },
 }
 
