@@ -279,6 +279,7 @@ h1 {
   background: transparent;
   color: var(--ink);
   font-weight: 900;
+  line-height: 1;
   cursor: pointer;
 }
 
@@ -292,23 +293,28 @@ h1 {
   background: #eef8f3;
 }
 
-.latest-team span {
+.latest-team span:not(.latest-flag) {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 1.15;
 }
 
 .latest-flag {
   width: 26px;
   height: 19px;
   flex: 0 0 auto;
-  display: grid;
-  place-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   object-fit: cover;
   border-radius: 3px;
   border: 1px solid rgba(23, 50, 77, 0.14);
   font-size: 1.15rem;
+  line-height: 1;
+  vertical-align: middle;
+  transform: translateY(-1px);
 }
 
 main {
@@ -465,9 +471,13 @@ footer {
 .country-button .mini-flag {
   width: 28px;
   height: 22px;
-  display: grid;
-  place-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
+  line-height: 1;
+  vertical-align: middle;
+  transform: translateY(-1px);
 }
 
 img.mini-flag {
@@ -1254,12 +1264,16 @@ ul {
   width: 28px;
   height: 20px;
   flex: 0 0 auto;
-  display: grid;
-  place-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   object-fit: cover;
   border-radius: 3px;
   font-size: 1.25rem;
+  line-height: 1;
+  vertical-align: middle;
   border: 1px solid rgba(23, 50, 77, 0.14);
+  transform: translateY(-1px);
 }
 
 .team-jump span {
