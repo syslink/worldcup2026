@@ -154,26 +154,41 @@ h1 {
   color: var(--blue);
 }
 
-.latest-matches {
+.latest-matches,
+.quarterfinals {
   width: min(100%, 900px);
   margin-top: 28px;
   display: grid;
   gap: 12px;
 }
 
-.latest-matches h2 {
+.quarterfinals {
+  margin-top: 18px;
+}
+
+.latest-matches h2,
+.quarterfinals h2 {
   margin-bottom: 0;
   color: var(--green);
   font-size: 1.25rem;
 }
 
-.latest-match-list {
+.quarterfinals__head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.latest-match-list,
+.quarterfinal-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
 }
 
-.latest-match {
+.latest-match,
+.quarterfinal-card {
   display: grid;
   gap: 8px;
   padding: 14px;
@@ -184,32 +199,56 @@ h1 {
   backdrop-filter: blur(8px);
 }
 
+.quarterfinal-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 248, 243, 0.84));
+}
+
+.quarterfinal-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--gold);
+}
+
 .latest-match__meta,
-.latest-match__score {
+.latest-match__score,
+.quarterfinal-card__meta,
+.quarterfinal-card__teams {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
 }
 
-.latest-match__meta {
+.latest-match__meta,
+.quarterfinal-card__meta {
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 800;
 }
 
-.latest-match__score > strong {
+.quarterfinal-card__meta strong {
+  color: var(--green);
+}
+
+.latest-match__score > strong,
+.quarterfinal-card__teams > span {
   flex: 0 0 auto;
   padding: 4px 8px;
   border-radius: 8px;
   background: #eef8f3;
   color: var(--blue);
   font-size: 1rem;
+  font-weight: 900;
   white-space: nowrap;
 }
 
 .latest-match__note,
-.latest-empty {
+.latest-empty,
+.quarterfinal-card p {
   margin: 0;
   color: var(--muted);
   font-size: 0.86rem;
@@ -1424,7 +1463,8 @@ footer {
     min-width: 92px;
   }
 
-  .latest-match-list {
+  .latest-match-list,
+  .quarterfinal-list {
     grid-template-columns: 1fr;
   }
 
