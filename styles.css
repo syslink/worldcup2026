@@ -185,8 +185,7 @@ h1 {
 }
 
 .latest-match__meta,
-.latest-match__score,
-.latest-match__headline {
+.latest-match__score {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -199,32 +198,13 @@ h1 {
   font-weight: 800;
 }
 
-.latest-match__headline {
-  min-height: 38px;
-  color: var(--ink);
-  font-weight: 900;
-}
-
-.latest-match__headline span {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.latest-match__headline strong {
+.latest-match__score > strong {
   flex: 0 0 auto;
   padding: 4px 8px;
   border-radius: 8px;
   background: #eef8f3;
-  color: var(--green);
-  font-size: 1.08rem;
-}
-
-.latest-match__score > strong {
-  flex: 0 0 auto;
   color: var(--blue);
-  font-size: 0.92rem;
+  font-size: 1rem;
   white-space: nowrap;
 }
 
@@ -234,6 +214,18 @@ h1 {
   color: var(--muted);
   font-size: 0.86rem;
   line-height: 1.55;
+}
+
+.latest-goal-link {
+  color: var(--green);
+  font-weight: 900;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(30, 91, 71, 0.35);
+}
+
+.latest-goal-link:hover {
+  color: var(--red);
+  border-bottom-color: currentColor;
 }
 
 .latest-team {

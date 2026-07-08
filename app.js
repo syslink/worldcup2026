@@ -808,14 +808,23 @@ function latestWinnerText(match) {
   return "平局收场";
 }
 
-function latestGoalText(match) {
+function latestGoalLinks(match) {
   const goals = [
-    ...(match.homeGoals || []).map((goal) => `${latestTeamName(match, "home")} ${goal}`),
-    ...(match.awayGoals || []).map((goal) => `${latestTeamName(match, "away")} ${goal}`)
+    ...(match.homeGoals || []),
+    ...(match.awayGoals || [])
   ];
-  if (!goals.length) return "暂无进球记录";
-  const visibleGoals = goals.slice(0, 3).join("；");
-  return goals.length > 3 ? `${visibleGoals} 等` : visibleGoals;
+  if (!goals.length) return "";
+  const links = goals.slice(0, 4).map((goal) => {
+    return `<a class="latest-goal-link" href="${goalSearchUrl(match, goal)}" target="_blank" rel="noopener noreferrer" title="在 YouTube 搜索这个进球片段">${goal}</a>`;
+  });
+  return goals.length > 4 ? `${links.join("、")}等` : links.join("、");
+}
+
+function latestNoteText(match) {
+  const goalLinks = latestGoalLinks(match);
+  if (goalLinks) return `${latestWinnerText(match)} · ${goalLinks}`;
+  if (match.penalties) return `${latestWinnerText(match)} · 点球大战 ${match.penalties}`;
+  return latestWinnerText(match);
 }
 
 function renderLatestMatches() {
@@ -834,21 +843,13 @@ function renderLatestMatches() {
         <span>最新赛果 · ${match.stage}</span>
         <strong>${match.date}</strong>
       </div>
-      <div class="latest-match__headline">
-        <span>${latestTeamName(match, "home")}</span>
-        <strong>${latestScoreText(match)}</strong>
-        <span>${latestTeamName(match, "away")}</span>
-      </div>
       <div class="latest-match__score">
         ${latestTeamButton(match, "home")}
-        <strong>${latestWinnerText(match)}</strong>
+        <strong>${latestScoreText(match)}</strong>
         ${latestTeamButton(match, "away")}
       </div>
-      <p class="latest-match__note">${latestGoalText(match)}</p>
+      <p class="latest-match__note">${latestNoteText(match)}</p>
     `;
-    item.querySelectorAll(".latest-team:not(:disabled)").forEach((button) => {
-      button.addEventListener("click", () => selectCountry(button.dataset.countryId));
-    });
     elements.latestMatchList.append(item);
   });
 }
@@ -1319,6 +1320,12 @@ elements.searchInput.addEventListener("input", (event) => {
   }
   renderCountryList();
   renderCountryDetail();
+});
+
+elements.latestMatchList.addEventListener("click", (event) => {
+  const button = event.target.closest(".latest-team:not(:disabled)");
+  if (!button) return;
+  selectCountry(button.dataset.countryId);
 });
 
 elements.aiChatForm.addEventListener("submit", (event) => {
