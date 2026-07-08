@@ -865,11 +865,33 @@ function venueCity(venue = "") {
   return venue.replace(/\s*,\s*/g, " · ").replace(/\s+/g, " ").trim();
 }
 
+function beijingTimeLabel(match) {
+  const dateMatch = String(match.date || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  const timeMatch = String(match.time || "").match(/^(\d{1,2}):(\d{2})\s*(a\.m\.|p\.m\.)\s*UTC([−-])(\d+)$/i);
+  if (!dateMatch || !timeMatch) return "北京时间待定";
+
+  let hour = Number(timeMatch[1]);
+  const minute = Number(timeMatch[2]);
+  const meridiem = timeMatch[3].toLowerCase();
+  if (meridiem === "p.m." && hour !== 12) hour += 12;
+  if (meridiem === "a.m." && hour === 12) hour = 0;
+
+  const offsetSign = timeMatch[4] === "−" || timeMatch[4] === "-" ? -1 : 1;
+  const sourceOffset = offsetSign * Number(timeMatch[5]);
+  const utcMillis = Date.UTC(Number(dateMatch[1]), Number(dateMatch[2]) - 1, Number(dateMatch[3]), hour - sourceOffset, minute);
+  const beijing = new Date(utcMillis + 8 * 60 * 60 * 1000);
+  const month = String(beijing.getUTCMonth() + 1).padStart(2, "0");
+  const day = String(beijing.getUTCDate()).padStart(2, "0");
+  const beijingHour = String(beijing.getUTCHours()).padStart(2, "0");
+  const beijingMinute = String(beijing.getUTCMinutes()).padStart(2, "0");
+  return `北京时间 ${month}月${day}日 ${beijingHour}:${beijingMinute}`;
+}
+
 function quarterfinalStatus(match) {
   if (match.status === "completed") {
     return `${latestScoreText(match)} · ${latestWinnerText(match)}`;
   }
-  return match.time ? match.time : "时间待定";
+  return beijingTimeLabel(match);
 }
 
 function renderQuarterfinals() {
@@ -887,7 +909,7 @@ function renderQuarterfinals() {
     card.innerHTML = `
       <div class="quarterfinal-card__meta">
         <span>${match.stage}</span>
-        <strong>${match.date || "待定"}</strong>
+        <strong>${beijingTimeLabel(match).replace("北京时间 ", "")}</strong>
       </div>
       <div class="quarterfinal-card__teams">
         ${latestTeamButton(match, "home")}
