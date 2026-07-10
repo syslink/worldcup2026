@@ -189,6 +189,15 @@ MANUAL_MATCH_UPDATES = {
         "homeResult": "胜",
         "awayResult": "负",
     },
+    97: {
+        "score": "2–0",
+        "homeGoals": ["Mbappé 60'", "Dembélé 66'"],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
 }
 
 MANUAL_TEAM_REPLACEMENTS = {
@@ -245,6 +254,12 @@ MANUAL_TEAM_REPLACEMENTS = {
         "homeId": "argentina",
         "away": "Switzerland",
         "awayId": "switzerland",
+    },
+    101: {
+        "home": "France",
+        "homeId": "france",
+        "away": "Winner Match 98",
+        "awayId": "winner-match-98",
     },
 }
 

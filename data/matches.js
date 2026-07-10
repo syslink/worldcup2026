@@ -2508,14 +2508,17 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "france",
       "away": "Morocco",
       "awayId": "morocco",
-      "score": "",
-      "homeGoals": [],
+      "score": "2–0",
+      "homeGoals": [
+        "Mbappé 60'",
+        "Dembélé 66'"
+      ],
       "awayGoals": [],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m98",
@@ -2592,8 +2595,8 @@ window.WORLD_CUP_MATCHES = {
       "date": "2026-07-14",
       "time": "2:00 p.m. UTC−5",
       "venue": "AT&T Stadium , Arlington",
-      "home": "Winner Match 97",
-      "homeId": "winner-match-97",
+      "home": "France",
+      "homeId": "france",
       "away": "Winner Match 98",
       "awayId": "winner-match-98",
       "score": "",
@@ -2601,7 +2604,7 @@ window.WORLD_CUP_MATCHES = {
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+97+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -3813,14 +3816,17 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "france",
         "away": "Morocco",
         "awayId": "morocco",
-        "score": "",
-        "homeGoals": [],
+        "score": "2–0",
+        "homeGoals": [
+          "Mbappé 60'",
+          "Dembélé 66'"
+        ],
         "awayGoals": [],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "haiti": [
@@ -6234,12 +6240,37 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "france",
         "away": "Morocco",
         "awayId": "morocco",
+        "score": "2–0",
+        "homeGoals": [
+          "Mbappé 60'",
+          "Dembélé 66'"
+        ],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m101",
+        "matchNo": 101,
+        "stageType": "knockout",
+        "stage": "半决赛",
+        "group": null,
+        "date": "2026-07-14",
+        "time": "2:00 p.m. UTC−5",
+        "venue": "AT&T Stadium , Arlington",
+        "home": "France",
+        "homeId": "france",
+        "away": "Winner Match 98",
+        "awayId": "winner-match-98",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Morocco+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -7931,30 +7962,6 @@ window.WORLD_CUP_MATCHES = {
         "awayResult": "胜"
       }
     ],
-    "winner-match-97": [
-      {
-        "id": "m101",
-        "matchNo": 101,
-        "stageType": "knockout",
-        "stage": "半决赛",
-        "group": null,
-        "date": "2026-07-14",
-        "time": "2:00 p.m. UTC−5",
-        "venue": "AT&T Stadium , Arlington",
-        "home": "Winner Match 97",
-        "homeId": "winner-match-97",
-        "away": "Winner Match 98",
-        "awayId": "winner-match-98",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+97+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
     "winner-match-98": [
       {
         "id": "m101",
@@ -7965,8 +7972,8 @@ window.WORLD_CUP_MATCHES = {
         "date": "2026-07-14",
         "time": "2:00 p.m. UTC−5",
         "venue": "AT&T Stadium , Arlington",
-        "home": "Winner Match 97",
-        "homeId": "winner-match-97",
+        "home": "France",
+        "homeId": "france",
         "away": "Winner Match 98",
         "awayId": "winner-match-98",
         "score": "",
@@ -7974,7 +7981,7 @@ window.WORLD_CUP_MATCHES = {
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+97+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
