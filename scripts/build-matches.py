@@ -198,6 +198,15 @@ MANUAL_MATCH_UPDATES = {
         "homeResult": "胜",
         "awayResult": "负",
     },
+    98: {
+        "score": "2–1",
+        "homeGoals": ["Fabián Ruiz 30'", "Merino 88'"],
+        "awayGoals": ["De Ketelaere 41'"],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
 }
 
 MANUAL_TEAM_REPLACEMENTS = {
@@ -258,8 +267,8 @@ MANUAL_TEAM_REPLACEMENTS = {
     101: {
         "home": "France",
         "homeId": "france",
-        "away": "Winner Match 98",
-        "awayId": "winner-match-98",
+        "away": "Spain",
+        "awayId": "spain",
     },
 }
 

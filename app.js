@@ -255,6 +255,10 @@ const matchStoryOverrides = {
   78: {
     france: "法国靠 Mbappé 45', 74' 的两粒进球和 Barcola 53' 的破门 3–0 击败瑞典，展现出强队在淘汰赛中的效率。",
     sweden: "瑞典努力用防守抵抗法国，但面对 Mbappé 45', 74' 和 Barcola 53' 的连续冲击，最终没能挡住法国的进攻火力。"
+  },
+  98: {
+    spain: "西班牙先靠 Fabián Ruiz 30' 打开局面，虽然被 De Ketelaere 41' 追平，但最终由 Merino 88' 完成绝杀，挺进半决赛。",
+    belgium: "比利时靠 De Ketelaere 41' 一度追平比分，但最后时刻还是没能挡住 Merino 88' 的绝杀，无缘半决赛。"
   }
 };
 

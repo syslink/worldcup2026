@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-08; latest knockout results patched from match reports",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-11; latest knockout results patched from match reports",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
@@ -2533,14 +2533,19 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "spain",
       "away": "Belgium",
       "awayId": "belgium",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "2–1",
+      "homeGoals": [
+        "Fabián Ruiz 30'",
+        "Merino 88'"
+      ],
+      "awayGoals": [
+        "De Ketelaere 41'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Belgium+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m99",
@@ -2597,14 +2602,14 @@ window.WORLD_CUP_MATCHES = {
       "venue": "AT&T Stadium , Arlington",
       "home": "France",
       "homeId": "france",
-      "away": "Winner Match 98",
-      "awayId": "winner-match-98",
+      "away": "Spain",
+      "awayId": "spain",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -5388,12 +5393,39 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "spain",
         "away": "Belgium",
         "awayId": "belgium",
+        "score": "2–1",
+        "homeGoals": [
+          "Fabián Ruiz 30'",
+          "Merino 88'"
+        ],
+        "awayGoals": [
+          "De Ketelaere 41'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Belgium+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
+      },
+      {
+        "id": "m101",
+        "matchNo": 101,
+        "stageType": "knockout",
+        "stage": "半决赛",
+        "group": null,
+        "date": "2026-07-14",
+        "time": "2:00 p.m. UTC−5",
+        "venue": "AT&T Stadium , Arlington",
+        "home": "France",
+        "homeId": "france",
+        "away": "Spain",
+        "awayId": "spain",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Belgium+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -5834,14 +5866,19 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "spain",
         "away": "Belgium",
         "awayId": "belgium",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "2–1",
+        "homeGoals": [
+          "Fabián Ruiz 30'",
+          "Merino 88'"
+        ],
+        "awayGoals": [
+          "De Ketelaere 41'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Belgium+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "cape-verde": [
@@ -6263,14 +6300,14 @@ window.WORLD_CUP_MATCHES = {
         "venue": "AT&T Stadium , Arlington",
         "home": "France",
         "homeId": "france",
-        "away": "Winner Match 98",
-        "awayId": "winner-match-98",
+        "away": "Spain",
+        "awayId": "spain",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -7960,30 +7997,6 @@ window.WORLD_CUP_MATCHES = {
         "replayUrl": "https://www.youtube.com/results?search_query=Panama+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "负",
         "awayResult": "胜"
-      }
-    ],
-    "winner-match-98": [
-      {
-        "id": "m101",
-        "matchNo": 101,
-        "stageType": "knockout",
-        "stage": "半决赛",
-        "group": null,
-        "date": "2026-07-14",
-        "time": "2:00 p.m. UTC−5",
-        "venue": "AT&T Stadium , Arlington",
-        "home": "France",
-        "homeId": "france",
-        "away": "Winner Match 98",
-        "awayId": "winner-match-98",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Winner+Match+98+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
       }
     ],
     "winner-match-99": [
