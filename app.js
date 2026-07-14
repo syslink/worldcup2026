@@ -277,8 +277,7 @@ const elements = {
   detailRegion: document.querySelector("#detailRegion"),
   detailName: document.querySelector("#detailName"),
   detailStatus: document.querySelector("#detailStatus"),
-  latestMatchList: document.querySelector("#latestMatchList"),
-  quarterfinalList: document.querySelector("#quarterfinalList"),
+  semifinalList: document.querySelector("#semifinalList"),
   capital: document.querySelector("#capital"),
   languages: document.querySelector("#languages"),
   hello: document.querySelector("#hello"),
@@ -776,16 +775,6 @@ function renderMatchList(target, matches, country) {
   });
 }
 
-function latestCompletedMatches(limit = 4) {
-  return (window.WORLD_CUP_MATCHES?.matches || [])
-    .filter((match) => match.status === "completed" && match.stageType === "knockout")
-    .sort((a, b) => {
-      const dateCompare = String(b.date || "").localeCompare(String(a.date || ""));
-      return dateCompare || b.matchNo - a.matchNo;
-    })
-    .slice(0, limit);
-}
-
 function latestTeamButton(match, side) {
   const teamId = match[`${side}Id`];
   const teamName = match[side];
@@ -832,36 +821,9 @@ function latestNoteText(match) {
   return latestWinnerText(match);
 }
 
-function renderLatestMatches() {
-  elements.latestMatchList.innerHTML = "";
-  const matches = latestCompletedMatches();
-  if (!matches.length) {
-    elements.latestMatchList.innerHTML = `<p class="latest-empty">暂无已结束的淘汰赛。</p>`;
-    return;
-  }
-
-  matches.forEach((match) => {
-    const item = document.createElement("article");
-    item.className = "latest-match";
-    item.innerHTML = `
-      <div class="latest-match__meta">
-        <span>最新赛果 · ${match.stage}</span>
-        <strong>${match.date}</strong>
-      </div>
-      <div class="latest-match__score">
-        ${latestTeamButton(match, "home")}
-        <strong>${latestScoreText(match)}</strong>
-        ${latestTeamButton(match, "away")}
-      </div>
-      <p class="latest-match__note">${latestNoteText(match)}</p>
-    `;
-    elements.latestMatchList.append(item);
-  });
-}
-
-function quarterfinalMatches() {
+function semifinalMatches() {
   return (window.WORLD_CUP_MATCHES?.matches || [])
-    .filter((match) => match.stage === "四分之一决赛")
+    .filter((match) => match.stage === "半决赛")
     .sort((a, b) => a.matchNo - b.matchNo);
 }
 
@@ -891,38 +853,38 @@ function beijingTimeLabel(match) {
   return `北京时间 ${month}月${day}日 ${beijingHour}:${beijingMinute}`;
 }
 
-function quarterfinalStatus(match) {
+function semifinalStatus(match) {
   if (match.status === "completed") {
     return `${latestScoreText(match)} · ${latestWinnerText(match)}`;
   }
   return beijingTimeLabel(match);
 }
 
-function renderQuarterfinals() {
-  if (!elements.quarterfinalList) return;
-  elements.quarterfinalList.innerHTML = "";
-  const matches = quarterfinalMatches();
+function renderSemifinals() {
+  if (!elements.semifinalList) return;
+  elements.semifinalList.innerHTML = "";
+  const matches = semifinalMatches();
   if (!matches.length) {
-    elements.quarterfinalList.innerHTML = `<p class="latest-empty">8强赛程待更新。</p>`;
+    elements.semifinalList.innerHTML = `<p class="latest-empty">半决赛赛程待更新。</p>`;
     return;
   }
 
   matches.forEach((match) => {
     const card = document.createElement("article");
-    card.className = "quarterfinal-card";
+    card.className = "semifinal-card";
     card.innerHTML = `
-      <div class="quarterfinal-card__meta">
+      <div class="semifinal-card__meta">
         <span>${match.stage}</span>
-        <strong>${beijingTimeLabel(match).replace("北京时间 ", "")}</strong>
+        <strong>${beijingTimeLabel(match)}</strong>
       </div>
-      <div class="quarterfinal-card__teams">
+      <div class="semifinal-card__teams">
         ${latestTeamButton(match, "home")}
         <span>${match.status === "completed" ? latestScoreText(match) : "vs"}</span>
         ${latestTeamButton(match, "away")}
       </div>
-      <p>${quarterfinalStatus(match)}${match.venue ? ` · ${venueCity(match.venue)}` : ""}</p>
+      <p>${match.status === "completed" ? semifinalStatus(match) : venueCity(match.venue)}</p>
     `;
-    elements.quarterfinalList.append(card);
+    elements.semifinalList.append(card);
   });
 }
 
@@ -1381,8 +1343,7 @@ function render() {
   renderFilters();
   renderCountryList();
   renderCountryDetail();
-  renderLatestMatches();
-  renderQuarterfinals();
+  renderSemifinals();
 }
 
 elements.searchInput.addEventListener("input", (event) => {
@@ -1401,8 +1362,7 @@ function handleHeaderTeamClick(event) {
   selectCountry(button.dataset.countryId);
 }
 
-elements.latestMatchList.addEventListener("click", handleHeaderTeamClick);
-elements.quarterfinalList?.addEventListener("click", handleHeaderTeamClick);
+elements.semifinalList?.addEventListener("click", handleHeaderTeamClick);
 
 elements.aiChatForm.addEventListener("submit", (event) => {
   event.preventDefault();
