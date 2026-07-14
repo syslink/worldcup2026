@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-11; latest knockout results patched from match reports",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-14; latest quarterfinal results patched from match reports",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
@@ -2560,14 +2560,19 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "norway",
       "away": "England",
       "awayId": "england",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "1–2",
+      "homeGoals": [
+        "Schjelderup 36'"
+      ],
+      "awayGoals": [
+        "Bellingham stoppage time",
+        "Bellingham 93'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "负",
+      "awayResult": "胜"
     },
     {
       "id": "m100",
@@ -2582,14 +2587,20 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "argentina",
       "away": "Switzerland",
       "awayId": "switzerland",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "3–1",
+      "homeGoals": [
+        "Mac Allister 10'",
+        "Álvarez 112'",
+        "La. Martínez 120+1'"
+      ],
+      "awayGoals": [
+        "Ndoye 68'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Switzerland+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "胜",
+      "awayResult": "负"
     },
     {
       "id": "m101",
@@ -2622,16 +2633,16 @@ window.WORLD_CUP_MATCHES = {
       "date": "2026-07-15",
       "time": "3:00 p.m. UTC−4",
       "venue": "Mercedes-Benz Stadium , Atlanta",
-      "home": "Winner Match 99",
-      "homeId": "winner-match-99",
-      "away": "Winner Match 100",
-      "awayId": "winner-match-100",
+      "home": "England",
+      "homeId": "england",
+      "away": "Argentina",
+      "awayId": "argentina",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+99+vs+Winner+Match+100+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Argentina+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -3533,14 +3544,20 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "argentina",
         "away": "Switzerland",
         "awayId": "switzerland",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "3–1",
+        "homeGoals": [
+          "Mac Allister 10'",
+          "Álvarez 112'",
+          "La. Martínez 120+1'"
+        ],
+        "awayGoals": [
+          "Ndoye 68'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Switzerland+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "brazil": [
@@ -6651,14 +6668,19 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "norway",
         "away": "England",
         "awayId": "england",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "1–2",
+        "homeGoals": [
+          "Schjelderup 36'"
+        ],
+        "awayGoals": [
+          "Bellingham stoppage time",
+          "Bellingham 93'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "负",
+        "awayResult": "胜"
       }
     ],
     "argentina": [
@@ -6809,14 +6831,20 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "argentina",
         "away": "Switzerland",
         "awayId": "switzerland",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "3–1",
+        "homeGoals": [
+          "Mac Allister 10'",
+          "Álvarez 112'",
+          "La. Martínez 120+1'"
+        ],
+        "awayGoals": [
+          "Ndoye 68'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Switzerland+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "algeria": [
@@ -7706,14 +7734,19 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "norway",
         "away": "England",
         "awayId": "england",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
+        "score": "1–2",
+        "homeGoals": [
+          "Schjelderup 36'"
+        ],
+        "awayGoals": [
+          "Bellingham stoppage time",
+          "Bellingham 93'"
+        ],
         "penalties": "",
-        "status": "scheduled",
+        "status": "completed",
         "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "homeResult": "负",
+        "awayResult": "胜"
       }
     ],
     "croatia": [
@@ -8009,16 +8042,16 @@ window.WORLD_CUP_MATCHES = {
         "date": "2026-07-15",
         "time": "3:00 p.m. UTC−4",
         "venue": "Mercedes-Benz Stadium , Atlanta",
-        "home": "Winner Match 99",
-        "homeId": "winner-match-99",
-        "away": "Winner Match 100",
-        "awayId": "winner-match-100",
+        "home": "England",
+        "homeId": "england",
+        "away": "Argentina",
+        "awayId": "argentina",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+99+vs+Winner+Match+100+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Argentina+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -8033,16 +8066,16 @@ window.WORLD_CUP_MATCHES = {
         "date": "2026-07-15",
         "time": "3:00 p.m. UTC−4",
         "venue": "Mercedes-Benz Stadium , Atlanta",
-        "home": "Winner Match 99",
-        "homeId": "winner-match-99",
-        "away": "Winner Match 100",
-        "awayId": "winner-match-100",
+        "home": "England",
+        "homeId": "england",
+        "away": "Argentina",
+        "awayId": "argentina",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Winner+Match+99+vs+Winner+Match+100+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Argentina+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
