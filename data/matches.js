@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-14; latest semifinal and final pairing patched from match reports",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-16; latest semifinal and final pairing patched from match reports",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
