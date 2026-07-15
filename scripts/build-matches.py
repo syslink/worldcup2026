@@ -207,6 +207,15 @@ MANUAL_MATCH_UPDATES = {
         "homeResult": "胜",
         "awayResult": "负",
     },
+    101: {
+        "score": "0–2",
+        "homeGoals": [],
+        "awayGoals": ["Oyarzabal 22'", "Pedro Porro 58'"],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "负",
+        "awayResult": "胜",
+    },
 }
 
 MANUAL_TEAM_REPLACEMENTS = {
@@ -269,6 +278,18 @@ MANUAL_TEAM_REPLACEMENTS = {
         "homeId": "france",
         "away": "Spain",
         "awayId": "spain",
+    },
+    103: {
+        "home": "France",
+        "homeId": "france",
+        "away": "Loser Match 102",
+        "awayId": "loser-match-102",
+    },
+    104: {
+        "home": "Spain",
+        "homeId": "spain",
+        "away": "Winner Match 102",
+        "awayId": "winner-match-102",
     },
 }
 
