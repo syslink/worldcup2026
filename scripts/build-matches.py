@@ -216,6 +216,15 @@ MANUAL_MATCH_UPDATES = {
         "homeResult": "负",
         "awayResult": "胜",
     },
+    102: {
+        "score": "1–2",
+        "homeGoals": ["Gordon 55'"],
+        "awayGoals": ["Fernandez 85'", "Lautaro Martínez 90+2'"],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "负",
+        "awayResult": "胜",
+    },
 }
 
 MANUAL_TEAM_REPLACEMENTS = {
@@ -282,14 +291,14 @@ MANUAL_TEAM_REPLACEMENTS = {
     103: {
         "home": "France",
         "homeId": "france",
-        "away": "Loser Match 102",
-        "awayId": "loser-match-102",
+        "away": "England",
+        "awayId": "england",
     },
     104: {
         "home": "Spain",
         "homeId": "spain",
-        "away": "Winner Match 102",
-        "awayId": "winner-match-102",
+        "away": "Argentina",
+        "awayId": "argentina",
     },
 }
 

@@ -277,7 +277,7 @@ const elements = {
   detailRegion: document.querySelector("#detailRegion"),
   detailName: document.querySelector("#detailName"),
   detailStatus: document.querySelector("#detailStatus"),
-  semifinalList: document.querySelector("#semifinalList"),
+  finalMatchCard: document.querySelector("#finalMatchCard"),
   capital: document.querySelector("#capital"),
   languages: document.querySelector("#languages"),
   hello: document.querySelector("#hello"),
@@ -821,10 +821,9 @@ function latestNoteText(match) {
   return latestWinnerText(match);
 }
 
-function semifinalMatches() {
+function finalMatch() {
   return (window.WORLD_CUP_MATCHES?.matches || [])
-    .filter((match) => match.stage === "半决赛")
-    .sort((a, b) => a.matchNo - b.matchNo);
+    .find((match) => match.stage === "决赛");
 }
 
 function venueCity(venue = "") {
@@ -853,39 +852,32 @@ function beijingTimeLabel(match) {
   return `北京时间 ${month}月${day}日 ${beijingHour}:${beijingMinute}`;
 }
 
-function semifinalStatus(match) {
+function finalStatus(match) {
   if (match.status === "completed") {
     return `${latestScoreText(match)} · ${latestWinnerText(match)}`;
   }
   return beijingTimeLabel(match);
 }
 
-function renderSemifinals() {
-  if (!elements.semifinalList) return;
-  elements.semifinalList.innerHTML = "";
-  const matches = semifinalMatches();
-  if (!matches.length) {
-    elements.semifinalList.innerHTML = `<p class="latest-empty">半决赛赛程待更新。</p>`;
+function renderFinalMatch() {
+  if (!elements.finalMatchCard) return;
+  const match = finalMatch();
+  if (!match) {
+    elements.finalMatchCard.innerHTML = `<p class="latest-empty">决赛信息待更新。</p>`;
     return;
   }
 
-  matches.forEach((match) => {
-    const card = document.createElement("article");
-    card.className = "semifinal-card";
-    card.innerHTML = `
-      <div class="semifinal-card__meta">
-        <span>${match.stage}</span>
-        <strong>${beijingTimeLabel(match)}</strong>
-      </div>
-      <div class="semifinal-card__teams">
-        ${latestTeamButton(match, "home")}
-        <span>${match.status === "completed" ? latestScoreText(match) : "vs"}</span>
-        ${latestTeamButton(match, "away")}
-      </div>
-      <p>${match.status === "completed" ? semifinalStatus(match) : venueCity(match.venue)}</p>
-    `;
-    elements.semifinalList.append(card);
-  });
+  elements.finalMatchCard.innerHTML = `
+    <p class="section-kicker">${match.stage}</p>
+    <h2>梅西 × 亚马尔，时代交会的一场球</h2>
+    <div class="world-final__teams">
+      ${latestTeamButton(match, "home")}
+      <span>${match.status === "completed" ? latestScoreText(match) : "vs"}</span>
+      ${latestTeamButton(match, "away")}
+    </div>
+    <p class="world-final__time">${finalStatus(match)}${match.venue ? ` · ${venueCity(match.venue)}` : ""}</p>
+    <p class="world-final__story">一边是年轻的西班牙锋芒，一边是梅西带领的卫冕冠军；这场决赛像是一封写给足球未来和传奇的邀请函。</p>
+  `;
 }
 
 function renderMatches(country) {
@@ -1343,7 +1335,7 @@ function render() {
   renderFilters();
   renderCountryList();
   renderCountryDetail();
-  renderSemifinals();
+  renderFinalMatch();
 }
 
 elements.searchInput.addEventListener("input", (event) => {
@@ -1362,7 +1354,7 @@ function handleHeaderTeamClick(event) {
   selectCountry(button.dataset.countryId);
 }
 
-elements.semifinalList?.addEventListener("click", handleHeaderTeamClick);
+elements.finalMatchCard?.addEventListener("click", handleHeaderTeamClick);
 
 elements.aiChatForm.addEventListener("submit", (event) => {
   event.preventDefault();

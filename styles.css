@@ -154,91 +154,94 @@ h1 {
   color: var(--blue);
 }
 
-.semifinals {
-  width: min(100%, 900px);
-  margin-top: 28px;
+.world-final {
+  width: min(100%, 980px);
+  margin-top: 30px;
   display: grid;
-  gap: 12px;
+  grid-template-columns: minmax(280px, 1.05fr) minmax(320px, 0.95fr);
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid rgba(30, 91, 71, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 24px 54px rgba(23, 50, 77, 0.18);
+  backdrop-filter: blur(10px);
 }
 
-.semifinals h2 {
-  margin-bottom: 0;
+.world-final__visual {
+  min-height: 320px;
+  margin: 0;
+  background: #17324d;
+}
+
+.world-final__visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  display: block;
+  object-fit: cover;
+}
+
+.world-final__content {
+  display: grid;
+  align-content: center;
+  gap: 16px;
+  padding: 26px;
+}
+
+.world-final h2 {
+  margin: 0;
   color: var(--green);
-  font-size: 1.25rem;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1.08;
 }
 
-.semifinals__head {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 14px;
-}
-
-.semifinal-list {
+.world-final__teams {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
   gap: 10px;
 }
 
-.semifinal-card {
-  display: grid;
-  gap: 8px;
-  padding: 14px;
-  border: 1px solid rgba(30, 91, 71, 0.2);
+.world-final__teams > span {
+  padding: 8px 12px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.84);
-  box-shadow: 0 10px 24px rgba(23, 50, 77, 0.08);
-  backdrop-filter: blur(8px);
-}
-
-.semifinal-card {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 248, 243, 0.84));
-}
-
-.semifinal-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 4px;
-  background: var(--gold);
-}
-
-.semifinal-card__meta,
-.semifinal-card__teams {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-}
-
-.semifinal-card__meta {
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 800;
-}
-
-.semifinal-card__meta strong {
-  color: var(--green);
-}
-
-.semifinal-card__teams > span {
-  flex: 0 0 auto;
-  padding: 4px 8px;
-  border-radius: 8px;
-  background: #eef8f3;
-  color: var(--blue);
-  font-size: 1rem;
+  background: var(--blue);
+  color: #fff;
+  font-size: 1.05rem;
   font-weight: 900;
   white-space: nowrap;
 }
 
+.world-final__teams .latest-team {
+  min-height: 54px;
+  padding: 10px 12px;
+  border-color: rgba(23, 50, 77, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 1.05rem;
+}
+
+.world-final__teams .latest-flag {
+  width: 32px;
+  height: 24px;
+  font-size: 1.32rem;
+}
+
+.world-final__time {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #eef8f3;
+  color: var(--blue);
+  font-weight: 900;
+  line-height: 1.45;
+}
+
 .latest-empty,
-.semifinal-card p {
+.world-final__story {
   margin: 0;
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: 0.96rem;
   line-height: 1.55;
 }
 
@@ -1464,8 +1467,25 @@ footer {
     min-width: 92px;
   }
 
-  .semifinal-list {
+  .world-final {
     grid-template-columns: 1fr;
+  }
+
+  .world-final__visual,
+  .world-final__visual img {
+    min-height: 230px;
+  }
+
+  .world-final__content {
+    padding: 18px;
+  }
+
+  .world-final__teams {
+    grid-template-columns: 1fr;
+  }
+
+  .world-final__teams > span {
+    justify-self: center;
   }
 
   main {

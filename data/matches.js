@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-15; latest semifinal result patched from match reports",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-14; latest semifinal and final pairing patched from match reports",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
@@ -2640,14 +2640,19 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "england",
       "away": "Argentina",
       "awayId": "argentina",
-      "score": "",
-      "homeGoals": [],
-      "awayGoals": [],
+      "score": "1–2",
+      "homeGoals": [
+        "Gordon 55'"
+      ],
+      "awayGoals": [
+        "Fernandez 85'",
+        "Lautaro Martínez 90+2'"
+      ],
       "penalties": "",
-      "status": "scheduled",
+      "status": "completed",
       "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Argentina+2026+FIFA+World+Cup+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "homeResult": "负",
+      "awayResult": "胜"
     },
     {
       "id": "m103",
@@ -2660,14 +2665,14 @@ window.WORLD_CUP_MATCHES = {
       "venue": "Hard Rock Stadium , Miami Gardens",
       "home": "France",
       "homeId": "france",
-      "away": "Loser Match 102",
-      "awayId": "loser-match-102",
+      "away": "England",
+      "awayId": "england",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Loser+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=France+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     },
@@ -2682,14 +2687,14 @@ window.WORLD_CUP_MATCHES = {
       "venue": "MetLife Stadium , East Rutherford",
       "home": "Spain",
       "homeId": "spain",
-      "away": "Winner Match 102",
-      "awayId": "winner-match-102",
+      "away": "Argentina",
+      "awayId": "argentina",
       "score": "",
       "homeGoals": [],
       "awayGoals": [],
       "penalties": "",
       "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Winner+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
+      "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Argentina+2026+FIFA+World+Cup+Final+highlights+full+match+replay",
       "homeResult": "待赛",
       "awayResult": "待赛"
     }
@@ -5426,28 +5431,6 @@ window.WORLD_CUP_MATCHES = {
         "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Belgium+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "胜",
         "awayResult": "负"
-      },
-      {
-        "id": "m101",
-        "matchNo": 101,
-        "stageType": "knockout",
-        "stage": "半决赛",
-        "group": null,
-        "date": "2026-07-14",
-        "time": "2:00 p.m. UTC−5",
-        "venue": "AT&T Stadium , Arlington",
-        "home": "France",
-        "homeId": "france",
-        "away": "Spain",
-        "awayId": "spain",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Spain+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
       }
     ],
     "egypt": [
@@ -5936,14 +5919,14 @@ window.WORLD_CUP_MATCHES = {
         "venue": "MetLife Stadium , East Rutherford",
         "home": "Spain",
         "homeId": "spain",
-        "away": "Winner Match 102",
-        "awayId": "winner-match-102",
+        "away": "Argentina",
+        "awayId": "argentina",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Winner+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Argentina+2026+FIFA+World+Cup+Final+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -6392,14 +6375,14 @@ window.WORLD_CUP_MATCHES = {
         "venue": "Hard Rock Stadium , Miami Gardens",
         "home": "France",
         "homeId": "france",
-        "away": "Loser Match 102",
-        "awayId": "loser-match-102",
+        "away": "England",
+        "awayId": "england",
         "score": "",
         "homeGoals": [],
         "awayGoals": [],
         "penalties": "",
         "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Loser+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "待赛",
         "awayResult": "待赛"
       }
@@ -6920,6 +6903,55 @@ window.WORLD_CUP_MATCHES = {
         "replayUrl": "https://www.youtube.com/results?search_query=Argentina+vs+Switzerland+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "胜",
         "awayResult": "负"
+      },
+      {
+        "id": "m102",
+        "matchNo": 102,
+        "stageType": "knockout",
+        "stage": "半决赛",
+        "group": null,
+        "date": "2026-07-15",
+        "time": "3:00 p.m. UTC−4",
+        "venue": "Mercedes-Benz Stadium , Atlanta",
+        "home": "England",
+        "homeId": "england",
+        "away": "Argentina",
+        "awayId": "argentina",
+        "score": "1–2",
+        "homeGoals": [
+          "Gordon 55'"
+        ],
+        "awayGoals": [
+          "Fernandez 85'",
+          "Lautaro Martínez 90+2'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Argentina+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "负",
+        "awayResult": "胜"
+      },
+      {
+        "id": "m104",
+        "matchNo": 104,
+        "stageType": "knockout",
+        "stage": "决赛",
+        "group": null,
+        "date": "2026-07-19",
+        "time": "3:00 p.m. UTC−4",
+        "venue": "MetLife Stadium , East Rutherford",
+        "home": "Spain",
+        "homeId": "spain",
+        "away": "Argentina",
+        "awayId": "argentina",
+        "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "scheduled",
+        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Argentina+2026+FIFA+World+Cup+Final+highlights+full+match+replay",
+        "homeResult": "待赛",
+        "awayResult": "待赛"
       }
     ],
     "algeria": [
@@ -7822,6 +7854,55 @@ window.WORLD_CUP_MATCHES = {
         "replayUrl": "https://www.youtube.com/results?search_query=Norway+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "负",
         "awayResult": "胜"
+      },
+      {
+        "id": "m102",
+        "matchNo": 102,
+        "stageType": "knockout",
+        "stage": "半决赛",
+        "group": null,
+        "date": "2026-07-15",
+        "time": "3:00 p.m. UTC−4",
+        "venue": "Mercedes-Benz Stadium , Atlanta",
+        "home": "England",
+        "homeId": "england",
+        "away": "Argentina",
+        "awayId": "argentina",
+        "score": "1–2",
+        "homeGoals": [
+          "Gordon 55'"
+        ],
+        "awayGoals": [
+          "Fernandez 85'",
+          "Lautaro Martínez 90+2'"
+        ],
+        "penalties": "",
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Argentina+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "负",
+        "awayResult": "胜"
+      },
+      {
+        "id": "m103",
+        "matchNo": 103,
+        "stageType": "knockout",
+        "stage": "三四名决赛",
+        "group": null,
+        "date": "2026-07-18",
+        "time": "5:00 p.m. UTC−4",
+        "venue": "Hard Rock Stadium , Miami Gardens",
+        "home": "France",
+        "homeId": "france",
+        "away": "England",
+        "awayId": "england",
+        "score": "",
+        "homeGoals": [],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "scheduled",
+        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
+        "homeResult": "待赛",
+        "awayResult": "待赛"
       }
     ],
     "croatia": [
@@ -8105,150 +8186,6 @@ window.WORLD_CUP_MATCHES = {
         "replayUrl": "https://www.youtube.com/results?search_query=Panama+vs+England+2026+FIFA+World+Cup+highlights+full+match+replay",
         "homeResult": "负",
         "awayResult": "胜"
-      }
-    ],
-    "winner-match-99": [
-      {
-        "id": "m102",
-        "matchNo": 102,
-        "stageType": "knockout",
-        "stage": "半决赛",
-        "group": null,
-        "date": "2026-07-15",
-        "time": "3:00 p.m. UTC−4",
-        "venue": "Mercedes-Benz Stadium , Atlanta",
-        "home": "England",
-        "homeId": "england",
-        "away": "Argentina",
-        "awayId": "argentina",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Argentina+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-100": [
-      {
-        "id": "m102",
-        "matchNo": 102,
-        "stageType": "knockout",
-        "stage": "半决赛",
-        "group": null,
-        "date": "2026-07-15",
-        "time": "3:00 p.m. UTC−4",
-        "venue": "Mercedes-Benz Stadium , Atlanta",
-        "home": "England",
-        "homeId": "england",
-        "away": "Argentina",
-        "awayId": "argentina",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=England+vs+Argentina+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "loser-match-101": [
-      {
-        "id": "m103",
-        "matchNo": 103,
-        "stageType": "knockout",
-        "stage": "三四名决赛",
-        "group": null,
-        "date": "2026-07-18",
-        "time": "5:00 p.m. UTC−4",
-        "venue": "Hard Rock Stadium , Miami Gardens",
-        "home": "France",
-        "homeId": "france",
-        "away": "Loser Match 102",
-        "awayId": "loser-match-102",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Loser+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "loser-match-102": [
-      {
-        "id": "m103",
-        "matchNo": 103,
-        "stageType": "knockout",
-        "stage": "三四名决赛",
-        "group": null,
-        "date": "2026-07-18",
-        "time": "5:00 p.m. UTC−4",
-        "venue": "Hard Rock Stadium , Miami Gardens",
-        "home": "France",
-        "homeId": "france",
-        "away": "Loser Match 102",
-        "awayId": "loser-match-102",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=France+vs+Loser+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-101": [
-      {
-        "id": "m104",
-        "matchNo": 104,
-        "stageType": "knockout",
-        "stage": "决赛",
-        "group": null,
-        "date": "2026-07-19",
-        "time": "3:00 p.m. UTC−4",
-        "venue": "MetLife Stadium , East Rutherford",
-        "home": "Spain",
-        "homeId": "spain",
-        "away": "Winner Match 102",
-        "awayId": "winner-match-102",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Winner+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
-      }
-    ],
-    "winner-match-102": [
-      {
-        "id": "m104",
-        "matchNo": 104,
-        "stageType": "knockout",
-        "stage": "决赛",
-        "group": null,
-        "date": "2026-07-19",
-        "time": "3:00 p.m. UTC−4",
-        "venue": "MetLife Stadium , East Rutherford",
-        "home": "Spain",
-        "homeId": "spain",
-        "away": "Winner Match 102",
-        "awayId": "winner-match-102",
-        "score": "",
-        "homeGoals": [],
-        "awayGoals": [],
-        "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Winner+Match+102+2026+FIFA+World+Cup+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
       }
     ]
   }
