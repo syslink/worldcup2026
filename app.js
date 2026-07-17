@@ -821,13 +821,6 @@ function latestNoteText(match) {
   return latestWinnerText(match);
 }
 
-function latestCompletedKnockoutMatch() {
-  return (window.WORLD_CUP_MATCHES?.matches || [])
-    .filter((match) => match.stageType === "knockout" && match.status === "completed")
-    .sort((a, b) => (a.matchNo || 0) - (b.matchNo || 0))
-    .at(-1) || null;
-}
-
 function finalMatch() {
   return (window.WORLD_CUP_MATCHES?.matches || [])
     .find((match) => match.stage === "决赛");
@@ -868,8 +861,7 @@ function finalStatus(match) {
 
 function renderFinalMatch() {
   if (!elements.finalMatchCard) return;
-  const latestMatch = latestCompletedKnockoutMatch();
-  const match = latestMatch || finalMatch();
+  const match = finalMatch();
   if (!match) {
     elements.finalMatchCard.innerHTML = `<p class="latest-empty">决赛信息待更新。</p>`;
     return;
@@ -877,21 +869,21 @@ function renderFinalMatch() {
 
   const isCompleted = match.status === "completed";
   const title = isCompleted
-    ? `${latestTeamName(match, "away")}补时逆转${latestTeamName(match, "home")}`
+    ? `${latestWinnerText(match)}，世界杯冠军诞生`
     : "梅西 × 亚马尔，时代交会的一场球";
   const summary = isCompleted
-    ? `${latestWinnerText(match)}，最新一场淘汰赛把决赛对阵定格为西班牙 vs 阿根廷。`
+    ? latestNoteText(match)
     : "一边是年轻的西班牙锋芒，一边是梅西带领的卫冕冠军；这场决赛像是一封写给足球未来和传奇的邀请函。";
 
   elements.finalMatchCard.innerHTML = `
-    <p class="section-kicker">${isCompleted ? `最新战报 · ${match.stage}` : match.stage}</p>
+    <p class="section-kicker">${match.stage}</p>
     <h2>${title}</h2>
     <div class="world-final__teams">
       ${latestTeamButton(match, "home")}
       <span>${isCompleted ? latestScoreText(match) : "vs"}</span>
       ${latestTeamButton(match, "away")}
     </div>
-    <p class="world-final__time">${isCompleted ? `${match.date} ${match.time || ""}`.trim() : finalStatus(match)}${match.venue ? ` · ${venueCity(match.venue)}` : ""}</p>
+    <p class="world-final__time">${finalStatus(match)}${match.venue ? ` · ${venueCity(match.venue)}` : ""}</p>
     <p class="world-final__story">${summary}</p>
   `;
 }
