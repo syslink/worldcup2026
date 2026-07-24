@@ -225,6 +225,15 @@ MANUAL_MATCH_UPDATES = {
         "homeResult": "负",
         "awayResult": "胜",
     },
+    104: {
+        "score": "1–0",
+        "homeGoals": ["Ferran Torres 106'"],
+        "awayGoals": [],
+        "penalties": "",
+        "status": "completed",
+        "homeResult": "胜",
+        "awayResult": "负",
+    },
 }
 
 MANUAL_TEAM_REPLACEMENTS = {

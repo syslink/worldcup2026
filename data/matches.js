@@ -1,5 +1,5 @@
 window.WORLD_CUP_MATCHES = {
-  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-16; latest semifinal and final pairing patched from match reports",
+  "source": "Wikipedia 2026 FIFA World Cup page, fetched 2026-07-16; final result patched from FIFA and AP match reports",
   "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
   "matches": [
     {
@@ -2689,14 +2689,16 @@ window.WORLD_CUP_MATCHES = {
       "homeId": "spain",
       "away": "Argentina",
       "awayId": "argentina",
-      "score": "",
-      "homeGoals": [],
+      "score": "1–0",
+      "homeGoals": [
+        "Ferran Torres 106'"
+      ],
       "awayGoals": [],
       "penalties": "",
-      "status": "scheduled",
-      "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Argentina+2026+FIFA+World+Cup+Final+highlights+full+match+replay",
-      "homeResult": "待赛",
-      "awayResult": "待赛"
+      "status": "completed",
+      "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Argentina+2026+FIFA+World+Cup+Final+Ferran+Torres+106+goal+highlights+full+match+replay",
+      "homeResult": "胜",
+      "awayResult": "负"
     }
   ],
   "byCountry": {
@@ -5921,14 +5923,16 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "spain",
         "away": "Argentina",
         "awayId": "argentina",
-        "score": "",
-        "homeGoals": [],
+        "score": "1–0",
+        "homeGoals": [
+          "Ferran Torres 106'"
+        ],
         "awayGoals": [],
         "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Argentina+2026+FIFA+World+Cup+Final+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Argentina+2026+FIFA+World+Cup+Final+Ferran+Torres+106+goal+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "cape-verde": [
@@ -6944,14 +6948,16 @@ window.WORLD_CUP_MATCHES = {
         "homeId": "spain",
         "away": "Argentina",
         "awayId": "argentina",
-        "score": "",
-        "homeGoals": [],
+        "score": "1–0",
+        "homeGoals": [
+          "Ferran Torres 106'"
+        ],
         "awayGoals": [],
         "penalties": "",
-        "status": "scheduled",
-        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Argentina+2026+FIFA+World+Cup+Final+highlights+full+match+replay",
-        "homeResult": "待赛",
-        "awayResult": "待赛"
+        "status": "completed",
+        "replayUrl": "https://www.youtube.com/results?search_query=Spain+vs+Argentina+2026+FIFA+World+Cup+Final+Ferran+Torres+106+goal+highlights+full+match+replay",
+        "homeResult": "胜",
+        "awayResult": "负"
       }
     ],
     "algeria": [

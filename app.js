@@ -854,9 +854,15 @@ function beijingTimeLabel(match) {
 
 function finalStatus(match) {
   if (match.status === "completed") {
-    return `${latestScoreText(match)} · ${latestWinnerText(match)}`;
+    return `${finalWinnerName(match)}夺冠 · ${latestGoalLinks(match) || latestScoreText(match)}`;
   }
   return beijingTimeLabel(match);
+}
+
+function finalWinnerName(match) {
+  if (match.homeResult === "胜") return latestTeamName(match, "home");
+  if (match.awayResult === "胜") return latestTeamName(match, "away");
+  return "冠军";
 }
 
 function renderFinalMatch() {
@@ -869,10 +875,10 @@ function renderFinalMatch() {
 
   const isCompleted = match.status === "completed";
   const title = isCompleted
-    ? `${latestWinnerText(match)}，世界杯冠军诞生`
+    ? `${latestTeamName(match, "home")} ${latestScoreText(match)} ${latestTeamName(match, "away")}，${finalWinnerName(match)}登上世界之巅`
     : "梅西 × 亚马尔，时代交会的一场球";
   const summary = isCompleted
-    ? latestNoteText(match)
+    ? "鏖战到加时赛后，Ferran Torres 在第 106 分钟打破僵局，西班牙用整届赛事近乎滴水不漏的防守，把梅西和阿根廷的卫冕梦想挡在终点前。"
     : "一边是年轻的西班牙锋芒，一边是梅西带领的卫冕冠军；这场决赛像是一封写给足球未来和传奇的邀请函。";
 
   elements.finalMatchCard.innerHTML = `
